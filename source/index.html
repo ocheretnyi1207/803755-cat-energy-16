@@ -1,110 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <!--Вставить логотип SVG-->
-      </a>
-      <div class="image page-header__image">
-        <!--Вставить картинку SVG-->
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <!--Вставить логотип SVG-->
+    </a>
+    <div class="image page-header__image">
+      <!--Вставить картинку SVG-->
+    </div>
+    <nav class="main-navigation">
+      <button class="main-navigation__btn">Открыть меню</button>
+      <ul class="navigation-list">
+        <li class="navigation-list__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation-list__item">
+          <a href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="food">
+      <div class="food-promo">
+        <h1 class="food-promo__title">
+          Функциональное питание для котов
+        </h1>
+        <p class="food-promo__description">
+          Занялся собой? Займись котом!
+        </p>
+        <img class="food-promo__img" src="#" width="" height="" alt="Функциональное питание Cat Energy">
       </div>
-      <nav class="main-navigation">
-        <button class="main-navigation__btn">Открыть меню</button>
-        <ul class="navigation-list">
-          <li class="navigation-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation-list__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <section class="functional-food">
-        <div class="functional-food-promo">
-          <h1 class="functional-food-promo__h1">
-            Функциональное питание для котов
-          </h1>
-          <p class="functional-food-promo__p">
-            Занялся собой? Займись котом!
+      <a class="food__link" href="#">Подобрать программу</a>
+      <ul class="food-list">
+        <li class="food-list__item food-list__item--slim">
+          <h3 class="food-list__title">Похудение</h3>
+          <p class="food-list__description">
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+            поможет вашему питомцу сбросить лишний вес.
           </p>
-          <img class="functional-food-promo__img" src="#" width="" height="" alt="Функциональное питание Cat Energy">
-        </div>
-        <div class="functional-food-pickup">
-          <a class="functional-food-pickup__a" href="#">Подобрать программу</a>
-        </div>
-        <ul class="functional-food-list">
-          <li class="functional-food-item functional-food-item__slim">
-            <h3 class="functional-food-item__h3">Похудение</h3>
-            <p class="functional-food-item__p">
-              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-            </p>
-            <a class="functional-food-item__a" href="#">Каталог Slim</a>
-          </li>
-          <li class="functional-food-item functional-food-item__fat">
-            <h3 class="functional-food-item__h3">Набор массы</h3>
-            <p class="functional-food-item__p">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a class="functional-food-item__a" href="#">Каталог Pro</a>
-          </li>
-        </ul>
-      </section>
-      <section class="advantage">
-        <ul class="advantage-list">
-          <li class="advantage-list__item advantage-list__item--vitamins">
-            Функциональное питание содержит только полезные питательные вещества.
-          </li>
-          <li class="advantage-list__item advantage-list__item--flour">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-          </li>
-          <li class="advantage-list__item advantage-list__item--food">
-            Замените один-два приема обычной еды на наше функциональное питание.
-          </li>
-          <li class="advantage-list__item advantage-list__item--time">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-          </li>
-        </ul>
-      </section>
-      <!-- Разметим позже
+          <a class="food-list__link" href="#">Каталог Slim</a>
+        </li>
+        <li class="food-list__item food-list__item--fat">
+          <h3 class="food-list__title">Набор массы</h3>
+          <p class="food-list__description">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
+            необходимые мышцы!
+          </p>
+          <a class="food-list__link" href="#">Каталог Pro</a>
+        </li>
+      </ul>
+    </section>
+    <section class="advantage">
+      <h3 class="advantage__title">Как это работает</h3>
+      <ul class="advantage__list">
+        <li class="advantage__item advantage__item--vitamins">
+          Функциональное питание содержит только полезные питательные вещества.
+        </li>
+        <li class="advantage__item advantage__item--flour">
+          Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+        </li>
+        <li class="advantage__item advantage__item--food">
+          Замените один-два приема обычной еды на наше функциональное питание.
+        </li>
+        <li class="advantage__item advantage__item--time">
+          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+        </li>
+      </ul>
+    </section>
+    <!-- Разметим позже
       <section class="example"></section>
       <div class="cooperation"></div>
       <div class="maps"></div>
-      -->
-    </main>
-    <footer class="page-footer">
-      <div class="image page-footer__image">
-        <!--Вставить картинку SVG-->
-      </div>
-      <ul class="social-icons">
-        <li class="social-icons__item">
-          <a href="#" aria-label="CatEnergy Вконтакте">
-            <!--Вставить картинку SVG-->
-          </a>
-        </li>
-        <li class="social-icons__item">
-          <a href="#" aria-label="CatEnergy в Instagram">
-            <!--Вставить картинку SVG-->
-          </a>
-        </li>
-        <li class="social-icons__item">
-          <a href="#" aria-label="CatEnergy в Facebook">
-            <!--Вставить картинку SVG-->
-          </a>
-        </li>
-      </ul>
-      <a class="page-footer__a page-footer__a--text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="page-footer__a page-footer__a--image" href="https://htmlacademy.ru/intensive/adaptive">
+    -->
+  </main>
+  <footer class="page-footer">
+    <a class="image page-footer__image">
+      <!--Вставить картинку SVG-->
+    </a>
+    <ul class="social-icons">
+      <li class="social-icons__item">
+        <a href="#" aria-label="CatEnergy Вконтакте">
+          <!--Вставить картинку SVG-->
+        </a>
+      </li>
+      <li class="social-icons__item">
+        <a href="#" aria-label="CatEnergy в Instagram">
+          <!--Вставить картинку SVG-->
+        </a>
+      </li>
+      <li class="social-icons__item">
+        <a href="#" aria-label="CatEnergy в Facebook">
+          <!--Вставить картинку SVG-->
+        </a>
+      </li>
+    </ul>
+    <div class="copyrights">
+      <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="copyrights__link copyrights__link--image" href="https://htmlacademy.ru/intensive/adaptive">
         <!--Вставить картинку SVG-->
       </a>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>

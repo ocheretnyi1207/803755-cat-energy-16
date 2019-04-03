@@ -31,7 +31,7 @@
   </header>
   <main class="page-main">
     <h1 class="page-main__h1">Подбор программы</h1>
-    <p class="page_main__p">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <p class="page-main__p">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="program-selection" action="https://echo.htmlacademy.ru" method="POST">
       <div class="field-wrapper">
         <label class="field-wrapper__label" for="name-field">Имя:*</label>
@@ -42,19 +42,19 @@
         <input class="field-wrapper__input field-wrapper__input--age" type="text" name="age" id="age-field" placeholder="7">
       </div>
       <div class="field-wrapper">
-        <input class="field-wrapper__input field-wrapper__input--active" type="radio" name="program-option" id="slim-field" checked>
+        <input class="field-wrapper__input field-wrapper__input--active" type="radio" name="program-option" id="slim-field" value="Похудение" checked>
         <label class="field-wrapper__label" for="slim-field">Похудение</label>
-        <input class="field-wrapper__input" type="radio" name="program-option" id="fat-field">
+        <input class="field-wrapper__input" type="radio" name="program-option" id="fat-field" value="Набор массы">
         <label class="field-wrapper__label" for="fat-field">Набор массы</label>
-        <input class="field-wrapper__input" type="radio" name="program-option" id="incertitude-field">
+        <input class="field-wrapper__input" type="radio" name="program-option" id="incertitude-field" value="Не знаю (нужен ваш совет)">
         <label class="field-wrapper__label" for="incertitude-field">Не знаю (Нужен ваш совет)</label>
       </div>
       <fieldset class="program-selection-fieldset">
         <legend class="program-selection-fieldset__legend program-selection-fieldset__legend--contacts">Контактные данные (владельца кота)</legend>
         <label class="program-selection-fieldset__label" for="email-field">Email:*</label>
-        <input class="program-selection-fieldset__input program-selection-fieldset__input--email" type="text" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+        <input class="program-selection-fieldset__input program-selection-fieldset__input--email" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
         <label class="program-selection-fieldset__label" for="phone-field">Телефон:*</label>
-        <input class="program-selection-fieldset__input program-selection-fieldset__input--phone" type="text" name="phone" id="phone-field" placeholder="8 (960) 900-60-90">
+        <input class="program-selection-fieldset__input program-selection-fieldset__input--phone" type="tel" name="phone" id="phone-field" placeholder="8 (960) 900-60-90">
       </fieldset>
       <fieldset class="program-selection-fieldset">
         <legend class="program-selection-fieldset__legend program-selection-fieldset__legend--comments">Комментарий</legend>
