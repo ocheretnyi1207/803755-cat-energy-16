@@ -30,49 +30,49 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="page-main__h1">Подбор программы</h1>
-    <p class="page-main__p">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <h1 class="page-main__title">Подбор программы</h1>
+    <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="program-selection" action="https://echo.htmlacademy.ru" method="POST">
-      <div class="field-wrapper">
-        <label class="field-wrapper__label" for="name-field">Имя:*</label>
-        <input class="field-wrapper__input field-wrapper__input--name" type="text" name="name" id="name-field" placeholder="Барсик">
-        <label class="field-wrapper__label" for="weight-field">Вес:*</label>
-        <input class="field-wrapper__input field-wrapper__input--weight" type="text" name="weight" id="weight-field" placeholder="7">
-        <label class="field-wrapper__label" for="age-field">Возраст:*</label>
-        <input class="field-wrapper__input field-wrapper__input--age" type="text" name="age" id="age-field" placeholder="7">
+      <div class="program-selection__wrapper">
+        <label class="program-selection__label" for="name-field">Имя:*</label>
+        <input class="program-selection__input program-selection__input--name" type="text" name="name" id="name-field" placeholder="Барсик">
+        <label class="program-selection__label" for="weight-field">Вес:*</label>
+        <input class="program-selection__input program-selection__input--weight" type="text" name="weight" id="weight-field" placeholder="7">
+        <label class="program-selection__label" for="age-field">Возраст:*</label>
+        <input class="program-selection__input program-selection__input--age" type="text" name="age" id="age-field" placeholder="7">
       </div>
-      <div class="field-wrapper">
-        <input class="field-wrapper__input field-wrapper__input--active" type="radio" name="program-option" id="slim-field" value="Похудение" checked>
-        <label class="field-wrapper__label" for="slim-field">Похудение</label>
-        <input class="field-wrapper__input" type="radio" name="program-option" id="fat-field" value="Набор массы">
-        <label class="field-wrapper__label" for="fat-field">Набор массы</label>
-        <input class="field-wrapper__input" type="radio" name="program-option" id="incertitude-field" value="Не знаю (нужен ваш совет)">
-        <label class="field-wrapper__label" for="incertitude-field">Не знаю (Нужен ваш совет)</label>
+      <div class="program-selection__wrapper">
+        <input class="program-selection__input program-selection__input--active" type="radio" name="program-option" id="slim-field" value="Похудение" checked>
+        <label class="program-selection__label" for="slim-field">Похудение</label>
+        <input class="program-selection__input" type="radio" name="program-option" id="fat-field" value="Набор массы">
+        <label class="program-selection__label" for="fat-field">Набор массы</label>
+        <input class="program-selection__input" type="radio" name="program-option" id="incertitude-field" value="Не знаю (нужен ваш совет)">
+        <label class="program-selection__label" for="incertitude-field">Не знаю (Нужен ваш совет)</label>
       </div>
-      <fieldset class="program-selection-fieldset">
-        <legend class="program-selection-fieldset__legend program-selection-fieldset__legend--contacts">Контактные данные (владельца кота)</legend>
-        <label class="program-selection-fieldset__label" for="email-field">Email:*</label>
-        <input class="program-selection-fieldset__input program-selection-fieldset__input--email" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
-        <label class="program-selection-fieldset__label" for="phone-field">Телефон:*</label>
-        <input class="program-selection-fieldset__input program-selection-fieldset__input--phone" type="tel" name="phone" id="phone-field" placeholder="8 (960) 900-60-90">
+      <fieldset class="program-selection__fieldset">
+        <legend class="program-selection__legend program-selection__legend--contacts">Контактные данные (владельца кота)</legend>
+        <label class="program-selection__label" for="email-field">Email:*</label>
+        <input class="program-selection__input program-selection__input--email" type="email" name="email" id="email-field" placeholder="kuklachev@gmail.com">
+        <label class="program-selection__label" for="phone-field">Телефон:*</label>
+        <input class="program-selection__input program-selection__input--phone" type="tel" name="phone" id="phone-field" placeholder="8 (960) 900-60-90">
       </fieldset>
-      <fieldset class="program-selection-fieldset">
-        <legend class="program-selection-fieldset__legend program-selection-fieldset__legend--comments">Комментарий</legend>
-        <input class="program-selection-fieldset__input" type="textarea" placeholder="Расскажите обо всех повадках кота">
+      <fieldset class="program-selection__fieldset">
+        <legend class="program-selection__legend program-selection__legend--comments">Комментарий</legend>
+        <textarea class="program-selection__input" name="ongoings" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
       </fieldset>
-      <fieldset class="program-selection-fieldset">
-        <legend class="program-selection-fieldset__legend program-selection-fieldset__legend--additionaly">Дополнительно</legend>
-        <input class="program-selection-fieldset__input program-selection-fieldset__input--active" type="checkbox" name="sweetener" id="sweetener-field" checked>
-        <label class="program-selection-fieldset__label" for="sweetener-field">Сахарозаменитель</label>
-        <input class="program-selection-fieldset__input program-selection-fieldset__input" type="checkbox" name="water" id="water-field">
-        <label class="program-selection-fieldset__label" for="water-field">Питьевая вода</label>
-        <input class="program-selection-fieldset__input program-selection-fieldset__input" type="checkbox" name="milk" id="milk-field">
-        <label class="program-selection-fieldset__label" for="milk-field">Молоко</label>
-        <input class="program-selection-fieldset__input program-selection-fieldset__input" type="checkbox" name="vitamins" id="vitamins-field">
-        <label class="program-selection-fieldset__label" for="vitamins-field">Витамины</label>
+      <fieldset class="program-selection__fieldset">
+        <legend class="program-selection__legend program-selection__legend--additionaly">Дополнительно</legend>
+        <input class="program-selection__input program-selection__input--active" type="checkbox" name="sweetener" id="sweetener-field" checked>
+        <label class="program-selection__label" for="sweetener-field">Сахарозаменитель</label>
+        <input class="program-selection__input" type="checkbox" name="water" id="water-field">
+        <label class="program-selection__label" for="water-field">Питьевая вода</label>
+        <input class="program-selection__input" type="checkbox" name="milk" id="milk-field">
+        <label class="program-selection__label" for="milk-field">Молоко</label>
+        <input class="program-selection__input" type="checkbox" name="vitamins" id="vitamins-field">
+        <label class="program-selection__label" for="vitamins-field">Витамины</label>
       </fieldset>
       <input class="program-selection__btn" type="submit" value="Отправить">
-      <p class="program-selection__p">* — Обязательные поля</p>
+      <p class="program-selection__description">* — Обязательные поля</p>
     </form>
     <!-- Разметим позже
       <div class="cooperation"></div>
@@ -80,31 +80,33 @@
     -->
   </main>
   <footer class="page-footer">
-    <div class="image page-footer__image">
-      <!--Вставить картинку SVG-->
-    </div>
-    <ul class="social-icons">
-      <li class="social-icons__item">
-        <a href="#" aria-label="CatEnergy Вконтакте">
+      <a class="image page-footer__image">
+        <!--Вставить картинку SVG-->
+      </a>
+      <ul class="social-icons">
+        <li class="social-icons__item">
+          <a href="#" aria-label="CatEnergy Вконтакте">
+            <!--Вставить картинку SVG-->
+          </a>
+        </li>
+        <li class="social-icons__item">
+          <a href="#" aria-label="CatEnergy в Instagram">
+            <!--Вставить картинку SVG-->
+          </a>
+        </li>
+        <li class="social-icons__item">
+          <a href="#" aria-label="CatEnergy в Facebook">
+            <!--Вставить картинку SVG-->
+          </a>
+        </li>
+      </ul>
+      <div class="copyrights">
+        <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyrights__link copyrights__link--image" href="https://htmlacademy.ru/intensive/adaptive">
           <!--Вставить картинку SVG-->
         </a>
-      </li>
-      <li class="social-icons__item">
-        <a href="#" aria-label="CatEnergy в Instagram">
-          <!--Вставить картинку SVG-->
-        </a>
-      </li>
-      <li class="social-icons__item">
-        <a href="#" aria-label="CatEnergy в Facebook">
-          <!--Вставить картинку SVG-->
-        </a>
-      </li>
-    </ul>
-    <a class="page-footer__a page-footer__a--text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    <a class="page-footer__a page-footer__a--image" href="https://htmlacademy.ru/intensive/adaptive">
-      <!--Вставить картинку SVG-->
-    </a>
-  </footer>
+      </div>
+    </footer>
 </body>
 
 </html>
