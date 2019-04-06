@@ -7,3 +7,8 @@
 @mixin margin-reset {
   margin: 0;
 }
+
+@mixin body-reset {
+  margin: 0;
+  padding: 0;
+}
