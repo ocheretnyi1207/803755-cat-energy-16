@@ -1,0 +1,10 @@
+$fz: 20px;
+$lh: 20px;
+
+.navigation-list {
+  @include list-reset;
+  font-size: $fz;
+  line-height: $lh;
+  text-transform: uppercase;
+  width: $wdth_mobile;
+}
