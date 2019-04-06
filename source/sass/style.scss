@@ -1,16 +1,17 @@
-@import "var";
-@import "mixin";
-@import "global"
-@import "page-header";
-@import "main-navigation";
-@import "navigation-list";
-@import "page-main";
-@import "food";
-@import "food-promo";
-@import "food-list";
-@import "advantage";
-@import "page-footer";
-@import "social-icons";
-@import "copyrights";
+@import "var.scss";
+@import "mixin.scss";
+@import "global.scss";
+@import url("./block/page-header.scss");
+@import url("./block/main-navigation.scss");
+@import url("./block/navigation-list.scss");
+@import url("./block/page-main.scss");
+@import url("./block/food.scss");
+@import url("./block/food-promo.scss");
+@import url("./block/food-list.scss");
+@import url("./block/advantage.scss");
+@import url("./block/page-footer.scss");
+@import url("./block/social-icons.scss");
+@import url("./block/copyrights.scss");
+
 
 
