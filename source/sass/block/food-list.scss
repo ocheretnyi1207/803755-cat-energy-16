@@ -1,0 +1,93 @@
+.food-list {
+  @include list-reset;
+}
+
+.food-list__item {
+  position: relative;
+  width: 280px;
+  @include center-block;
+  background-color: $bg-food-list-item;
+  padding: 30px 36px 22px 21px;
+  margin-bottom: 20px;
+  @include fonts;
+  font-size: 14px;
+  line-height: 18px;
+  color: $food-list-item;
+
+  &::last-child {
+    @include margin-reset;
+  }
+}
+
+.food-list__item--slim {
+  &::after {
+    content: "";
+    width: 35px;
+    height: 49px;
+    background-image: url("../../img/icon-cat-slim.svg");
+    position: absolute;
+    top: 22px;
+    left: 30px;
+  }
+}
+
+.food-list__item--fat {
+  &::after {
+    content: "";
+    width: 67px;
+    height: 28px;
+    background-image: url("../../img/icon-cat-pro.svg");
+    position: absolute;
+    top: 35px;
+    left: 13px;
+  }
+}
+
+.food-list__title {
+  @include margin-reset;
+  margin-bottom: 36px;
+  @include fonts-regular;
+  font-size: 24px;
+  line-height: 37px;
+  margin-left: 70px;
+  text-transform: uppercase;
+  color: $food-list-title;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+    position: absolute;
+    top: 24px;
+    left: 20px;
+  }
+}
+
+.food-list__description {
+  @include margin-reset;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $food-list-description;
+  margin-bottom: 20px;
+}
+
+.food-list__link {
+  position: relative;
+  @include fonts-regular;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $food-list-link;
+
+  &::after {
+    content: "";
+    width: 25px;
+    height: 12px;
+    background-image: url('../../img/icon-right-arrow-long.svg');
+    position: absolute;
+    top: 6px;
+    left: 95px;
+  }
+}

@@ -1,0 +1,33 @@
+.food-promo {
+  position: relative;
+  width: 100%;
+  background-image: url('../../img/index-background-mobile@1x.jpg');
+  padding-top: 25px;
+  padding-bottom: 165px;
+  margin-bottom: 135px;
+}
+
+.food-promo__title {
+  @include margin-reset;
+  font-size: 36px;
+  line-height: 36px;
+  @include fonts-regular;
+  text-align: center;
+  color: $food-promo-title;
+  padding-bottom: 19px;
+}
+
+.food-promo__description {
+  @include margin-reset;
+  font-size: 14px;
+  line-height: 14px;
+  @include fonts-regular;
+  text-align: center;
+  color: $food-promo-description;
+}
+
+.food-promo__img {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+}

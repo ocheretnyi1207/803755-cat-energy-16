@@ -1,10 +1,24 @@
-$fz: 20px;
-$lh: 20px;
-
 .navigation-list {
   @include list-reset;
-  font-size: $fz;
-  line-height: $lh;
+  width: 100%;
+}
+
+.navigation-list__item {
+  font-size: 20px;
+  line-height: 20px;
+  @include fonts-medium;
   text-transform: uppercase;
-  width: $width_mobile;
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $nav-list-item;
+
+  &:first-child {
+    border-top: 1px solid $nav-list-item;
+  }
+
+  & a {
+    color: $nav-list-link;
+    text-decoration: none;
+  }
 }

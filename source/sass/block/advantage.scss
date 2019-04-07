@@ -1,0 +1,87 @@
+.advantage__title {
+  @include margin-reset;
+  @include fonts-regular;
+  font-size: 36px;
+  line-height: 60px;
+  color: $advantage-title;
+  margin-left: 22px;
+  margin-bottom: 41px;
+}
+
+.advantage__list {
+  @include list-reset;
+}
+
+.advantage__item {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 100px;
+  font-size: 14px;
+  line-height: 18px;
+  @include fonts;
+  color: $advantage-item;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $bg-advantage-item-before;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+}
+
+.advantage__item--vitamins {
+
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url('../../img/advantage-leaf@1x.png');
+    position: absolute;
+    top: 5px;
+    left: 25px;
+  }
+}
+
+.advantage__item--flour  {
+
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url('../../img/advantage-powder@1x.png');
+    position: absolute;
+    top: 5px;
+    left: 25px;
+  }
+}
+
+.advantage__item--food  {
+
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url('../../img/advantage-dining@1x.png');
+    position: absolute;
+    top: 5px;
+    left: 25px;
+  }
+}
+
+.advantage__item--time {
+
+  &::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-image: url('../../img/advantage-clock@1x.png');
+    position: absolute;
+    top: 5px;
+    left: 25px;
+  }
+}
+
+

@@ -1,0 +1,16 @@
+.copyrights {
+  @include center-block;
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyrights__link {
+  text-decoration: none;
+
+  &--text {
+    @include fonts;
+    color: $social-link-text;
+  }
+}
