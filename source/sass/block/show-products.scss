@@ -1,0 +1,62 @@
+.show-products {
+  position: relative;
+  width: 280px;
+  @include center-block;
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.show-products__btn {
+  outline: none;
+  display: block;
+  width: 31px;
+  height: 31px;
+  @include center-block;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 25px;
+
+  &::before {
+    content: "";
+    width: 31px;
+    height: 31px;
+    background-image: url("../../img/icon-plus-mobile.svg");
+    position: absolute;
+    top: 27px;
+    left: 125px;
+  }
+}
+
+.show-products__elem1 {
+  @include margin-reset;
+  text-align: center;
+  @include fonts-regular;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $show-products-elem1;
+  margin-bottom: 11px;
+}
+
+.show-products__elem2 {
+  @include margin-reset;
+  text-align: center;
+  @include fonts;
+  font-size: 12px;
+  line-height: 16px;
+  color: $show-products-elem2;
+  margin-bottom: 22px;
+}
+
+.show-products_link {
+  display: block;
+  width: 280px;
+  background-color: $bg-show-products-link;
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  @include fonts-regular;
+  color: $show-products-link;
+  text-transform: uppercase;
+  text-decoration: none;
+}

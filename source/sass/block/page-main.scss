@@ -1,0 +1,13 @@
+.page-main {
+  padding-top: 31px;
+}
+
+.page-main__title {
+  width: 258px;
+  @include margin-reset;
+  @include fonts-regular;
+  font-size: 36px;
+  line-height: 60px;
+  margin-left: 22px;
+  margin-bottom: 36px;
+}
