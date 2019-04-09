@@ -30,57 +30,43 @@
     top: 0;
     left: 20px;
   }
-}
-
-.advantage__item--vitamins {
 
   &::after {
     content: "";
     width: 50px;
     height: 50px;
-    background-image: url('../../img/advantage-leaf@1x.png');
     position: absolute;
     top: 5px;
     left: 25px;
+  }
+  
+}
+
+.advantage__item--vitamins {
+
+  &::after {
+    background-image: url('../img/advantage-leaf@1x.png'); 
   }
 }
 
 .advantage__item--flour  {
 
   &::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-image: url('../../img/advantage-powder@1x.png');
-    position: absolute;
-    top: 5px;
-    left: 25px;
+    background-image: url('../img/advantage-powder@1x.png');
   }
 }
 
 .advantage__item--food  {
 
   &::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-image: url('../../img/advantage-dining@1x.png');
-    position: absolute;
-    top: 5px;
-    left: 25px;
+    background-image: url('../img/advantage-dining@1x.png');
   }
 }
 
 .advantage__item--time {
 
   &::after {
-    content: "";
-    width: 50px;
-    height: 50px;
-    background-image: url('../../img/advantage-clock@1x.png');
-    position: absolute;
-    top: 5px;
-    left: 25px;
+    background-image: url('../img/advantage-clock@1x.png');
   }
 }
 
