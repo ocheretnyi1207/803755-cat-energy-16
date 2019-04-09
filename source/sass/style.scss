@@ -1,8 +1,9 @@
-@import "normalize";
 @import "var";
 @import "mixin";
+@import "normalize";
 @import "global";
 @import "fonts";
+@import "visuallyhidden";
 @import "./block/page-header";
 @import "./block/main-navigation";
 @import "./block/navigation-list";

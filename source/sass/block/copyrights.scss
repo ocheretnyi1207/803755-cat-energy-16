@@ -10,7 +10,7 @@
   text-decoration: none;
 
   &--text {
-    @include fonts;
-    color: $social-link-text;
+    font-family: $font-additional;
+    color: $color_3;
   }
 }

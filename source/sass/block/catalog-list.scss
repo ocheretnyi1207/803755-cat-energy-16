@@ -3,7 +3,7 @@
 }
 
 .catalog-list__item {
-  border-top: 1px solid $catalog-list-item;
+  border-top: 1px solid $color_6;
   padding-bottom: 25px;
 }
 
@@ -15,26 +15,26 @@
 
 .catalog-list__title {
   width: 75px;
-  @include fonts-regular;
   font-size: 16px;
   line-height: 20px;
-  color: $catalog-list-title;
+  color: $color_1;
+  font-weight: 400;
 }
 
 .catalog-list__option {
   width: 142px;
-  @include fonts;
-  color: $catalog-list-table;
+  font-family: $font-additional;
+  color: $color_3;
   font-size: 12px;
   line-height: 16px;
 
-  & td:nth-child(odd) {
+   td:nth-child(odd) {
     width: 38px;
     text-align: left;
     margin-right: auto;
   }
 
-  & td:nth-child(even) {
+   td:nth-child(even) {
     width: 39px;
     text-align: right;
   }
@@ -45,11 +45,10 @@
   width: 280px;
   @include center-block;
   text-align: center;
-  background-color: $bg-catalog-list-link;
-  @include fonts-regular;
+  background-color: $color_4;
   font-size: 16px;
   line-height: 20px;
-  color: $catalog-list-link;
+  color: $color_2;
   text-transform: uppercase;
   text-decoration: none;
   padding-top: 13px;

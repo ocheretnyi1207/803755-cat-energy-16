@@ -6,19 +6,19 @@
 .navigation-list__item {
   font-size: 20px;
   line-height: 20px;
-  @include fonts-medium;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid $nav-list-item;
+  border-bottom: 1px solid $color_6;
 
   &:first-child {
-    border-top: 1px solid $nav-list-item;
+    border-top: 1px solid $color_6;
   }
+}
 
-  & a {
-    color: $nav-list-link;
-    text-decoration: none;
-  }
+.navigation-list__link {
+  color: $color_1;
+  text-decoration: none;
 }

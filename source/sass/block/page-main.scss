@@ -4,10 +4,10 @@
 
 .page-main__title {
   width: 258px;
-  @include margin-reset;
-  @include fonts-regular;
+  margin: 0;
   font-size: 36px;
   line-height: 60px;
+  font-weight: 400;
   margin-left: 22px;
   margin-bottom: 36px;
 }

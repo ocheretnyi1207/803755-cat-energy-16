@@ -6,37 +6,29 @@
   position: relative;
   width: 280px;
   @include center-block;
-  background-color: $bg-food-list-item;
+  background-color: $color_5;
   padding: 30px 36px 22px 21px;
   margin-bottom: 20px;
-  @include fonts;
-  font-size: 14px;
-  line-height: 18px;
-  color: $food-list-item;
 
   &::last-child {
-    @include margin-reset;
+    margin: 0;
   }
-}
 
-.food-list__item--slim {
-  &::after {
+  &--slim::after {
     content: "";
     width: 35px;
     height: 49px;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     position: absolute;
     top: 22px;
     left: 30px;
   }
-}
 
-.food-list__item--fat {
-  &::after {
+  &--fat::after {
     content: "";
     width: 67px;
     height: 28px;
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     position: absolute;
     top: 35px;
     left: 13px;
@@ -44,14 +36,14 @@
 }
 
 .food-list__title {
-  @include margin-reset;
-  margin-bottom: 36px;
-  @include fonts-regular;
+  margin: 0;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   margin-left: 70px;
+  margin-bottom: 36px;
   text-transform: uppercase;
-  color: $food-list-title;
+  color: $color_1;
 
   &::before {
     content: "";
@@ -66,26 +58,29 @@
 }
 
 .food-list__description {
-  @include margin-reset;
+  margin: 0;
   padding-bottom: 23px;
-  border-bottom: 1px solid $food-list-description;
+  border-bottom: 1px solid $color_7;
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-additional;
+  color: $color_3;
 }
 
 .food-list__link {
   position: relative;
-  @include fonts-regular;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $food-list-link;
+  color: $color_1;
 
   &::after {
     content: "";
     width: 25px;
     height: 12px;
-    background-image: url('../../img/icon-right-arrow-long.svg');
+    background-image: url('../img/icon-right-arrow-long.svg');
     position: absolute;
     top: 6px;
     left: 95px;

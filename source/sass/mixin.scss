@@ -4,28 +4,9 @@
   list-style: none;
 }
 
-@mixin margin-reset {
-  margin: 0;
-}
-
 @mixin body-reset {
   margin: 0;
   padding: 0;
-}
-
-@mixin fonts {
-  font-family: "ArialMT", sans-serif;
-  font-weight: 400;
-}
-
-@mixin fonts-regular {
-  font-family: "Oswald-Regular", "Arial", sans-serif;
-  font-weight: 400;
-}
-
-@mixin fonts-medium {
-  font-family: "Oswald-Medium", "Arial", sans-serif;
-  font-weight: 500;
 }
 
 @mixin center-block {
