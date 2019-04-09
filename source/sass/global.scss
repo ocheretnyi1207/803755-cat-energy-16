@@ -1,0 +1,21 @@
+* {
+  box-sizing: inherit;
+
+  &::before {
+    box-sizing: inherit;
+  }
+
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  @include body-reset;
+  width: $width_mobile;
+  font-family: $font-base;
+}

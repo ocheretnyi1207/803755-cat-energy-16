@@ -1,0 +1,15 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin body-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin center-block {
+  margin-left: auto;
+  margin-right: auto;
+}

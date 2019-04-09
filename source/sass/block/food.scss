@@ -1,0 +1,14 @@
+.food__link {
+  width: 280px;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color_2;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 11px;
+  text-align: center;
+  background-color: $color_4;
+  @include center-block;
+  margin-bottom: 32px;
+}

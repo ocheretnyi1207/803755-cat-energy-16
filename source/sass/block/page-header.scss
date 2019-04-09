@@ -1,0 +1,33 @@
+.page-header {
+  width: $width_mobile;
+  padding-top: 12px;
+}
+
+.page-header__wrap {
+  position: relative;
+  width: 281px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+.page-header__btn {
+  outline: none;
+  width: 25px;
+  height: 19px;
+  margin-top: 12px;
+  background: transparent;
+  border: none;
+
+  &::after {
+    content: "";
+    width: 25px;
+    height: 19px;
+    background-image: url('../img/icon-mobile-menu.svg');
+    position: absolute;
+    top: 11px;
+    left: 257px;
+  }
+}
