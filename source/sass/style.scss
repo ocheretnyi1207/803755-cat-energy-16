@@ -1,8 +1,8 @@
 @import "var";
 @import "mixin";
 @import "normalize";
-@import "global";
 @import "fonts";
+@import "global";
 @import "visuallyhidden";
 @import "./block/page-header";
 @import "./block/main-navigation";
@@ -14,6 +14,7 @@
 @import "./block/advantage";
 @import "./block/catalog-list";
 @import "./block/show-products";
+@import "./block/program-selection";
 @import "./block/page-footer";
 @import "./block/social-icons";
 @import "./block/copyrights";

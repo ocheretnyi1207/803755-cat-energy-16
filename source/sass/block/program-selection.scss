@@ -1,0 +1,30 @@
+.program-selection {
+  width: 280px;
+  @include center-block;
+}
+
+.program-selection__input {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $color_3;
+  text-transform: uppercase;
+  border: 1px solid $color_8;
+
+  &--name {
+    width: 219px;
+    margin-bottom: 14px;
+  }
+
+  &--weight {
+    width: 204px;
+    margin-bottom: 14px;
+  }
+
+  &--age {
+    width: 172px;
+    margin-bottom: 23px;
+  }
+}
