@@ -28,13 +28,13 @@
   font-size: 12px;
   line-height: 16px;
 
-   td:nth-child(odd) {
+  & td:nth-child(odd) {
     width: 38px;
     text-align: left;
     margin-right: auto;
   }
 
-   td:nth-child(even) {
+  & td:nth-child(even) {
     width: 39px;
     text-align: right;
   }
