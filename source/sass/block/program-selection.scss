@@ -1,30 +1,113 @@
 .program-selection {
-  width: 280px;
-  @include center-block;
+  width: 320px;
 }
 
-.program-selection__input {
+.program-selection__list {
+  @include list-reset;
+  margin-bottom: 23px;
+}
+
+.program-selection__label {
+  text-transform: uppercase;
+  color: $color_9;
+
+  &--text {
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+
+  &--radio {
+    margin-left: 46px;
+    position: relative;
+  }
+}
+
+.program-selection__label--radio {
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    border: 1px solid $color_8;
+    top: -2px;
+    left: -46px;
+  }
+
+  &:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 7px;
+    left: -37px;
+  }
+}
+
+.program-selection__item {
+  width: 280px;
+  @include center-block
+  display: flex;
+  margin-bottom: 14px;
+
+  &:first-child label {
+    margin-top: 15px;
+    margin-bottom: 16px;
+  }
+
+  &:first-child input {
+    width: 219px;
+  }
+
+  &:not(:first-child):not(:last-child) input {
+    width: 204px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:last-child input {
+    width: 172px;
+  }
+}
+
+.program-selection__control {
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 16px;
-  line-height: 18px;
-  color: $color_3;
-  text-transform: uppercase;
-  border: 1px solid $color_8;
 
-  &--name {
-    width: 219px;
-    margin-bottom: 14px;
+  &--text {
+    font-size: 16px;
+    line-height: 18px;
+    color: $color_3;
+    text-transform: uppercase;
+    border: 1px solid $color_8;
   }
 
-  &--weight {
-    width: 204px;
-    margin-bottom: 14px;
+  &--radio:checked + .program-selection__label--radio:after {
+    background-color: $color_4;
+  }
+}
+
+.program-selection__wrap {
+  @include list-reset;
+  padding-top: 29px;
+  padding-bottom: 26px;
+  margin-bottom: 31px;
+  border-top: 1px solid $color_8;
+  border-bottom: 1px solid $color_8;
+
+  & li {
+    width: 280px;
+    @include center-block;
+    margin-bottom: 26px;
   }
 
-  &--age {
-    width: 172px;
-    margin-bottom: 23px;
+  & li:last-child {
+    margin-bottom: 0;
   }
 }
