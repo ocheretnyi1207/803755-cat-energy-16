@@ -13,3 +13,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@mixin program-selection-control {
+  font-size: 16px;
+  line-height: 18px;
+  color: $color_3;
+  text-transform: uppercase;
+}
