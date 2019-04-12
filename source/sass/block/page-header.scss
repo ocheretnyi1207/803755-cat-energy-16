@@ -1,6 +1,13 @@
 .page-header {
   width: $width_mobile;
   padding-top: 12px;
+
+  @media (min-width: $width_tablet) {
+    display: flex;
+    padding-top: 24px;
+    padding-left: 29px;
+    padding-right: 31px;
+  }
 }
 
 .page-header__wrap {
@@ -11,6 +18,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
+
+  @media(min-width: $width_tablet) {
+    margin: 0;
+    margin-right: 96px;
+  }
 }
 
 .page-header__btn {
@@ -20,6 +32,10 @@
   margin-top: 12px;
   background: transparent;
   border: none;
+
+  @media(min-width: $width_tablet) {
+    display: none;
+  }
 
   &::after {
     content: "";

@@ -16,6 +16,6 @@ html {
 
 body {
   @include body-reset;
-  width: $width_mobile;
+  min-width: $width_mobile;
   font-family: $font-base;
 }

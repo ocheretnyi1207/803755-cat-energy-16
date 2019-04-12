@@ -1,5 +1,9 @@
 .page-main {
   padding-top: 31px;
+
+  @media(min-width: $width_tablet) {
+    padding-top: 61px;
+  }
 }
 
 .page-main__title {

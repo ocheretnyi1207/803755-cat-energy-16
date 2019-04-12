@@ -11,4 +11,12 @@
   background-color: $color_4;
   @include center-block;
   margin-bottom: 32px;
+
+  &:hover {
+    background-color: $btn_hover;
+  }
+
+  &:active {
+    color: $btn_active;
+  }
 }

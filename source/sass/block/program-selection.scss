@@ -74,7 +74,7 @@
       left: -42px;
     }
   }
-
+  
   &--email {
     position: relative;
 
@@ -110,7 +110,21 @@
   padding-bottom: 15px;
 
   &--text {
+    outline: none;
     @include program-selection-control;
+    opacity: 0.5;
+    
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      border: 2px solid $color_3;
+    }
+
+    &:invalid {
+      border: 2px solid $input_error;
+    }
   }
 
   &--name {
@@ -130,15 +144,35 @@
   }
 
   &--email {
+    outline: none;
     width: 219px;
     @include program-selection-control;
     padding-right: 36px;
+    opacity: 0.5;
+    
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      border: 2px solid $color_3;
+    }
   }
 
   &--phone {
+    outline: none;
     width: 204px;
     @include program-selection-control;
     padding-right: 36px;
+    opacity: 0.5;
+    
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      border: 2px solid $color_3;
+    }
   }
 
   &--checkbox:checked + .program-selection__label--checkbox::after {
@@ -213,7 +247,7 @@
       background-color: $color_4;
       position: absolute;
       top: 15px;
-      left: 160px;
+      left: 182px;
     }
   }
 }

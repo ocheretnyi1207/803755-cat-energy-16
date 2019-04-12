@@ -1,6 +1,12 @@
 .navigation-list {
   @include list-reset;
   width: 100%;
+
+  @media (min-width: $width_tablet) {
+    width: 438px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .navigation-list__item {
@@ -15,10 +21,28 @@
 
   &:first-child {
     border-top: 1px solid $color_6;
+
+    @media(min-width: $width_tablet) {
+      border: none;
+    }
+  }
+
+  @media(min-width: $width_tablet) {
+    border: none;
+    font-size: 18px;
+    line-height: 25px;
   }
 }
 
 .navigation-list__link {
   color: $color_1;
   text-decoration: none;
+
+  &:hover {
+    color: $main_menu_hover;
+  }
+
+  &:active {
+    color: $main_menu_down;
+  }
 }
