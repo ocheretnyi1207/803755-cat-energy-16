@@ -8,6 +8,7 @@
 
   @media(min-width: $width_tablet) {
     background-image: none;
+    padding-top: 0;
   }
 }
 
@@ -27,6 +28,8 @@
     line-height: 60px;
     color: $color_1;
     text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 33px;
   }
 }
 
@@ -51,4 +54,9 @@
   position: absolute;
   top: 167px;
   left: 20px;
+
+  @media(min-width: $width_tablet) {
+    top: 193px;
+    left: 310px;
+  }
 }

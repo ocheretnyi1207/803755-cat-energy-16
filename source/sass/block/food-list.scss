@@ -1,5 +1,9 @@
 .food-list {
   @include list-reset;
+
+  & .food-list__item:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .food-list__item {
@@ -10,10 +14,6 @@
   padding: 30px 36px 22px 21px;
   margin-bottom: 20px;
 
-  &::last-child {
-    margin: 0;
-  }
-
   &--slim::after {
     content: "";
     width: 35px;
@@ -22,6 +22,13 @@
     position: absolute;
     top: 22px;
     left: 30px;
+
+    @media(min-width: $width_tablet) {
+      width: 141px;
+      height: 194px;
+      top: 80px;
+      left: 470px;
+    }
   }
 
   &--fat::after {
@@ -32,6 +39,43 @@
     position: absolute;
     top: 35px;
     left: 13px;
+
+    @media(min-width: $width_tablet) {
+      width: 268px;
+      height: 113px;
+      top: 145px;
+      left: 400px;
+    }
+  }
+
+  @media(min-width: $width_tablet) {
+    width: 708px;
+    margin-bottom: 30px;
+    padding: 81px 61px 62px 52px;
+  }
+
+  &--slim .food-list__title {
+    @media(min-width: $width_tablet) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &--slim .food-list__description {
+    @media(min-width: $width_tablet) {
+      width: 371px;
+    }
+  }
+
+  &--fat .food-list__description {
+    @media(min-width: $width_tablet) {
+      width: 340px;
+    }
+  }
+
+  &--fat .food-list__title {
+    @media(min-width: $width_tablet) {
+      margin-bottom: 31px;
+    }
   }
 }
 
@@ -54,6 +98,18 @@
     position: absolute;
     top: 24px;
     left: 20px;
+
+    @media(min-width: $width_tablet) {
+      width: 200px;
+      height: 200px;
+      top: 100px;
+      left: 446px;
+    }
+  }
+
+  @media(min-width: $width_tablet) {
+    margin-left: 0;
+    font-size: 36px;
   }
 }
 
@@ -66,6 +122,14 @@
   line-height: 18px;
   font-family: $font-additional;
   color: $color_3;
+
+  @media(min-width: $width_tablet) {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 61px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .food-list__link {

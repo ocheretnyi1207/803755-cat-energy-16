@@ -4,6 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media(min-width: $width_tablet) {
+    margin: 0;
+    width: 162px;
+  }
 }
 
 .copyrights__link {

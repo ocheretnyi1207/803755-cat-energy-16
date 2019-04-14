@@ -3,9 +3,22 @@
   padding-top: 39px;
   padding-bottom: 22px;
   text-align: center;
+
+  @media(min-width: $width_tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 62px;
+    padding-left: 31px;
+    padding-right: 30px;
+  }
 }
 
 .page-footer__logo {
   display: block;
   margin-bottom: 31px;
+
+  @media(min-width: $width_tablet) {
+    margin-bottom: 0;
+  }
 }

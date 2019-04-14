@@ -6,10 +6,30 @@
   font-weight: 400;
   margin-left: 22px;
   margin-bottom: 41px;
+
+  @media(min-width: $width_tablet) {
+    font-size: 60px;
+    margin-left: 33px;
+  }
 }
 
 .advantage__list {
   @include list-reset;
+
+  @media(min-width: $width_tablet) {
+    margin-left: 30px;
+    width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 105px;
+  }
+
+  & .advantage__item:nth-child(4n+3),
+  & .advantage__item:nth-child(4n+4) {
+    padding-bottom: 0;
+  }
+
 }
 
 .advantage__item {
@@ -21,6 +41,18 @@
   font-family: $font-additional;
   color: $color_3;
 
+  & p {
+    margin: 0;
+  }
+
+  @media(min-width: $width_tablet) {
+    padding-left: 0;
+    width: 354px;
+    padding-top: 117px;
+    padding-bottom: 137px;
+    margin-bottom: 0;
+  }
+
   &::before {
     content: "";
     width: 60px;
@@ -29,6 +61,13 @@
     position: absolute;
     top: 0;
     left: 20px;
+
+    @media(min-width: $width_tablet) {
+      width: 80px;
+      height: 80px;
+      top: 0;
+      left: 0;
+    }
   }
 
   &::after {
@@ -38,6 +77,11 @@
     position: absolute;
     top: 5px;
     left: 25px;
+
+    @media(min-width: $width_tablet) {
+      top: 13px;
+      left: 17px;
+    }
   }
 
   &--vitamins::after {
@@ -55,4 +99,29 @@
   &--time::after {
     background-image: url('../img/advantage-clock@1x.png');
   }
+
+  &--vitamins p {
+    @media(min-width: $width_tablet) {
+      width: 201px;
+    }
+  }
+
+  &--flour p {
+    @media(min-width: $width_tablet) {
+      width: 220px;
+    }
+  }
+
+  &--food p {
+    @media(min-width: $width_tablet) {
+      width: 203px;
+    }
+  }
+
+  &--time p {
+    @media(min-width: $width_tablet) {
+      width: 244px;
+    }
+  }
 }
+

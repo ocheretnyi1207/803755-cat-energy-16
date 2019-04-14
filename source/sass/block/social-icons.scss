@@ -8,4 +8,9 @@
   border-bottom: 1px solid $color_7;
   padding: 22px 81px 21px 71px;
   margin-bottom: 22px;
+
+  @media(min-width: $width_tablet) {
+    border: none;
+    margin: 0;
+  }
 }
