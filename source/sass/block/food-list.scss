@@ -8,7 +8,7 @@
 
 .food-list__item {
   position: relative;
-  width: 280px;
+  width: 100%;
   @include center-block;
   background-color: $color_5;
   padding: 30px 36px 22px 21px;

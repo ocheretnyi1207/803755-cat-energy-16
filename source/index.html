@@ -11,7 +11,11 @@
   <header class="page-header">
     <div class="page-header__wrap">
       <a class="page-header__logo">
-        <img class="page-header__img" src="./img/logo-mobile.svg" width="191" height="39" alt="Логотип CatEnergy">
+        <picture>
+          <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" >
+          <img class="page-header__img" srcset="./img/logo-mobile.svg" alt="Логотип CatEnergy">
+        </picture>
       </a>
       <button class="page-header__btn" aria-label="Открыть меню"></button>
     </div>
@@ -38,8 +42,11 @@
         <p class="food-promo__description">
           Занялся собой? Займись котом!
         </p>
-        <img class="food-promo__img" src="./img/index-can-mobile@1x.png" width="280" height="271"
-          alt="Функциональное питание Cat Energy">
+        <picture>
+          <source srcset="./img/index-can-desktop@1x.png" media="(min-width: 1440px)">
+          <source srcset="./img/index-can-tablet@1x.jpg" media="(min-width: 768px)" >
+          <img class="food-promo__img" srcset="./img/index-can-mobile@1x.png" alt="Функциональное питание Cat Energy">
+        </picture>
       </div>
       <a class="food__link" href="#">Подобрать программу</a>
       <ul class="food-list">

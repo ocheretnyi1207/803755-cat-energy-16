@@ -5,10 +5,12 @@
   padding-top: 25px;
   padding-bottom: 165px;
   margin-bottom: 135px;
+  min-height: 295px;
 
   @media(min-width: $width_tablet) {
     background-image: none;
     padding-top: 0;
+    margin-bottom: 465px;
   }
 }
 
@@ -53,10 +55,11 @@
 .food-promo__img {
   position: absolute;
   top: 167px;
-  left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media(min-width: $width_tablet) {
     top: 193px;
-    left: 310px;
+    left: 70px;
   }
 }

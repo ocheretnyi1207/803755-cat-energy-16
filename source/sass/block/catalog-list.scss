@@ -1,5 +1,7 @@
 .catalog-list {
   @include list-reset;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $width-tablet) {
     width: 708px;
@@ -40,11 +42,13 @@
 
 .catalog-list__wrapper {
   @include center-block;
-  width: 280px;
+  width: 100%;
   display: flex;
 }
 
 .catalog-list__img {
+  margin-right: auto;
+
   @media (min-width: $width_tablet) {
     position: absolute;
     top: -30px;
@@ -109,7 +113,7 @@
 
 .catalog-list__link {
   display: block;
-  width: 280px;
+  width: 100%;
   @include center-block;
   text-align: center;
   background-color: $color_4;
@@ -128,6 +132,7 @@
 }
 
 .catalog-list__btn {
+  position: relative;
   outline: none;
   display: block;
   width: 31px;
@@ -143,8 +148,8 @@
     height: 31px;
     background-image: url("../img/icon-plus-mobile.svg");
     position: absolute;
-    top: 27px;
-    left: 125px;
+    top: 0;
+    left: 0;
   }
 
   @media (min-width: $width_tablet) {

@@ -18,6 +18,7 @@
   text-align: center;
   background-color: $color_4;
   @include center-block;
+  margin-bottom: 22px;
 
   &:hover {
     background-color: $btn_hover;
