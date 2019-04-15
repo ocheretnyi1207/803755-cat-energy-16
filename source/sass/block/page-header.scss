@@ -8,6 +8,11 @@
     padding-left: 29px;
     padding-right: 31px;
   }
+
+  @media (min-width: $width_desktop) {
+    padding-top: 53px;
+    padding-left: 109px;
+  }
 }
 
 .page-header__wrap {
@@ -21,7 +26,7 @@
 
   @media(min-width: $width_tablet) {
     margin: 0;
-    margin-right: 96px;
+    margin-right: auto;
   }
 }
 

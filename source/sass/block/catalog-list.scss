@@ -1,10 +1,41 @@
 .catalog-list {
   @include list-reset;
+
+  @media (min-width: $width-tablet) {
+    width: 708px;
+    display: flex;
+    flex-wrap: wrap;
+    @include center-block;
+  }
+
+  & .catalog-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .catalog-list__item {
   border-top: 1px solid $color_6;
   padding-bottom: 25px;
+
+  &--show {
+    padding-top: 27px;
+
+    @media (min-width: $width_tablet) {
+      background-color: $color_2;
+      padding-top: 55px;
+    }
+  }
+
+  @media (min-width: $width_tablet) {
+    width: 324px;
+    border: none;
+    padding-top: 165px;
+    padding-bottom: 40px;
+    background-color: $color_5;
+    margin-right: 60px;
+    margin-bottom: 140px;
+    position: relative;
+  }
 }
 
 .catalog-list__wrapper {
@@ -13,12 +44,37 @@
   display: flex;
 }
 
+.catalog-list__img {
+  @media (min-width: $width_tablet) {
+    position: absolute;
+    top: -30px;
+    left: 101px;
+  }
+}
+
+.catalog-list__wrap {
+  @media (min-width: $width_tablet) {
+    width: 250px;
+    @include center-block;
+  }
+}
+
 .catalog-list__title {
   width: 75px;
   font-size: 16px;
   line-height: 20px;
   color: $color_1;
   font-weight: 400;
+
+  @media (min-width: $width_tablet) {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 124px;
+    @include center-block;
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
 }
 
 .catalog-list__option {
@@ -38,6 +94,17 @@
     width: 39px;
     text-align: right;
   }
+
+  @media (min-width: $width_tablet) {
+    width: 250px;
+    margin-bottom: 40px;
+  }
+
+  & tr {
+    @media (min-width: $width_tablet) {
+      border-bottom: 1px solid $color_1;
+    }
+  }
 }
 
 .catalog-list__link {
@@ -53,4 +120,55 @@
   text-decoration: none;
   padding-top: 13px;
   padding-bottom: 12px;
+
+  &--show {
+    background-color: $color_5;
+    color: $color_3;
+  }
+}
+
+.catalog-list__btn {
+  outline: none;
+  display: block;
+  width: 31px;
+  height: 31px;
+  @include center-block;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 25px;
+
+  &::before {
+    content: "";
+    width: 31px;
+    height: 31px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    position: absolute;
+    top: 27px;
+    left: 125px;
+  }
+
+  @media (min-width: $width_tablet) {
+    width: 61px;
+    height: 61px;
+  }
+}
+
+.catalog-list__elem1 {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color_1;
+  margin-bottom: 11px;
+}
+
+.catalog-list__elem2 {
+  margin: 0;
+  text-align: center;
+  font-family: $font-additional;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color_3;
+  margin-bottom: 22px;
 }

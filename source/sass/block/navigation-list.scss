@@ -7,6 +7,10 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $width_desktop) {
+    width: 477px;
+  }
 }
 
 .navigation-list__item {

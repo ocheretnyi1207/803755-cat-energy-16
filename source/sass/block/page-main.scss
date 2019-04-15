@@ -4,6 +4,12 @@
   @media(min-width: $width_tablet) {
     padding-top: 61px;
   }
+
+  &--catalog {
+    @media (min-width: $width_tablet) {
+      padding-top: 65px;
+    }
+  }
 }
 
 .page-main__title {
@@ -14,6 +20,13 @@
   font-weight: 400;
   margin-left: 22px;
   margin-bottom: 36px;
+
+  @media (min-width: $width_tablet) {
+    width: 432px;
+    font-size: 60px;
+    margin-left: 33px;
+    margin-bottom: 156px;
+  }
 }
 
 .page-main__description {
