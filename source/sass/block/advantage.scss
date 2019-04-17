@@ -6,7 +6,6 @@
   font-weight: 400;
   margin-left: 22px;
   margin-bottom: 41px;
-
   @media(min-width: $width_tablet) {
     width: 708px;
     @include center-block;
@@ -18,20 +17,23 @@
 .advantage__list {
   @include list-reset;
   @include center-block;
+  width: 100%;
+  padding-right: 20px;
+  @media(min-width: $width_tablet) {
+    & .advantage__item:nth-child(4n+3),
+    & .advantage__item:nth-child(4n+4) {
+      margin-bottom: 0;
+    }
+  }
 
   @media(min-width: $width_tablet) {
-    width: 708px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 105px;
   }
-
-  & .advantage__item:nth-child(4n+3),
-  & .advantage__item:nth-child(4n+4) {
-    padding-bottom: 0;
-  }
-
 }
 
 .advantage__item {
@@ -43,17 +45,15 @@
   font-family: $font-additional;
   color: $color_3;
   min-height: 54px;
-
-  & p {
-    margin: 0;
-  }
-
   @media(min-width: $width_tablet) {
     padding-left: 0;
-    width: 354px;
+    width: 340px;
     padding-top: 117px;
-    padding-bottom: 137px;
-    margin-bottom: 0;
+    margin-bottom: 160px;
+  }
+
+  p {
+    margin: 0;
   }
 
   &::before {
@@ -64,7 +64,6 @@
     position: absolute;
     top: 0;
     left: 20px;
-
     @media(min-width: $width_tablet) {
       width: 80px;
       height: 80px;
@@ -80,7 +79,6 @@
     position: absolute;
     top: 5px;
     left: 25px;
-
     @media(min-width: $width_tablet) {
       top: 13px;
       left: 17px;
@@ -103,27 +101,45 @@
     background-image: url('../img/advantage-clock@1x.png');
   }
 
-  &--vitamins p {
-    @media(min-width: $width_tablet) {
+  &--vitamins .advantage__description {
+    width: 100%;
+    @media (min-width: $width_tablet) {
       width: 201px;
     }
   }
 
-  &--flour p {
-    @media(min-width: $width_tablet) {
+  &--flour .advantage__description {
+    width: 100%;
+    @media (min-width: $width_tablet) {
       width: 220px;
     }
   }
 
-  &--food p {
-    @media(min-width: $width_tablet) {
+  &--food .advantage__description {
+    width: 100%;
+    @media (min-width: $width_tablet) {
       width: 203px;
     }
   }
 
-  &--time p {
-    @media(min-width: $width_tablet) {
+  &--time .advantage__description {
+    width: 100%;
+    @media (min-width: $width_tablet) {
       width: 244px;
     }
+  }
+}
+
+.advantage__number {
+  display: none;
+    @media (min-width: $width_tablet) {
+      display: block;
+      font-size: 281px;
+      line-height: 281px;
+      color: $color_5;
+      font-family: $font-base;
+      position: absolute;
+      top: -40px;
+      left: 100px;
   }
 }

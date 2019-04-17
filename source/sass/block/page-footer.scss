@@ -2,19 +2,18 @@
   background-color: $color_5;
   padding: 39px 20px 22px;
   text-align: center;
-
   @media(min-width: $width_tablet) {
     display: flex;
     justify-content: space-between;
-    padding: 64px 30px 62px 31px;
+    padding: 58px 30px 58px 31px;
   }
 }
 
 .page-footer__logo {
   display: block;
   margin-bottom: 31px;
-
   @media(min-width: $width_tablet) {
     margin-bottom: 0;
+    padding-top: 12px;
   }
 }

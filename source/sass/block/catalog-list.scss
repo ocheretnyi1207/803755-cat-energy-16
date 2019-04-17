@@ -2,32 +2,40 @@
   @include list-reset;
   padding-left: 20px;
   padding-right: 20px;
-
   @media (min-width: $width-tablet) {
-    width: 708px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    @include center-block;
-  }
+    padding-left: 30px;
+    padding-right: 30px;
 
-  & .catalog-list__item:nth-child(2n) {
-    margin-right: 0;
+    & .catalog-list__item:nth-child(2n) {
+      margin-right: 0;
+    }
   }
+  @media (min-width: $width_desktop) {
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+    @include center-block;
+
+    & .catalog-list__item:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    & .catalog-list__item:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.catalog-list picture {
+  margin-right: auto;
 }
 
 .catalog-list__item {
   border-top: 1px solid $color_6;
   padding-bottom: 25px;
-
-  &--show {
-    padding-top: 27px;
-
-    @media (min-width: $width_tablet) {
-      background-color: $color_2;
-      padding-top: 55px;
-    }
-  }
-
   @media (min-width: $width_tablet) {
     width: 324px;
     border: none;
@@ -38,22 +46,47 @@
     margin-bottom: 140px;
     position: relative;
   }
+  @media (min-width: $width_desktop) {
+    width: 245px;
+    margin-right: 80px;
+    margin-bottom: 142px;
+  }
+
+  &--show {
+    padding-top: 27px;
+    @media (min-width: $width_tablet) {
+      background-color: $color_2;
+      padding-top: 55px;
+    }
+  }
+
+  &:nth-child(odd) picture {
+    @media (min-width: $width_tablet) {
+      position: absolute;
+      top: -70px;
+      left: 0;
+    }
+  }
+
+  &:nth-child(even) picture {
+    @media (min-width: $width_tablet) {
+      position: absolute;
+      top: -97px;
+      left: 0;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $width_tablet) {
+    border: 1px solid $color_6;
+  }
+ }
 }
 
 .catalog-list__wrapper {
   @include center-block;
   width: 100%;
   display: flex;
-}
-
-.catalog-list__img {
-  margin-right: auto;
-
-  @media (min-width: $width_tablet) {
-    position: absolute;
-    top: -30px;
-    left: 101px;
-  }
 }
 
 .catalog-list__wrap {
@@ -69,7 +102,6 @@
   line-height: 20px;
   color: $color_1;
   font-weight: 400;
-
   @media (min-width: $width_tablet) {
     text-align: center;
     text-transform: uppercase;
@@ -87,6 +119,10 @@
   color: $color_3;
   font-size: 12px;
   line-height: 16px;
+  @media (min-width: $width_tablet) {
+    width: 250px;
+    margin-bottom: 40px;
+  }
 
   & td:nth-child(odd) {
     width: 38px;
@@ -99,17 +135,19 @@
     text-align: right;
   }
 
-  @media (min-width: $width_tablet) {
-    width: 250px;
-    margin-bottom: 40px;
-  }
-
   & tr {
     @media (min-width: $width_tablet) {
-      border-bottom: 1px solid $color_1;
+      font-size: 16px;
     }
   }
+
+  & td {
+    @media (min-width: $width_tablet) {
+    border-bottom: 1px solid $color_8;
+  }
+ }
 }
+
 
 .catalog-list__link {
   display: block;
@@ -124,6 +162,9 @@
   text-decoration: none;
   padding-top: 13px;
   padding-bottom: 12px;
+  @media (min-width: $width_tablet) {
+    width: 249px;
+  }
 
   &--show {
     background-color: $color_5;
@@ -141,6 +182,11 @@
   border: none;
   background-color: transparent;
   margin-bottom: 25px;
+  @media (min-width: $width_tablet) {
+    width: 61px;
+    height: 61px;
+    margin-bottom: 50px;
+  }
 
   &::before {
     content: "";
@@ -150,11 +196,11 @@
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-  @media (min-width: $width_tablet) {
-    width: 61px;
-    height: 61px;
+    @media (min-width: $width_tablet) {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/icon-plus.svg")
+    }
   }
 }
 
@@ -166,6 +212,12 @@
   text-transform: uppercase;
   color: $color_1;
   margin-bottom: 11px;
+  @media (min-width: $width_tablet) {
+    font-size: 20px;
+    width: 135px;
+    @include center-block;
+    margin-bottom: 28px;
+  }
 }
 
 .catalog-list__elem2 {
@@ -176,4 +228,10 @@
   line-height: 16px;
   color: $color_3;
   margin-bottom: 22px;
+  @media (min-width: $width_tablet) {
+    font-size: 16px;
+    width: 168px;
+    @include center-block;
+    margin-bottom: 70px;
+  }
 }

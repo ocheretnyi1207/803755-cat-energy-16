@@ -20,12 +20,14 @@
   font-weight: 400;
   margin-left: 22px;
   margin-bottom: 36px;
-
   @media (min-width: $width_tablet) {
     width: 432px;
     font-size: 60px;
     margin-left: 33px;
     margin-bottom: 156px;
+  }
+  @media (max-width: $width_desktop) {
+    margin-left: 40px;
   }
 }
 
