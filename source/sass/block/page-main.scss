@@ -26,7 +26,7 @@
     margin-left: 33px;
     margin-bottom: 156px;
   }
-  @media (max-width: $width_desktop) {
+  @media (min-width: $width_desktop) {
     margin-left: 40px;
   }
 }

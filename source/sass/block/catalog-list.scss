@@ -9,21 +9,41 @@
     padding-left: 30px;
     padding-right: 30px;
 
-    & .catalog-list__item:nth-child(2n) {
+    & .catalog-list__item:nth-child(8n+2),
+    & .catalog-list__item:nth-child(8n+4),
+    & .catalog-list__item:nth-child(8n+6),
+    & .catalog-list__item:nth-child(8n+8), {
+      margin-right: 0;
+    }
+  }
+  @media (min-width: 1152px) {
+    & .catalog-list__item:nth-child(8n+2),
+    & .catalog-list__item:nth-child(8n+4),
+    & .catalog-list__item:nth-child(8n+6),
+    & .catalog-list__item:nth-child(8n+8), {
+      margin-right: 60px;
+    }
+  }
+  @media (min-width: 1212px) {
+    & .catalog-list__item:nth-child(8n+3),
+    & .catalog-list__item:nth-child(8n+6),
+    & .catalog-list__item:nth-child(8n+8) {
       margin-right: 0;
     }
   }
   @media (min-width: $width_desktop) {
-    width: 1220px;
+    width: 1300px;
     padding-left: 40px;
     padding-right: 40px;
-    @include center-block;
 
-    & .catalog-list__item:nth-child(2n) {
+    & .catalog-list__item:nth-child(8n+2)
+    & .catalog-list__item:nth-child(8n+3),
+    & .catalog-list__item:nth-child(8n+6) {
       margin-right: 80px;
     }
 
-    & .catalog-list__item:nth-child(4n) {
+    & .catalog-list__item:nth-child(8n+4),
+    & .catalog-list__item:nth-child(8n+8) {
       margin-right: 0;
     }
   }
@@ -123,6 +143,10 @@
     width: 250px;
     margin-bottom: 40px;
   }
+  @media (min-width: $width_desktop) {
+    width: 167px;
+    @include center-block;
+  }
 
   & td:nth-child(odd) {
     width: 38px;
@@ -164,6 +188,9 @@
   padding-bottom: 12px;
   @media (min-width: $width_tablet) {
     width: 249px;
+  }
+  @media (min-width: $width_desktop) {
+    width: 169px;
   }
 
   &--show {
