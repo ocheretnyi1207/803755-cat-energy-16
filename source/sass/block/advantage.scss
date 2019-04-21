@@ -1,3 +1,10 @@
+.advantage {
+  @media (min-width: $width_desktop) {
+    width: 1220px;
+    @include center-block;
+  }
+}
+
 .advantage__title {
   margin: 0;
   font-size: 36px;
@@ -6,10 +13,41 @@
   font-weight: 400;
   margin-left: 22px;
   margin-bottom: 41px;
+  @media (min-width: $width_tablet) {
+    width: 708px;
+    @include center-block;
+    font-size: 60px;
+    margin-left: 33px;
+  }
+  @media (min-width: $width_desktop) {
+    margin: 0;
+    margin-bottom: 63px;
+  }
 }
 
 .advantage__list {
   @include list-reset;
+  @include center-block;
+  width: 100%;
+  padding-right: 20px;
+  @media(min-width: $width_tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 105px;
+
+    & .advantage__item:nth-child(4n+3),
+    & .advantage__item:nth-child(4n+4) {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: $width_desktop) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
 }
 
 .advantage__item {
@@ -20,6 +58,23 @@
   line-height: 18px;
   font-family: $font-additional;
   color: $color_3;
+  min-height: 54px;
+  @media (min-width: $width_tablet) {
+    padding-left: 0;
+    width: 340px;
+    padding-top: 117px;
+    margin-bottom: 160px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media (min-width: $width_desktop) {
+    width: 295px;
+    margin-bottom: 65px;
+  }
+
+  p {
+    margin: 0;
+  }
 
   &::before {
     content: "";
@@ -29,6 +84,12 @@
     position: absolute;
     top: 0;
     left: 20px;
+    @media(min-width: $width_tablet) {
+      width: 80px;
+      height: 80px;
+      top: 0;
+      left: 0;
+    }
   }
 
   &::after {
@@ -38,6 +99,10 @@
     position: absolute;
     top: 5px;
     left: 25px;
+    @media(min-width: $width_tablet) {
+      top: 13px;
+      left: 17px;
+    }
   }
 
   &--vitamins::after {
@@ -55,6 +120,55 @@
   &--time::after {
     background-image: url('../img/advantage-clock@1x.png');
   }
+
+  &--vitamins .advantage__description {
+    width: 100%;
+    @media (min-width: $width_tablet) {
+      width: 201px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &--flour .advantage__description {
+    width: 100%;
+    @media (min-width: $width_tablet) {
+      width: 220px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &--food .advantage__description {
+    width: 100%;
+    @media (min-width: $width_tablet) {
+      width: 203px;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &--time .advantage__description {
+    width: 100%;
+    @media (min-width: $width_tablet) {
+      width: 244px;
+      position: relative;
+      z-index: 2;
+    }
+  }
 }
 
-
+.advantage__number {
+  display: none;
+    @media (min-width: $width_tablet) {
+      display: block;
+      font-size: 281px;
+      line-height: 281px;
+      color: $color_5;
+      font-family: $font-base;
+      position: absolute;
+      top: -40px;
+      left: 100px;
+      z-index: 1;
+  }
+}

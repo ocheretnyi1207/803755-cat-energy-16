@@ -1,8 +1,8 @@
 $width_mobile: 320px;
-
+$width_tablet: 768px;
+$width_desktop: 1300px;
 $font-base: "Oswald", "Arial", sans-serif;
 $font-additional: "Arial", sans-serif;
-
 $color_1: #111111;
 $color_2: #ffffff;
 $color_3: #444444;
@@ -10,5 +10,12 @@ $color_4: #68b738;
 $color_5: #f2f2f2;
 $color_6: #e6e6e6;
 $color_7: #d9d9d9;
-
-
+$color_8: #cdcdcd;
+$color_9: #222222;
+$btn_hover: #5eaa2f;
+$btn_active: rgba(255,255,255,0.3);
+$main_menu_hover:rgba(17, 17, 17, 0.6);
+$main_menu_down:rgba(17, 17, 17, 0.3);
+$radio_hover: #bababa;
+$radio_active: rgba(34,34,34,0.3);
+$input_error: #ff8282;

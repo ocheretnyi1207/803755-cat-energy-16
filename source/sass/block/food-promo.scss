@@ -5,6 +5,18 @@
   padding-top: 25px;
   padding-bottom: 165px;
   margin-bottom: 135px;
+  min-height: 295px;
+  @media(min-width: $width_tablet) {
+    background-image: none;
+    padding-top: 0;
+    margin-bottom: 465px;
+  }
+  @media (min-width: $width_desktop) {
+    position: absolute;
+    top: 244px;
+    left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .food-promo__title {
@@ -15,6 +27,16 @@
   text-align: center;
   color: $color_2;
   padding-bottom: 19px;
+  @media (min-width: $width_tablet) {
+    width: 415px;
+    margin-left: 120px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $color_1;
+    text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 33px;
+  }
 }
 
 .food-promo__description {
@@ -24,10 +46,28 @@
   text-transform: uppercase;
   text-align: center;
   color: $color_2;
+
+  @media(min-width: $width_tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $color_1;
+    text-align: left;
+    margin-left: 118px;
+  }
 }
 
 .food-promo__img {
   position: absolute;
   top: 167px;
-  left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media(min-width: $width_tablet) {
+    top: 192px;
+    left: 50%;
+  }
+  @media (min-width: $width_desktop) {
+    transform: none;
+    top: -90px;
+    left: 496px;
+  }
 }

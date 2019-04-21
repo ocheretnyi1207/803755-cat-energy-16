@@ -1,3 +1,11 @@
+.food {
+  margin-bottom: 32px;
+
+  @media (min-width: $width_tablet) {
+    margin-bottom: 51px;
+  }
+}
+
 .food__link {
   width: 280px;
   display: block;
@@ -10,5 +18,21 @@
   text-align: center;
   background-color: $color_4;
   @include center-block;
-  margin-bottom: 32px;
+  margin-bottom: 22px;
+  @media(min-width: $width_tablet) {
+    position: absolute;
+    top: 374px;
+    left: 119px;
+  }
+  @media (min-width: $width_desktop) {
+    top: 480px;
+  }
+
+  &:hover {
+    background-color: $btn_hover;
+  }
+
+  &:active {
+    color: $btn_active;
+  }
 }
