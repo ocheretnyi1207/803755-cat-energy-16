@@ -46,9 +46,10 @@
   text-decoration: none;
   @media (min-width: $width_desktop) {
     color: $color_2;
-  }
-  @media (min-width: $width_desktop) {
-    color: $color_1;
+
+    &--catalog {
+      color: $color_1;
+    }
   }
 
   &:hover {

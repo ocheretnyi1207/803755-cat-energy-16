@@ -8,8 +8,11 @@
   }
   @media (min-width: $width_desktop) {
     &--catalog {
-      height: inherit;
+      width: 477px;
+      height: auto;
       background-image: none;
+      padding-top: 0;
+      padding-left: 0;
     }
   }
 }
