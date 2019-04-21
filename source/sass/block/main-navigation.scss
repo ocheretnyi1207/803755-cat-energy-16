@@ -1,0 +1,15 @@
+.main-navigation {
+  @media (min-width: $width_desktop) {
+    width: 50%;
+    height: 696px;
+    padding-top: 53px;
+    padding-left: 133px;
+    background-image: url("../../img/index-background-desktop@1x.jpg");
+  }
+  @media (min-width: $width_desktop) {
+    &--catalog {
+      height: inherit;
+      background-image: none;
+    }
+  }
+}

@@ -1,17 +1,9 @@
 .social-icons {
   @include list-reset;
+  @include center-block;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  border-top: 1px solid $color_7;
-  border-bottom: 1px solid $color_7;
-  padding: 22px 21px;
-  margin-bottom: 22px;
-  @media(min-width: $width_tablet) {
-    border: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 15px;
-    width: 124px;
-  }
+  width: 123px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }

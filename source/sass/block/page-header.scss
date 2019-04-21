@@ -8,8 +8,15 @@
     padding-right: 31px;
   }
   @media (min-width: $width_desktop) {
-    padding-top: 53px;
-    padding-left: 109px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    margin-bottom: 80px;
+
+    &--catalog {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -27,6 +34,11 @@
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
+  }
+  @media (min-width: $width_desktop) {
+    width: 50%;
+    padding-top: 53px;
+    padding-left: 40px;
   }
 }
 

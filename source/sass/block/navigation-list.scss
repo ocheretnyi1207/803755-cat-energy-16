@@ -23,6 +23,14 @@
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid $color_6;
+  @media (min-width: $width_tablet) {
+    border: none;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  @media (min-width: $width_desktop) {
+    font-size: 20px;
+  }
 
   &:first-child {
     border-top: 1px solid $color_6;
@@ -31,17 +39,17 @@
       border: none;
     }
   }
-
-  @media(min-width: $width_tablet) {
-    border: none;
-    font-size: 18px;
-    line-height: 25px;
-  }
 }
 
 .navigation-list__link {
   color: $color_1;
   text-decoration: none;
+  @media (min-width: $width_desktop) {
+    color: $color_2;
+  }
+  @media (min-width: $width_desktop) {
+    color: $color_1;
+  }
 
   &:hover {
     color: $main_menu_hover;
