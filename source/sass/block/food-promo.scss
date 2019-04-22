@@ -29,13 +29,13 @@
   padding-bottom: 19px;
   @media (min-width: $width_tablet) {
     width: 415px;
-    margin-left: 120px;
+    margin-left: 118px;
     font-size: 60px;
     line-height: 60px;
     color: $color_1;
     text-align: left;
     padding-bottom: 0;
-    margin-bottom: 33px;
+    margin-bottom: 41px;
   }
 }
 
@@ -62,7 +62,7 @@
   left: 50%;
   transform: translateX(-50%);
   @media(min-width: $width_tablet) {
-    top: 192px;
+    top: 201px;
     left: 50%;
   }
   @media (min-width: $width_desktop) {

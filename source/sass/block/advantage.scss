@@ -15,11 +15,12 @@
   margin-bottom: 41px;
   @media (min-width: $width_tablet) {
     width: 708px;
-    @include center-block;
     font-size: 60px;
-    margin-left: 33px;
+    margin-left: 30px;
+    margin-bottom: 72px;
   }
   @media (min-width: $width_desktop) {
+    @include center-block;
     margin: 0;
     margin-bottom: 63px;
   }
