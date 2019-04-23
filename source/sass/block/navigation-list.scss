@@ -20,8 +20,8 @@
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 23px;
+  padding-bottom: 22px;
   border-bottom: 1px solid $color_6;
   @media (min-width: $width_tablet) {
     border: none;
@@ -36,7 +36,7 @@
     border-top: 1px solid $color_6;
 
     @media(min-width: $width_tablet) {
-      border: none;
+      border-top: none;
     }
   }
 }
@@ -47,6 +47,10 @@
   @media (min-width: $width_tablet) {
     color: $color_9;
     font-weight: 400;
+
+    &--active {
+      border-bottom: $color_4;
+    }
   }
   @media (min-width: $width_desktop) {
     color: $color_2;

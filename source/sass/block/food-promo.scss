@@ -2,9 +2,9 @@
   position: relative;
   width: 100%;
   background-image: url('../img/index-background-mobile@1x.jpg');
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 165px;
-  margin-bottom: 135px;
+  margin-bottom: 136px;
   min-height: 295px;
   @media(min-width: $width_tablet) {
     background-image: none;
@@ -26,7 +26,7 @@
   font-weight: 400;
   text-align: center;
   color: $color_2;
-  padding-bottom: 19px;
+  margin-bottom: 26px;
   @media (min-width: $width_tablet) {
     width: 415px;
     margin-left: 118px;

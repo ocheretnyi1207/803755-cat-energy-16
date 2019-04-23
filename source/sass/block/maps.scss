@@ -1,0 +1,10 @@
+.maps {
+  height: 440px;
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  @media (min-width: $width_tablet) {
+    background-image: url("../../img/bg-map-mobile@1x.png");
+  }
+  @media (min-width: $width_desktop) {
+    background-image: url("../../img/bg-map-desktop@1x.png");
+  }
+}

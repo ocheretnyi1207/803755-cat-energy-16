@@ -1,6 +1,5 @@
 .food {
-  margin-bottom: 32px;
-
+  margin-bottom: 15px;
   @media (min-width: $width_tablet) {
     margin-bottom: 43px;
   }
@@ -14,7 +13,8 @@
   color: $color_2;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 14px 11px;
+  padding-top: 12px;
+  padding-bottom: 10px;
   text-align: center;
   background-color: $color_4;
   @include center-block;
