@@ -3,8 +3,10 @@
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
-  @media (min-width: $width_desktop) {
+  @media (min-width: $width_tablet) {
     margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   @media (min-width: $width_desktop) {
     width: 1220px;
@@ -110,7 +112,7 @@
 
   &--fat .food-list__title {
     @media(min-width: $width_tablet) {
-      margin-bottom: 25px;
+      margin-bottom: 27px;
     }
     @media (min-width: $width_desktop) {
       margin-bottom: 80px;
@@ -213,7 +215,7 @@
   }
   @media (min-width: $width_desktop) {
     & span {
-     display: none;
+      display: none;
     }
   }
 }
@@ -242,6 +244,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color_1;
+  @media (min-width: $width_tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   &::after {
     content: "";
@@ -259,14 +265,18 @@
   &--slim::after {
     top: 5px;
     left: 97px;
+    @media (min-width: $width_tablet) {
+      top: 10px;
+      left: 132px;
+    }
   }
 
   &--fat::after {
     top: 5px;
     left: 95px;
-  }
-  @media (min-width: $width_tablet) {
-    font-size: 20px;
-    line-height: 20px;
+    @media (min-width: $width_tablet) {
+      top: 10px;
+      left: 125px;
+    }
   }
 }

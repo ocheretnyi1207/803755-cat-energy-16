@@ -67,8 +67,8 @@
   &:last-child {
     @media (min-width: $width_tablet) {
     border: 1px solid $color_6;
+    }
   }
- }
 }
 
 .catalog-list__wrapper {
@@ -138,8 +138,8 @@
   & td {
     @media (min-width: $width_tablet) {
     border-bottom: 1px solid $color_8;
+    }
   }
- }
 }
 
 

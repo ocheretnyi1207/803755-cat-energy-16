@@ -4,6 +4,23 @@
   display: flex;
   justify-content: space-between;
   width: 123px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 24px;
+  padding-bottom: 19px;
+}
+
+.social-icons__item {
+
+  &:first-child {
+    margin-top: -2px;
+    margin-left: -5px;
+  }
+
+  &:not(:first-child):not(:last-child) {
+    margin-left: -3px;
+  }
+
+  &:last-child {
+    margin-top: -2px;
+    margin-right: 4px;
+  }
 }

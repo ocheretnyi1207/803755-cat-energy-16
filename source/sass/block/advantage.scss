@@ -1,5 +1,8 @@
 .advantage {
   margin-bottom: 45px;
+  @media (min-width: $width_tablet) {
+    margin-bottom: -3px;
+  }
   @media (min-width: $width_desktop) {
     width: 1220px;
     @include center-block;
@@ -208,4 +211,3 @@
     }
   }
 }
-

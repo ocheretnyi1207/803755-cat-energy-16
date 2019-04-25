@@ -20,7 +20,9 @@
 }
 
 .food-promo__title {
+  width: 250px;
   margin: 0;
+  @include center-block;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
