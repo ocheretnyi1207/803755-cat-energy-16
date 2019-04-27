@@ -1,24 +1,7 @@
-.maps {
-  position: relative;
-  height: 360px;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-position: left -38px;
-  background-repeat: no-repeat;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 55px;
-    height: 53px;
-    background-image: url("../../img/map-pin-png-50.png");
-    top: 139px;
-    left: 136px;
-  }
-
+.maps__static {
+  width: 320px;
+  @include center-block;
   @media (min-width: $width_tablet) {
-    background-image: url("../img/bg-map-mobile@1x.png");
-  }
-  @media (min-width: $width_desktop) {
-    background-image: url("../img/bg-map-desktop@1x.png");
+    width: 767px;
   }
 }
