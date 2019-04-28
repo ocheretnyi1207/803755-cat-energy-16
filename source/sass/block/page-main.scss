@@ -4,10 +4,12 @@
   }
   @media (min-width: $width_desktop) {
     padding-top: 0;
+    position: relative;
   }
 
 
   &--catalog {
+    padding-top: 15px;
     @media (min-width: $width_tablet) {
       padding-top: 65px;
     }
@@ -34,6 +36,11 @@
   @media (min-width: $width_desktop) {
     width: 1220px;
     @include center-block;
+  }
+
+  &--catalog {
+    margin-left: 20px;
+    margin-bottom: 28px;
   }
 }
 

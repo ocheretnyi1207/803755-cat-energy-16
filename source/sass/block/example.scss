@@ -6,6 +6,9 @@
     background-color: $color_2;
     padding-top: 44px;
   }
+  @media (min-width: $width_desktop) {
+    padding-top: 63px;
+  }
 }
 
 .example__title {
@@ -20,6 +23,30 @@
     font-size: 60px;
     margin-left: 30px;
     margin-bottom: 64px;
+  }
+  @media (min-width: $width_desktop) {
+    margin-left: 40px;
+    margin-bottom: 75px;
+  }
+}
+
+.example__wrapping{
+  @media (min-width: $width_desktop) {
+    display: flex;
+    background-color: $color_5;
+  }
+}
+
+.example__wrapping1 {
+  @media (min-width: $width_desktop) {
+    padding-top: 71px;
+    margin-right: auto;
+  }
+}
+
+.example__wrapping2 {
+  @media (min-width: $width_desktop) {
+    width: 650px;
   }
 }
 
@@ -39,6 +66,12 @@
     font-size: 16px;
     line-height: 24px;
   }
+  @media (min-width: $width_desktop) {
+    width: 435px;
+    margin-left: 40px;
+    margin-right: auto;
+    margin-bottom: 68px;
+  }
 }
 
 .example__wrap {
@@ -50,6 +83,12 @@
     margin-right: 30px;
     margin-bottom: 252px;
     display: flex;
+  }
+  @media (min-width: $width_desktop) {
+    margin-left: 40px;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 0;
   }
 }
 
@@ -68,6 +107,9 @@
     width: 366px;
     margin: 0;
     margin-right: auto;
+  }
+  @media (min-width: $width_desktop) {
+    margin-bottom: 62px;
   }
 
   p {
@@ -110,6 +152,9 @@
       top: 63px;
       left: 9px;
     }
+    @media (min-width: $width_desktop) {
+      background-color: $color_5;
+    }
   }
 }
 
@@ -120,6 +165,11 @@
     display: block;
     padding-top: 10px;
     width: 174px;
+  }
+  @media (min-width: $width_desktop) {
+    width: 327px;
+    padding-top: 0;
+    display: flex;
   }
 
   p {
@@ -132,12 +182,22 @@
       font-size: 20px;
       width: 174px;
     }
+    @media (min-width: $width_desktop) {
+      width: 90px;
+    }
   }
 
   p:first-child {
     margin-left: -1px;
     margin-bottom: 10px;
     margin-right: 3px;
+    @media (min-width: $width_desktop) {
+      width: 192px;
+      text-align: inherit;
+      margin-left: 1px;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -148,8 +208,13 @@
   @media (min-width: $width_tablet) {
     position: absolute;
     top: 450px;
-    left: 50%;
+    left: 51%;
     transform: translateX(-50%);
+  }
+  @media (min-width: $width_desktop) {
+    top: 8px;
+    left: 611px;
+    transform: none;
   }
 }
 
@@ -164,6 +229,9 @@
     padding-top: 375px;
     padding-bottom: 75px;
   }
+  @media (min-width: $width_desktop) {
+    background-color: transparent;
+  }
 }
 
 .example__center {
@@ -176,6 +244,9 @@
     width: 583px;
     display: flex;
     justify-content: space-between;
+  }
+  @media (min-width: $width_desktop) {
+    margin-top: -3px;
   }
 }
 

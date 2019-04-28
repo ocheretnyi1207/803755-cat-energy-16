@@ -15,7 +15,7 @@
   }
 }
 
-.catalog-list picture {
+.catalog-list img {
   margin-right: auto;
 }
 
@@ -48,7 +48,7 @@
     }
   }
 
-  &:nth-child(odd) picture {
+  &:nth-child(odd) img {
     @media (min-width: $width_tablet) {
       position: absolute;
       top: -70px;
@@ -56,7 +56,7 @@
     }
   }
 
-  &:nth-child(even) picture {
+  &:nth-child(even) img {
     @media (min-width: $width_tablet) {
       position: absolute;
       top: -97px;
@@ -78,6 +78,7 @@
 }
 
 .catalog-list__wrap {
+  padding-top: 22px;
   @media (min-width: $width_tablet) {
     width: 250px;
     @include center-block;
@@ -90,6 +91,9 @@
   line-height: 20px;
   color: $color_1;
   font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 9px;
   @media (min-width: $width_tablet) {
     text-align: center;
     text-transform: uppercase;
@@ -102,11 +106,12 @@
 }
 
 .catalog-list__option {
-  width: 142px;
+  width: 147px;
   font-family: $font-additional;
   color: $color_3;
   font-size: 12px;
   line-height: 16px;
+  margin-left: -2px;
   @media (min-width: $width_tablet) {
     width: 250px;
     border-collapse: collapse;
@@ -130,6 +135,7 @@
   }
 
   & tr {
+    margin-top: -2px;
     @media (min-width: $width_tablet) {
       font-size: 16px;
     }

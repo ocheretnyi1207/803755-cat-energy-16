@@ -1,0 +1,103 @@
+.additional-products {
+  padding-bottom: 35px;
+}
+
+.additional-products__title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.additional-products__list {
+  @include list-reset;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.additional-products__item {
+  border-top: 1px solid $color_5;
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  &:last-child {
+    border-bottom: 1px solid $color_5;
+  }
+
+  table {
+    width: 100%;
+    font-family: $font_additional;
+    font-size: 14px;
+    line-height: 14px;
+    color: $color_3;
+    margin-bottom: 14px;
+  }
+
+  td:first-child {
+    margin-right: auto;
+  }
+
+  td:last-child {
+    text-align: right;
+  }
+}
+
+.additional-products__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  color: $color_9;
+}
+
+.additional-products__link {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #68b738;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+
+.additional-products__all {
+  width: 280px;
+  @include center-block;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  padding-top: 154px;
+  padding-bottom: 43px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 56px;
+    height: 61px;
+    background-image: url("../../img/icon-gift.svg");
+    position: absolute;
+    top: 20px;
+    left: 50px;
+  }
+
+
+  p {
+    width: 159px;
+    @include center-block;
+    text-align: center;
+    font-family: $font-additional;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color_2;
+  }
+}
+
+

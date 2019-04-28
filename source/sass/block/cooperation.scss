@@ -2,10 +2,19 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding-top: 29px;
-  padding-left: 19px;
-  padding-right: 25px;
-  padding-bottom: 25px;
+  padding: 30px 25px 25px 19px;
+  @media (min-width: $width_tablet) {
+    padding: 63px 72px 56px 71px;
+  }
+  @media (min-width: $width_desktop) {
+    width: 570px;
+    padding: 64px 72px 56px 76px;
+    background-color: $color_2;
+    position: absolute;
+    top: 1580px;
+    left: 40px;
+    z-index: 3;
+  }
 
   p {
     margin: 0;
@@ -16,11 +25,29 @@
     width: 125px;
     font-size: 16px;
     text-transform: uppercase;
+    @media (min-width: $width_tablet) {
+      font-size: 20px;
+      line-height: 25px;
+      width: 154px;
+    }
   }
 
   p:last-child {
     width: 135px;
     font-size: 14px;
     font-family: $font_additional;
+    @media (min-width: $width_tablet) {
+      width: 153px;
+      font-size: 16px;
+      text-align: right;
+    }
+    @media (min-width: $width_desktop) {
+      width: 173px;
+      text-align: left;
+    }
+  }
+
+  &--catalog {
+    background-color: $color_5;
   }
 }
