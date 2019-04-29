@@ -1,10 +1,11 @@
 .maps__static {
   position: relative;
-  width: 100%;
+  width: 320px;
   height: 363px;
+  @include center-block;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 0 -36px;
+  background-position: 0 -37px;
 
   &::after {
     content: "";
@@ -28,11 +29,13 @@
   }
 
   @media (min-width: $width_tablet) {
+    width: 767px;
     background-image: url("../img/bg-map-tablet@1x.png");
     background-position: 0 -5px;
     height: 395px;
   }
   @media (min-width: $width_desktop) {
+    width: 1300px;
     background-image:: url("../img/bg-map-desktop@1x.png");
     background-position: -70px -2px;
   }

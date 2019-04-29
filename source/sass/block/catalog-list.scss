@@ -1,7 +1,5 @@
 .catalog-list {
   @include list-reset;
-  padding-left: 20px;
-  padding-right: 20px;
   @media (min-width: $width-tablet) {
     width: 100%;
     display: flex;
@@ -21,11 +19,13 @@
 
 .catalog-list__item {
   border-top: 1px solid $color_6;
-  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
   @media (min-width: $width_tablet) {
     width: 324px;
     border: none;
-    padding-top: 165px;
+    padding-top: 140px;
     padding-bottom: 40px;
     background-color: $color_5;
     margin-left: 30px;
@@ -42,6 +42,7 @@
 
   &--show {
     padding-top: 27px;
+    border-bottom: 1px solid $color_6;
     @media (min-width: $width_tablet) {
       background-color: $color_2;
       padding-top: 55px;
@@ -51,7 +52,7 @@
   &:nth-child(odd) img {
     @media (min-width: $width_tablet) {
       position: absolute;
-      top: -70px;
+      top: -47px;
       left: 0;
     }
   }
@@ -59,7 +60,7 @@
   &:nth-child(even) img {
     @media (min-width: $width_tablet) {
       position: absolute;
-      top: -97px;
+      top: -83px;
       left: 0;
     }
   }
@@ -93,15 +94,15 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
   @media (min-width: $width_tablet) {
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
-    width: 124px;
+    width: 130px;
     @include center-block;
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 21px;
   }
 }
 
@@ -110,13 +111,14 @@
   font-family: $font-additional;
   color: $color_3;
   font-size: 12px;
-  line-height: 16px;
-  margin-left: -2px;
+  line-height: 13px;
+  margin-left: -3px;
   @media (min-width: $width_tablet) {
-    width: 250px;
+    width: 251px;
     border-collapse: collapse;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     font-size: 16px;
+    margin-left: 0;
   }
   @media (min-width: $width_desktop) {
     width: 167px;
@@ -143,7 +145,9 @@
 
   & td {
     @media (min-width: $width_tablet) {
-    border-bottom: 1px solid $color_8;
+      padding-top: 7px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid $color_8;
     }
   }
 }
@@ -160,10 +164,11 @@
   color: $color_2;
   text-transform: uppercase;
   text-decoration: none;
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 10px;
   @media (min-width: $width_tablet) {
     width: 249px;
+    padding-top: 10px;
   }
   @media (min-width: $width_desktop) {
     width: 169px;
@@ -184,11 +189,11 @@
   @include center-block;
   border: none;
   background-color: transparent;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   @media (min-width: $width_tablet) {
     width: 61px;
     height: 61px;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 
   &::before {
@@ -214,7 +219,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color_1;
-  margin-bottom: 11px;
+  margin-bottom: 7px;
   @media (min-width: $width_tablet) {
     font-size: 20px;
     width: 135px;
@@ -235,6 +240,6 @@
     font-size: 16px;
     width: 168px;
     @include center-block;
-    margin-bottom: 70px;
+    margin-bottom: 87px;
   }
 }

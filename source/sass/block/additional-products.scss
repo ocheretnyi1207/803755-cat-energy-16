@@ -1,5 +1,9 @@
 .additional-products {
+  padding-top: 29px;
   padding-bottom: 35px;
+}
+.additional-products__wrap {
+  margin-bottom: 39px;
 }
 
 .additional-products__title {
@@ -8,7 +12,11 @@
   line-height: 24px;
   font-weight: 400;
   margin-left: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+  @media (min-width: $width_tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additional-products__list {
@@ -18,7 +26,7 @@
 }
 
 .additional-products__item {
-  border-top: 1px solid $color_5;
+  border-top: 1px solid $color_8;
   padding-top: 14px;
   padding-bottom: 17px;
 
@@ -27,12 +35,13 @@
   }
 
   table {
-    width: 100%;
+    width: 103%;
     font-family: $font_additional;
     font-size: 14px;
     line-height: 14px;
     color: $color_3;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
+    margin-left: -4px;
   }
 
   td:first-child {
@@ -49,7 +58,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
   color: $color_9;
 }
 
@@ -65,8 +74,8 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .additional-products__all {
@@ -74,18 +83,18 @@
   @include center-block;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-  padding-top: 154px;
-  padding-bottom: 43px;
+  padding-top: 171px;
+  padding-bottom: 26px;
   position: relative;
 
   &::after {
     content: "";
     width: 56px;
     height: 61px;
-    background-image: url("../../img/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     position: absolute;
-    top: 20px;
-    left: 50px;
+    top: 65px;
+    left: 112px;
   }
 
 
