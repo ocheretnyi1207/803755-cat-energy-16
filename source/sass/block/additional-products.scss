@@ -1,9 +1,15 @@
 .additional-products {
   padding-top: 29px;
   padding-bottom: 35px;
+  @media (min-width: $width_tablet) {
+    padding-top: 65px;
+  }
 }
 .additional-products__wrap {
   margin-bottom: 39px;
+  @media (min-width: $width_tablet) {
+    border-top: 3px solid $color_4;
+  }
 }
 
 .additional-products__title {
@@ -14,8 +20,10 @@
   margin-left: 20px;
   margin-bottom: 34px;
   @media (min-width: $width_tablet) {
+    margin-left: 67px;
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 78px;
   }
 }
 

@@ -65,9 +65,16 @@
     }
   }
 
+  &:nth-child(8n+7) {
+    @media (min-width: $width_tablet) {
+      margin-bottom: 0;
+    }
+  }
+
   &:last-child {
     @media (min-width: $width_tablet) {
-    border: 1px solid $color_6;
+      border: 1px solid $color_6;
+      margin-bottom: 0;
     }
   }
 }
