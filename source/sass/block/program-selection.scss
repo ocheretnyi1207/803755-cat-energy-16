@@ -139,7 +139,7 @@
     width: 172px;
   }
 
-  &--radio:checked + .program-selection__label--radio::after {
+  &--radio:checked+.program-selection__label--radio::after {
     background-color: $color_4;
   }
 
@@ -175,7 +175,7 @@
     }
   }
 
-  &--checkbox:checked + .program-selection__label--checkbox::after {
+  &--checkbox:checked+.program-selection__label--checkbox::after {
     background-image: url("../img/icon-tick.svg");
   }
 

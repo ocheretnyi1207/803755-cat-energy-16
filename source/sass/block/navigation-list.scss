@@ -23,11 +23,13 @@
   padding-top: 23px;
   padding-bottom: 22px;
   border-bottom: 1px solid $color_6;
+
   @media (min-width: $width_tablet) {
     border: none;
     font-size: 18px;
     line-height: 25px;
   }
+
   @media (min-width: $width_desktop) {
     font-size: 20px;
   }
@@ -44,6 +46,7 @@
 .navigation-list__link {
   color: $color_1;
   text-decoration: none;
+
   @media (min-width: $width_tablet) {
     color: $color_9;
     font-weight: 400;
@@ -52,6 +55,7 @@
       border-bottom: $color_4;
     }
   }
+
   @media (min-width: $width_desktop) {
     color: $color_2;
 

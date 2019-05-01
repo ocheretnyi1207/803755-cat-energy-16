@@ -3,9 +3,11 @@
   display: flex;
   justify-content: space-between;
   padding: 29px 25px 25px 19px;
+
   @media (min-width: $width_tablet) {
-    padding: 63px 72px 56px 71px;
+    padding: 67px 72px 56px 71px;
   }
+
   @media (min-width: $width_desktop) {
     width: 570px;
     padding: 64px 72px 56px 76px;
@@ -25,6 +27,7 @@
     width: 125px;
     font-size: 16px;
     text-transform: uppercase;
+
     @media (min-width: $width_tablet) {
       font-size: 20px;
       line-height: 25px;
@@ -36,11 +39,13 @@
     width: 135px;
     font-size: 14px;
     font-family: $font_additional;
+
     @media (min-width: $width_tablet) {
       width: 153px;
       font-size: 16px;
       text-align: right;
     }
+
     @media (min-width: $width_desktop) {
       width: 173px;
       text-align: left;

@@ -15,6 +15,7 @@
     position: absolute;
     top: 141px;
     left: 136px;
+
     @media (min-width: $width_tablet) {
       width: 113px;
       height: 106px;
@@ -22,6 +23,7 @@
       top: 146px;
       left: 322px;
     }
+
     @media (min-width: $width_desktop) {
       top: 148px;
       left: 928px;
@@ -34,9 +36,10 @@
     background-position: 0 -5px;
     height: 395px;
   }
+
   @media (min-width: $width_desktop) {
     width: 1300px;
-    background-image:: url("../img/bg-map-desktop@1x.png");
+    background-image: : url("../img/bg-map-desktop@1x.png");
     background-position: -70px -2px;
   }
 }
