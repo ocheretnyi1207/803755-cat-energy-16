@@ -1,9 +1,14 @@
 .main-navigation {
+  @media (min-width: $width_tablet) {
+    width: 438px;
+  }
+
   @media (min-width: $width_desktop) {
     width: 50%;
     height: 696px;
     padding-top: 55px;
     padding-left: 132px;
+    background-color: #60d719;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
   }
@@ -15,6 +20,7 @@
       background-image: none;
       padding-top: 0;
       padding-left: 0;
+      background-color: transparent;
     }
   }
 }

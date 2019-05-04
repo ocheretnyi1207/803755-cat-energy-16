@@ -17,7 +17,7 @@
     }
 
     @media (min-width: $width_desktop) {
-      padding-top: 83px;
+      padding-top: 67px;
     }
   }
 }
@@ -51,6 +51,10 @@
       margin-left: 30px;
       margin-bottom: 166px;
     }
+
+    @media (min-width: $width_desktop) {
+      margin-left: 40px;
+    }
   }
 }
 
@@ -62,4 +66,13 @@
   text-transform: uppercase;
   margin-left: 20px;
   margin-bottom: 39px;
+}
+
+.page-main__wrap {
+
+  @media (min-width: $width_desktop) {
+    width: 1300px;
+    @include center-block;
+    position: relative;
+  }
 }

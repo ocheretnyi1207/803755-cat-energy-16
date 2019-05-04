@@ -14,9 +14,11 @@
   }
 
   @media (min-width: $width_desktop) {
+    width: 1300px;
     position: absolute;
     top: -554px;
-    left: 2px;
+    left: 50%;
+    margin-left: -650px;
     margin-bottom: 0;
   }
 }
@@ -34,7 +36,7 @@
 
   @media (min-width: $width_tablet) {
     width: 415px;
-    margin-left: 118px;
+    margin-left: 120px;
     font-size: 60px;
     line-height: 60px;
     color: $color_1;
@@ -57,7 +59,7 @@
     line-height: 20px;
     color: $color_1;
     text-align: left;
-    margin-left: 118px;
+    margin-left: 121px;
   }
 }
 
@@ -75,6 +77,6 @@
   @media (min-width: $width_desktop) {
     transform: none;
     top: -80px;
-    left: 488px;
+    left: 491px;
   }
 }

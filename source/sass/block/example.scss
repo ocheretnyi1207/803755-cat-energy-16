@@ -29,28 +29,44 @@
   }
 
   @media (min-width: $width_desktop) {
-    margin-left: 40px;
+    margin-left: 0;
     margin-bottom: 75px;
+  }
+}
+
+.example__wrap {
+  @media (min-width: $width_desktop) {
+    width: 1220px;
+    @include center-block;
+  }
+}
+
+.example__wrap2 {
+  @media (min-width: $width_desktop) {
+    width: 100%;
+    background-color: $color_5;
   }
 }
 
 .example__wrapping {
   @media (min-width: $width_desktop) {
+    width: 1220px;
+    @include center-block;
     display: flex;
-    background-color: $color_5;
   }
 }
 
-.example__wrapping1 {
+.example__wrapping2 {
   @media (min-width: $width_desktop) {
     padding-top: 71px;
     margin-right: auto;
   }
 }
 
-.example__wrapping2 {
+.example__wrapping3 {
   @media (min-width: $width_desktop) {
     width: 650px;
+    position: relative;
   }
 }
 
@@ -74,13 +90,13 @@
 
   @media (min-width: $width_desktop) {
     width: 435px;
-    margin-left: 40px;
+    margin-left: 0;
     margin-right: auto;
     margin-bottom: 68px;
   }
 }
 
-.example__wrap {
+.example__wrappers {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 25px;
@@ -93,7 +109,7 @@
   }
 
   @media (min-width: $width_desktop) {
-    margin-left: 40px;
+    margin-left: 0;
     margin-right: auto;
     display: block;
     margin-bottom: 0;
@@ -105,7 +121,7 @@
   position: relative;
 }
 
-.example__wrappers1 {
+.example__wrappers2 {
   width: 280px;
   @include center-block;
   display: flex;
@@ -171,7 +187,7 @@
   }
 }
 
-.example__wrappers2 {
+.example__wrappers3 {
   display: flex;
   justify-content: center;
 
@@ -232,8 +248,8 @@
   }
 
   @media (min-width: $width_desktop) {
-    top: 8px;
-    left: 611px;
+    top: -190px;
+    left: 0px;
     transform: none;
   }
 }
@@ -248,11 +264,12 @@
   @media (min-width: $width_tablet) {
     background-color: $color_5;
     padding-top: 375px;
-    padding-bottom: 75px;
+    padding-bottom: 69px;
   }
 
   @media (min-width: $width_desktop) {
     background-color: transparent;
+    padding-left: 74px;
   }
 }
 
@@ -263,13 +280,13 @@
   justify-content: space-between;
 
   @media (min-width: $width_tablet) {
-    @include center-block;
     width: 583px;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $width_desktop) {
+    margin: 0;
     margin-top: -3px;
   }
 }
@@ -287,6 +304,8 @@ button {
   @media (min-width: $width_tablet) {
     font-size: 20px;
     margin-top: -5px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted $color_8;
   }
 }
 
