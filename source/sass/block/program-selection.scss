@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $width_desktop) {
-   width: 570px;
+    width: 570px;
   }
 
   &:nth-child(3n) {
@@ -457,7 +457,7 @@
     @media (min-width: $width_desktop) {
       flex-wrap: nowrap;
       width: 100%;
-  }
+    }
 
     li {
       @media (min-width: $width_tablet) {
