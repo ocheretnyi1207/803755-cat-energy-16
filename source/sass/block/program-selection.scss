@@ -1,19 +1,57 @@
 .program-selection {
-  width: 320px;
+  width: 100%;
+
+  @media (min-width: $width_tablet) {
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $width_desktop) {
+    margin-bottom: 81px;
+  }
 }
 
 .program-selection__item {
-  width: 280px;
+  width: 283px;
   @include center-block;
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
+
+  @media (min-width: $width_tablet) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $width_desktop) {
+   width: 570px;
+  }
 
   &:nth-child(3n) {
-    margin-bottom: 23px;
+    margin-bottom: 19px;
+
+    @media (min-width: $width_tablet) {
+      margin-bottom: 72px;
+    }
+
+    @media (min-width: $width_desktop) {
+      margin-bottom: 0;
+    }
   }
 
   &:nth-child(5n) {
     margin-bottom: 0;
+  }
+
+  &--contacts {
+    @media (min-width: $width_desktop) {
+      margin: 0;
+      margin-right: auto;
+    }
+  }
+
+  &--contacts:last-child {
+    @media (min-width: $width_desktop) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -23,9 +61,15 @@
   margin-top: 15px;
   margin-bottom: 16px;
   margin-right: auto;
+  margin-left: 2px;
+
+  @media (min-width: $width_tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 
   &--radio {
-    margin-left: 46px;
+    margin-left: 47px;
     position: relative;
 
     &::before {
@@ -37,6 +81,13 @@
       border: 1px solid $color_8;
       top: -2px;
       left: -46px;
+
+      @media (min-width: $width_tablet) {
+        width: 40px;
+        height: 40px;
+        top: -5px;
+        left: -59px;
+      }
     }
 
     &::after {
@@ -48,11 +99,18 @@
       position: absolute;
       top: 7px;
       left: -37px;
+
+      @media (min-width: $width_tablet) {
+        width: 18px;
+        height: 18px;
+        top: 6px;
+        left: -48px;
+      }
     }
   }
 
   &--checkbox {
-    margin-left: 46px;
+    margin-left: 48px;
     position: relative;
 
     &::before {
@@ -63,6 +121,18 @@
       border: 1px solid $color_8;
       top: -2px;
       left: -46px;
+
+      @media (min-width: $width_tablet) {
+        width: 40px;
+        height: 40px;
+        top: -5px;
+        left: -59px;
+      }
+
+      @media (min-width: $width_desktop) {
+        top: -4px;
+        left: -58px;
+      }
     }
 
     &::after {
@@ -72,6 +142,16 @@
       position: absolute;
       top: 4px;
       left: -42px;
+
+      @media (min-width: $width_tablet) {
+        top: 6px;
+        left: -50px;
+      }
+
+      @media (min-width: $width_desktop) {
+        top: 8px;
+        left: -49px;
+      }
     }
   }
 
@@ -84,13 +164,26 @@
       height: 14px;
       background-image: url("../img/icon-mail.svg");
       position: absolute;
-      top: 4px;
+      top: 1px;
       left: 248px;
+
+      @media (min-width: $width_tablet) {
+        top: 4px;
+        left: 593px;
+      }
+
+      @media (min-width: $width_desktop) {
+        left: 530px;
+      }
     }
   }
 
   &--phone {
     position: relative;
+
+    @media (min-width: $width_tablet) {
+      margin-left: -1px;
+    }
 
     &::after {
       content: "";
@@ -98,21 +191,75 @@
       height: 21px;
       background-image: url("../img/icon-phone.svg");
       position: absolute;
-      top: 1px;
+      top: -2px;
       left: 248px;
+
+      @media (min-width: $width_tablet) {
+        top: 1px;
+        left: 597px;
+      }
+
+      @media (min-width: $width_desktop) {
+        left: 532px;
+      }
     }
   }
 }
 
+.program-selection__wrap {
+  margin-bottom: 42px;
+
+  @media (min-width: $width_tablet) {
+    padding-left: 71px;
+    padding-right: 67px;
+    margin-bottom: 98px;
+  }
+
+  @media (min-width: $width_desktop) {
+    display: flex;
+    padding-left: 43px;
+    padding-right: 39px;
+    margin-bottom: 91px;
+  }
+}
+
+.program-selection__wrappers {
+  @media (min-width: $width_desktop) {
+    width: 570px;
+    margin-right: auto;
+  }
+}
+
+.program-selection__wrappers2 {
+  @media (min-width: $width_desktop) {
+    display: flex;
+  }
+}
+
 .program-selection__control {
-  padding-left: 16px;
+  padding-left: 14px;
   padding-top: 15px;
   padding-bottom: 15px;
+
+  @media (min-width: $width_tablet) {
+    padding-left: 17px;
+  }
 
   &--text {
     outline: none;
     @include program-selection-control;
     opacity: 0.5;
+    height: 45px;
+
+    @media (min-width: $width_tablet) {
+      font-size: 20px;
+      line-height: 20px;
+      height: 52px;
+    }
+
+    &::placeholder {
+      color: $color_3;
+    }
 
     &:hover {
       opacity: 1;
@@ -121,22 +268,42 @@
     &:active {
       border: 2px solid $color_3;
     }
-
-    &:invalid {
-      border: 2px solid $input_error;
-    }
   }
 
   &--name {
     width: 229px;
+
+    @media (min-width: $width_tablet) {
+      width: 567px;
+    }
+
+    @media (min-width: $width_desktop) {
+      width: 506px;
+    }
   }
 
   &--weight {
     width: 204px;
+
+    @media (min-width: $width_tablet) {
+      width: 536px;
+    }
+
+    @media (min-width: $width_desktop) {
+      width: 475px;
+    }
   }
 
   &--age {
     width: 172px;
+
+    @media (min-width: $width_tablet) {
+      width: 497px;
+    }
+
+    @media (min-width: $width_desktop) {
+      width: 436px;
+    }
   }
 
   &--radio:checked+.program-selection__label--radio::after {
@@ -146,9 +313,28 @@
   &--email {
     outline: none;
     width: 219px;
+    height: 45px;
     @include program-selection-control;
     padding-right: 36px;
     opacity: 0.5;
+
+    @media (min-width: $width_tablet) {
+      width: 551px;
+      height: 52px;
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 13px;
+      padding-left: 20px;
+    }
+
+    @media (min-width: $width_desktop) {
+      width: 486px;
+      padding-left: 18px;
+    }
+
+    &::placeholder {
+      color: $color_3;
+    }
 
     &:hover {
       opacity: 1;
@@ -162,9 +348,27 @@
   &--phone {
     outline: none;
     width: 204px;
+    height: 45px;
     @include program-selection-control;
     padding-right: 36px;
     opacity: 0.5;
+
+    @media (min-width: $width_tablet) {
+      width: 535px;
+      height: 52px;
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 13px;
+      padding-left: 18px;
+    }
+
+    @media (min-width: $width_desktop) {
+      width: 472px;
+    }
+
+    &::placeholder {
+      color: $color_3;
+    }
 
     &:hover {
       opacity: 1;
@@ -180,74 +384,176 @@
   }
 
   &--textarea {
+    display: block;
     width: 280px;
     height: 150px;
     @include program-selection-control;
+    @include center-block;
+    padding-top: 13px;
+    padding-left: 16px;
     padding-right: 10px;
+    border: 1px solid $color_5;
+
+    @media (min-width: $width_tablet) {
+      width: 100%;
+      height: 175px;
+      font-size: 20px;
+      line-height: 30px;
+      padding-top: 10px;
+      padding-left: 19px;
+    }
   }
 }
 
-.program-selection__wrap {
+.program-selection__list {
   @include list-reset;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 26px;
-  margin-bottom: 31px;
   border-top: 1px solid $color_8;
   border-bottom: 1px solid $color_8;
+
+  @media (min-width: $width_tablet) {
+    width: 100%;
+    border: 1px solid $color_8;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 570px;
+  }
+
+  li {
+    width: 280px;
+    @include center-block;
+    margin-bottom: 24px;
+
+    @media (min-width: $width_tablet) {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 25px;
+      padding-top: 7px;
+      padding-left: 41px;
+    }
+
+    @media (min-width: $width_desktop) {
+      padding-left: 39px;
+    }
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
 
   &--additionaly {
     border: none;
     padding-bottom: 0;
     margin-bottom: 0;
+
+    @media (min-width: $width_tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $width_desktop) {
+      flex-wrap: nowrap;
+      width: 100%;
   }
 
-  & li {
-    width: 280px;
-    @include center-block;
-    margin-bottom: 26px;
+    li {
+      @media (min-width: $width_tablet) {
+        width: 283px;
+        padding-left: 12px;
+        margin-bottom: 43px;
+      }
+
+      @media (min-width: $width_desktop) {
+        width: 325px;
+        padding-left: 10px;
+      }
+    }
+
+    li:nth-child(even) {
+      @media (min-width: $width_tablet) {
+        padding-left: 72px;
+      }
+
+      @media (min-width: $width_desktop) {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.program-selection__wrap2 {
+  border-top: 3px solid $color_4;
+  margin-bottom: 10px;
+
+  @media (min-width: $width_tablet) {
+    padding-left: 57px;
+    padding-right: 52px;
+    margin-bottom: 4px;
   }
 
-  & li:last-child {
-    margin-bottom: 0;
+  @media (min-width: $width_desktop) {
+    padding-left: 29px;
+    padding-right: 25px;
+    margin-bottom: 79px;
+  }
+
+  &--comments {
+    margin-bottom: 32px;
+
+    @media (min-width: $width_tablet) {
+      margin-bottom: 76px;
+    }
+  }
+
+  &--additionaly {
+    @media (min-width: $width_desktop) {
+      margin-bottom: 19px;
+    }
+  }
+}
+
+.program-selection__wrap3 {
+  @media (min-width: $width_tablet) {
+    display: flex;
+    padding-left: 73px;
+    padding-right: 63px;
+  }
+
+  @media (min-width: $width_desktop) {
+    padding-left: 44px;
   }
 }
 
 .program-selection__fieldset {
   border: none;
   position: relative;
-  margin-bottom: 31px;
 
-  &--contacts::after {
-    content: "";
-    width: 99px;
-    height: 3px;
-    background-color: $color_4;
-    position: absolute;
-    top: 15px;
-    left: 219px;
+  &--contacts {
+    padding-top: 66px;
+
+    @media (min-width: $width_tablet) {
+      padding-top: 87px;
+    }
   }
 
-  &--comments::after {
-    content: "";
-    width: 158px;
-    height: 3px;
-    background-color: $color_4;
-    position: absolute;
-    top: 15px;
-    left: 160px;
+  &--comments {
+    padding-top: 41px;
+
+    @media (min-width: $width_tablet) {
+      padding-top: 87px;
+    }
   }
 
   &--additionaly {
-    margin-bottom: 43px;
+    padding-top: 21px;
+    margin-bottom: 31px;
 
-    &::after {
-      content: "";
-      width: 136px;
-      height: 3px;
-      background-color: $color_4;
-      position: absolute;
-      top: 15px;
-      left: 182px;
+    @media (min-width: $width_tablet) {
+      padding-top: 44px;
+      margin-bottom: 11px;
     }
   }
 }
@@ -256,15 +562,50 @@
   font-size: 24px;
   line-height: 24px;
   color: $color_1;
+  position: absolute;
+  left: 0;
+  padding-left: 19px;
+  background-color: $color_2;
+
+  @media (min-width: $width_tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
   &--contacts {
-    width: 181px;
-    margin-bottom: 30px;
+    width: 222px;
+    top: -16px;
+
+    @media (min-width: $width_tablet) {
+      width: 594px;
+      top: -25px;
+      left: -28px;
+      padding-left: 40px;
+    }
   }
 
   &--comments {
-    width: 118px;
-    margin-bottom: 31px;
+    width: 163px;
+    top: -18px;
+
+    @media (min-width: $width_tablet) {
+      width: 259px;
+      top: -25px;
+      left: -27px;
+      padding-left: 39px;
+    }
+  }
+
+  &--additionaly {
+    width: 184px;
+    top: -17px;
+
+    @media (min-width: $width_tablet) {
+      width: 291px;
+      top: -24px;
+      left: -27px;
+      padding-left: 39px;
+    }
   }
 }
 
@@ -277,18 +618,43 @@
   line-height: 20px;
   color: $color_2;
   text-transform: uppercase;
-  text-align: center;
-  padding-top: 13px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
   background-color: $color_4;
   border: none;
   margin-bottom: 23px;
+
+  @media (min-width: $width_tablet) {
+    margin: 0;
+    margin-right: 61px;
+    width: 283px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    padding-left: 1px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 568px;
+    margin-right: 82px;
+    padding-left: 8px;
+  }
 }
 
 .program-selection__description {
-  text-align: center;
   font-family: $font-additional;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 34px;
+  padding-left: 84px;
+  margin-top: -2px;
+  margin-bottom: 30px;
+
+  @media (min-width: $width_tablet) {
+    width: 180px;
+    margin: 0;
+    padding-left: 0;
+    font-size: 16px;
+    padding-top: 16px;
+  }
 }

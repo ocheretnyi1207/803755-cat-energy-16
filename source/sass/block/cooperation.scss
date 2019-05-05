@@ -33,15 +33,17 @@
 
   &--catalog {
     background-color: $color_5;
+  }
+
+  &--form {
+    @media (min-width: $width_tablet) {
+      padding: 65px 72px 56px 73px;
+      background-color: $color_5;
+    }
 
     @media (min-width: $width_desktop) {
+      padding: 65px 70px 56px 78px;
       background-color: $color_2;
-      width: 570px;
-      position: absolute;
-      top: 1959px;
-      left: 40px;
-      padding: 64px 72px 56px 76px;
-      z-index: 3;
     }
   }
 }
@@ -89,6 +91,12 @@
 
     @media (min-width: $width_desktop) {
       margin-left: 0;
+    }
+  }
+
+  &--form {
+    @media (min-width: $width_tablet) {
+      margin-top: -2px;
     }
   }
 }
