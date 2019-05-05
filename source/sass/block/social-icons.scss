@@ -4,6 +4,66 @@
   display: flex;
   justify-content: space-between;
   width: 123px;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 24px;
+  padding-bottom: 19px;
+
+  @media (min-width: $width_tablet) {
+    margin: 0;
+  }
+}
+
+.social-icons__item {
+
+  &:first-child {
+    margin-top: -2px;
+    margin-left: -5px;
+
+    svg {
+      width: 22px;
+      height: 12px;
+
+      @media (min-width: $width_tablet) {
+        width: 30px;
+        height: 16px;
+      }
+    }
+  }
+
+  &:not(:first-child):not(:last-child) {
+    margin-top: -1px;
+    margin-left: -3px;
+
+    @media (min-width: $width_tablet) {
+      margin-top: -5px;
+    }
+
+    svg {
+      width: 17px;
+      height: 17px;
+
+      @media (min-width: $width_tablet) {
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+
+  &:last-child {
+    margin-top: -2px;
+    margin-right: 4px;
+
+    @media (min-width: $width_tablet) {
+      margin-top: -8px;
+    }
+
+    svg {
+      width: 10px;
+      height: 19px;
+
+      @media (min-width: $width_tablet) {
+        width: 14px;
+        height: 28px;
+      }
+    }
+  }
 }

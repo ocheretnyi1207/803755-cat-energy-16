@@ -1,12 +1,14 @@
 .page-header {
   width: 100%;
-  padding-top: 12px;
+  padding-top: 10px;
+
   @media (min-width: $width_tablet) {
     display: flex;
     padding-top: 24px;
     padding-left: 29px;
     padding-right: 31px;
   }
+
   @media (min-width: $width_desktop) {
     padding-top: 0;
     padding-left: 0;
@@ -15,11 +17,46 @@
     margin-bottom: 80px;
 
     &--catalog {
+      width: 1300px;
+      @include center-block;
       padding-top: 53px;
       padding-left: 40px;
       padding-right: 40px;
       margin-bottom: 0;
     }
+  }
+}
+
+.page-header__left,
+.page-header__right {
+  display: none;
+
+  @media (min-width: $width_desktop) {
+    display: block;
+    width: 50%;
+    height: 696px;
+  }
+}
+
+.page-header__right {
+  @media (min-width: $width_desktop) {
+    background-color: $color_4;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+  }
+}
+
+.page-header__wrapper {
+  @media (min-width: $width_tablet) {
+    width: 100%;
+    display: flex;
+  }
+
+  @media (min-width: $width_desktop) {
+    position: absolute;
+    left: 50%;
+    margin-left: -650px;
+    width: 1300px;
+    display: flex;
   }
 }
 
@@ -31,23 +68,25 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
+
   @media(min-width: $width_tablet) {
     margin: 0;
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
   }
+
   @media (min-width: $width_desktop) {
     width: 50%;
     padding-top: 53px;
     padding-left: 40px;
 
     &--catalog {
+      width: 270px;
+      padding-top: 0;
+      padding-left: 0;
     }
-    width: 270px;
-    padding-top: 0;
-    padding-left: 0;
   }
 }
 
@@ -59,6 +98,7 @@
   background: transparent;
   border: none;
   position: relative;
+
   @media(min-width: $width_tablet) {
     display: none;
   }

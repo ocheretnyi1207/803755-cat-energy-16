@@ -1,7 +1,6 @@
 .catalog-list {
   @include list-reset;
-  padding-left: 20px;
-  padding-right: 20px;
+
   @media (min-width: $width-tablet) {
     width: 100%;
     display: flex;
@@ -9,23 +8,27 @@
     padding-left: 0;
     padding-right: 0;
   }
+
   @media (min-width: $width_desktop) {
     width: 1300px;
     @include center-block;
   }
 }
 
-.catalog-list picture {
+.catalog-list img {
   margin-right: auto;
 }
 
 .catalog-list__item {
   border-top: 1px solid $color_6;
-  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+
   @media (min-width: $width_tablet) {
     width: 324px;
     border: none;
-    padding-top: 165px;
+    padding-top: 141px;
     padding-bottom: 40px;
     background-color: $color_5;
     margin-left: 30px;
@@ -33,6 +36,7 @@
     margin-bottom: 140px;
     position: relative;
   }
+
   @media (min-width: $width_desktop) {
     width: 245px;
     margin-left: 40px;
@@ -42,33 +46,49 @@
 
   &--show {
     padding-top: 27px;
+    border-bottom: 1px solid $color_6;
+
     @media (min-width: $width_tablet) {
       background-color: $color_2;
       padding-top: 55px;
     }
   }
 
-  &:nth-child(odd) picture {
+  &:nth-child(odd) img {
     @media (min-width: $width_tablet) {
       position: absolute;
-      top: -70px;
+      top: -47px;
       left: 0;
     }
   }
 
-  &:nth-child(even) picture {
+  &:nth-child(even) img {
     @media (min-width: $width_tablet) {
       position: absolute;
-      top: -97px;
+      top: -83px;
       left: 0;
+    }
+  }
+
+  &:nth-child(8n+5),
+  &:nth-child(8n+6) {
+    @media (min-width:$width_desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:nth-child(8n+7) {
+    @media (min-width: $width_tablet) {
+      margin-bottom: 0;
     }
   }
 
   &:last-child {
     @media (min-width: $width_tablet) {
-    border: 1px solid $color_6;
+      border: 1px solid $color_6;
+      margin-bottom: 0;
+    }
   }
- }
 }
 
 .catalog-list__wrapper {
@@ -78,6 +98,8 @@
 }
 
 .catalog-list__wrap {
+  padding-top: 22px;
+
   @media (min-width: $width_tablet) {
     width: 250px;
     @include center-block;
@@ -90,29 +112,37 @@
   line-height: 20px;
   color: $color_1;
   font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 10px;
+
   @media (min-width: $width_tablet) {
     text-align: center;
     text-transform: uppercase;
     font-size: 20px;
-    width: 124px;
+    width: 130px;
     @include center-block;
     margin-top: 0;
-    margin-bottom: 28px;
+    margin-bottom: 21px;
   }
 }
 
 .catalog-list__option {
-  width: 142px;
+  width: 147px;
   font-family: $font-additional;
   color: $color_3;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 13px;
+  margin-left: -3px;
+
   @media (min-width: $width_tablet) {
-    width: 250px;
+    width: 251px;
     border-collapse: collapse;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
     font-size: 16px;
+    margin-left: 0;
   }
+
   @media (min-width: $width_desktop) {
     width: 167px;
     @include center-block;
@@ -130,6 +160,8 @@
   }
 
   & tr {
+    margin-top: -2px;
+
     @media (min-width: $width_tablet) {
       font-size: 16px;
     }
@@ -137,9 +169,11 @@
 
   & td {
     @media (min-width: $width_tablet) {
-    border-bottom: 1px solid $color_8;
+      padding-top: 7px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid $color_8;
+    }
   }
- }
 }
 
 
@@ -154,11 +188,15 @@
   color: $color_2;
   text-transform: uppercase;
   text-decoration: none;
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  margin-top: -1px;
+
   @media (min-width: $width_tablet) {
     width: 249px;
+    padding-top: 10px;
   }
+
   @media (min-width: $width_desktop) {
     width: 169px;
   }
@@ -178,11 +216,12 @@
   @include center-block;
   border: none;
   background-color: transparent;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
+
   @media (min-width: $width_tablet) {
     width: 61px;
     height: 61px;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
   }
 
   &::before {
@@ -193,6 +232,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
     @media (min-width: $width_tablet) {
       width: 61px;
       height: 61px;
@@ -208,7 +248,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color_1;
-  margin-bottom: 11px;
+  margin-bottom: 7px;
+
   @media (min-width: $width_tablet) {
     font-size: 20px;
     width: 135px;
@@ -225,10 +266,11 @@
   line-height: 16px;
   color: $color_3;
   margin-bottom: 22px;
+
   @media (min-width: $width_tablet) {
     font-size: 16px;
     width: 168px;
     @include center-block;
-    margin-bottom: 70px;
+    margin-bottom: 89px;
   }
 }

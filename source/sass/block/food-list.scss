@@ -1,12 +1,19 @@
 .food-list {
   @include list-reset;
-  margin-left: 30px;
-  margin-right: 30px;
-  @media (min-width: $width_desktop) {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $width_tablet) {
     margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
   }
+
   @media (min-width: $width_desktop) {
     width: 1220px;
+    padding-left: 0;
+    padding-right: 0;
     @include center-block;
     display: flex;
   }
@@ -21,12 +28,14 @@
   width: 100%;
   @include center-block;
   background-color: $color_5;
-  padding: 30px 36px 22px 21px;
+  padding: 30px 20px 22px 20px;
   margin-bottom: 20px;
+
   @media(min-width: $width_tablet) {
     margin-bottom: 30px;
-    padding: 81px 61px 62px 52px;
+    padding: 75px 50px 62px 52px;
   }
+
   @media (min-width: $width_desktop) {
     width: 570px;
     margin-left: 0;
@@ -48,15 +57,17 @@
     position: absolute;
     top: 22px;
     left: 30px;
+
     @media(min-width: $width_tablet) {
       display: none;
     }
+
     @media (min-width: $width_desktop) {
       display: block;
       width: 71px;
       height: 97px;
-      top: 60px;
-      left: 75px;
+      top: 41px;
+      left: 66px;
     }
   }
 
@@ -66,33 +77,38 @@
     height: 28px;
     background-image: url("../img/icon-cat-pro.svg");
     position: absolute;
-    top: 35px;
+    top: 33px;
     left: 13px;
+
     @media(min-width: $width_tablet) {
       display: none;
     }
+
     @media (min-width: $width_desktop) {
       display: block;
       width: 134px;
       height: 57px;
-      top: 95px;
-      left: 45px;
+      top: 70px;
+      left: 34px;
     }
   }
 
   &--slim .food-list__title {
     @media(min-width: $width_tablet) {
-      margin-bottom: 26px;
+      margin-bottom: 24px;
     }
+
     @media (min-width: $width_desktop) {
+      margin-left: 162px;
       margin-bottom: 75px;
     }
   }
 
   &--slim .food-list__description {
     @media(min-width: $width_tablet) {
-      width: 371px;
+      width: 372px;
     }
+
     @media (min-width: $width_desktop) {
       width: 462px;
     }
@@ -102,17 +118,21 @@
     @media(min-width: $width_tablet) {
       width: 340px;
     }
+
     @media (min-width: $width_desktop) {
-      width: 444px;
+      width: 446px;
     }
   }
 
   &--fat .food-list__title {
     @media(min-width: $width_tablet) {
-      margin-bottom: 31px;
+      margin-bottom: 27px;
     }
+
     @media (min-width: $width_desktop) {
-      margin-bottom: 80px;
+      margin-top: 1px;
+      margin-left: 162px;
+      margin-bottom: 75px;
     }
   }
 }
@@ -123,13 +143,23 @@
   line-height: 37px;
   font-weight: 400;
   margin-left: 70px;
-  margin-bottom: 36px;
   text-transform: uppercase;
   color: $color_1;
+
+  &--slim {
+    margin-bottom: 29px;
+  }
+
+  &--fat {
+    margin-top: -2px;
+    margin-bottom: 29px;
+  }
+
   @media(min-width: $width_tablet) {
     margin-left: 0;
     font-size: 36px;
   }
+
   @media (min-width: $width_desktop) {
     margin-left: 164px;
     margin-bottom: 80px;
@@ -143,42 +173,46 @@
     background-color: $color_4;
     position: absolute;
     top: 24px;
-    left: 20px;
+    left: 22px;
+
     @media(min-width: $width_tablet) {
       display: none;
     }
+
     @media (min-width: $width_desktop) {
       display: block;
       width: 100px;
       height: 100px;
-      top: 65px;
-      left: 55px;
+      top: 48px;
+      left: 52px;
     }
   }
 }
 
 .food-list__wrap {
+  margin-bottom: 18px;
+
   @media (min-width: $width_tablet) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 61px;
+    margin-bottom: 57px;
 
-    & span {
+    span {
       width: 200px;
       height: 95px;
       background-color: transparent;
       position: relative;
     }
 
-    & span::before {
+    span::before {
       content: "";
       width: 200px;
       height: 200px;
       border-radius: 50%;
       background-color: $color_4;
       position: absolute;
-      top: -45px;
-      left: 0;
+      top: -46px;
+      left: 1;
     }
 
     &--slim span::after {
@@ -187,7 +221,7 @@
       height: 194px;
       background-image: url("../img/icon-cat-slim.svg");
       position: absolute;
-      top: -55px;
+      top: -58px;
       left: 30px;
     }
 
@@ -197,13 +231,16 @@
       height: 113px;
       background-image: url("../img/icon-cat-pro.svg");
       position: absolute;
-      top: -7px;
-      left: -38px;
+      top: -2px;
+      left: -35px;
     }
   }
+
   @media (min-width: $width_desktop) {
+    margin-bottom: 31px;
+
     & span {
-     display: none;
+      display: none;
     }
   }
 }
@@ -212,11 +249,11 @@
   margin: 0;
   padding-bottom: 23px;
   border-bottom: 1px solid $color_7;
-  margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
   font-family: $font-additional;
   color: $color_3;
+
   @media(min-width: $width_tablet) {
     border: none;
     padding-bottom: 0;
@@ -234,9 +271,9 @@
   text-decoration: none;
   color: $color_1;
 
-  &:hover::after{
-    width: 34px;
-    background-image: url("../img/icon-right-arrow-verylong.svg");
+  @media (min-width: $width_tablet) {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   &::after {
@@ -245,7 +282,38 @@
     height: 12px;
     background-image: url('../img/icon-right-arrow-long.svg');
     position: absolute;
-    top: 6px;
+  }
+
+  &:hover::after {
+    width: 34px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &--slim::after {
+    top: 5px;
+    left: 97px;
+
+    @media (min-width: $width_tablet) {
+      top: 10px;
+      left: 132px;
+    }
+
+    @media (min-width: $width_desktop) {
+      top: 8px;
+    }
+  }
+
+  &--fat::after {
+    top: 5px;
     left: 95px;
+
+    @media (min-width: $width_tablet) {
+      top: 10px;
+      left: 125px;
+    }
+
+    @media (min-width: $width_desktop) {
+      top: 8px;
+    }
   }
 }

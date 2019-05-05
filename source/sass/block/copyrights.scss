@@ -5,8 +5,12 @@
   align-items: center;
 
   @media(min-width: $width_tablet) {
-    margin: 0;
+    margin-top: -4px;
     width: 162px;
+  }
+
+  @media(min-width: $width_desktop) {
+    margin-top: 1px;
   }
 }
 
@@ -14,6 +18,7 @@
   text-decoration: none;
 
   &--text {
+    margin-left: -2px;
     font-family: $font-additional;
     color: $color_3;
   }

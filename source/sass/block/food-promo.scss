@@ -2,31 +2,38 @@
   position: relative;
   width: 100%;
   background-image: url('../img/index-background-mobile@1x.jpg');
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 165px;
-  margin-bottom: 135px;
+  margin-bottom: 136px;
   min-height: 295px;
+
   @media(min-width: $width_tablet) {
     background-image: none;
     padding-top: 0;
     margin-bottom: 465px;
   }
+
   @media (min-width: $width_desktop) {
+    width: 1300px;
     position: absolute;
-    top: 244px;
-    left: 0;
+    top: -554px;
+    left: 50%;
+    margin-left: -650px;
     margin-bottom: 0;
   }
 }
 
 .food-promo__title {
+  width: 250px;
   margin: 0;
+  @include center-block;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   text-align: center;
   color: $color_2;
-  padding-bottom: 19px;
+  margin-bottom: 26px;
+
   @media (min-width: $width_tablet) {
     width: 415px;
     margin-left: 120px;
@@ -35,7 +42,7 @@
     color: $color_1;
     text-align: left;
     padding-bottom: 0;
-    margin-bottom: 33px;
+    margin-bottom: 41px;
   }
 }
 
@@ -52,7 +59,7 @@
     line-height: 20px;
     color: $color_1;
     text-align: left;
-    margin-left: 118px;
+    margin-left: 121px;
   }
 }
 
@@ -61,13 +68,15 @@
   top: 167px;
   left: 50%;
   transform: translateX(-50%);
+
   @media(min-width: $width_tablet) {
-    top: 192px;
+    top: 201px;
     left: 50%;
   }
+
   @media (min-width: $width_desktop) {
     transform: none;
-    top: -90px;
-    left: 496px;
+    top: -80px;
+    left: 491px;
   }
 }
