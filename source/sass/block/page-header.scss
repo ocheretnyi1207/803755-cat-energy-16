@@ -27,28 +27,10 @@
   }
 }
 
-.page-header__left,
-.page-header__right {
-  display: none;
-
-  @media (min-width: $width_desktop) {
-    display: block;
-    width: 50%;
-    height: 696px;
-  }
-}
-
-.page-header__right {
-  @media (min-width: $width_desktop) {
-    background-color: $color_4;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-  }
-}
-
-.page-header__wrapper {
+.page-header__wrap {
   @media (min-width: $width_tablet) {
     width: 100%;
-    display: flex;
+    
   }
 
   @media (min-width: $width_desktop) {
@@ -60,7 +42,7 @@
   }
 }
 
-.page-header__wrap {
+.page-header__wrap2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -112,4 +94,90 @@
     top: -5px;
     left: 0;
   }
+}
+
+.page-header__promo {
+  position: relative;
+  width: 100%;
+  background-image: url('../img/index-background-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  padding-top: 27px;
+  margin-bottom: 22px;
+  min-height: 295px;
+
+  @media(min-width: $width_tablet) {
+    background-image: none;
+    padding-top: 0;
+  }
+
+  @media (min-width: $width_desktop) {
+    width: 1300px;
+    position: absolute;
+    top: -554px;
+    left: 50%;
+    margin-left: -650px;
+    margin-bottom: 0;
+  }
+}
+
+.page-header__title {
+  width: 250px;
+  margin: 0;
+  @include center-block;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: $color_2;
+  margin-bottom: 25px;
+
+  @media (min-width: $width_tablet) {
+    width: 415px;
+    margin-left: 120px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $color_1;
+    text-align: left;
+    padding-bottom: 0;
+    margin-bottom: 41px;
+  }
+}
+
+.page-header__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color_2;
+  margin-bottom: 28px;
+
+  @media(min-width: $width_tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $color_1;
+    text-align: left;
+    margin-left: 121px;
+  }
+}
+
+.page-header__img {
+  display: block;
+  width: 280px;
+  @include center-block;
+}
+
+.page-header__link {
+  display: block;
+  width: 280px;
+  @include center-block;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  background-color: $color_4;
+  color: $color_2;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
 }
