@@ -1,9 +1,9 @@
 .main-navigation {
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     width: 438px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 50%;
     height: 696px;
     padding-top: 55px;
@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     &--catalog {
       width: 477px;
       height: auto;

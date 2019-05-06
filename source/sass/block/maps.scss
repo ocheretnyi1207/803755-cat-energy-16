@@ -16,7 +16,7 @@
     top: 141px;
     left: 136px;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       width: 113px;
       height: 106px;
       background-image: url("../img/map-pin.png");
@@ -24,20 +24,20 @@
       left: 322px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       top: 149px;
       left: 928px;
     }
   }
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     width: 767px;
     background-image: url("../img/bg-map-tablet@1x.png");
     background-position: 0 -2px;
     height: 395px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 100%;
     height: 400px;
     background-image: url("../img/bg-map-desktop@1x.png");
@@ -45,11 +45,13 @@
   }
 }
 
-.maps__static__catalog {
-  @media (min-width: $width_tablet) {}
+.maps__static {
 
-  @media (min-width: $width_desktop) {
-    background-position: -70px -2px;
+  &--catalog {
+
+    @media ($width_desktop) {
+      background-position: -70px -2px;
+    }
   }
 }
 

@@ -1,9 +1,9 @@
 .page-main {
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     padding-top: 51px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     padding-top: 0;
     position: relative;
   }
@@ -12,11 +12,11 @@
   &--catalog {
     padding-top: 15px;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       padding-top: 51px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       padding-top: 67px;
     }
   }
@@ -25,11 +25,11 @@
     padding-top: 15px;
     margin-left: -2px;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       padding-top: 50px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       padding-top: 71px;
     }
   }
@@ -44,14 +44,14 @@
   margin-left: 22px;
   margin-bottom: 36px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     width: 432px;
     font-size: 60px;
     margin-left: 30px;
     margin-bottom: 156px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 1220px;
     @include center-block;
   }
@@ -60,12 +60,12 @@
     margin-left: 20px;
     margin-bottom: 28px;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       margin-left: 30px;
       margin-bottom: 166px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       margin-left: 40px;
     }
   }
@@ -73,11 +73,11 @@
   &--form {
     margin-bottom: 25px;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       margin-bottom: 56px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       margin-left: 43px;
       margin-bottom: 54px;
     }
@@ -96,7 +96,7 @@
   &--form {
     margin-left: 22px;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       width: 324px;
       font-size: 20px;
       line-height: 30px;
@@ -105,7 +105,7 @@
       margin-bottom: 66px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       margin-left: 43px;
     }
   }
@@ -113,7 +113,7 @@
 
 .page-main__wrap {
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 1300px;
     @include center-block;
     position: relative;

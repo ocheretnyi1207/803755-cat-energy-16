@@ -4,12 +4,12 @@
   justify-content: space-between;
   padding: 29px 23px 25px 19px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     padding: 67px 72px 56px 71px;
     background-color: $color_2;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 570px;
     position: absolute;
     top: 94px;
@@ -24,7 +24,7 @@
     line-height: 20px;
     text-transform: uppercase;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       width: 154px;
       font-size: 20px;
       line-height: 25px;
@@ -36,12 +36,12 @@
   }
 
   &--form {
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       padding: 65px 72px 56px 73px;
       background-color: $color_5;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       padding: 65px 70px 56px 78px;
       background-color: $color_2;
     }
@@ -51,12 +51,12 @@
 .cooperation__wrap {
   width: 182px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     width: 160px;
     margin-top: -4px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 172px;
     margin-top: -1px;
   }
@@ -67,35 +67,35 @@
     line-height: 20px;
     text-transform: none;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       font-size: 16px;
       text-align: right;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       text-align: left;
     }
   }
 
   p:first-child {
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       width: 160px;
       margin-bottom: 20px;
     }
   }
 
   p:last-child {
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       margin-left: 6px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       margin-left: 0;
     }
   }
 
   &--form {
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       margin-top: -2px;
     }
   }

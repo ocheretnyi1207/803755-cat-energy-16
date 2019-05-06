@@ -2,7 +2,7 @@
   background-color: $color_5;
   text-align: center;
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     padding: 42px 38px 58px 40px;
   }
 }
@@ -11,7 +11,7 @@
   display: block;
   margin-bottom: 29px;
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     margin-bottom: 0;
     margin-right: 27px;
     padding-top: 20px;
@@ -24,13 +24,13 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     display: flex;
     justify-content: space-between;
     padding: 46px 30px 58px 31px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 1220px;
     @include center-block;
     display: flex;
@@ -48,7 +48,7 @@
   border-bottom: 1px solid $color_7;
   margin-bottom: 20px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     border: none;
     margin: 0;
   }

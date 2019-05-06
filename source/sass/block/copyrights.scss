@@ -4,12 +4,12 @@
   justify-content: space-between;
   align-items: center;
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     margin-top: -4px;
     width: 162px;
   }
 
-  @media(min-width: $width_desktop) {
+  @media($width_desktop) {
     margin-top: 1px;
   }
 }

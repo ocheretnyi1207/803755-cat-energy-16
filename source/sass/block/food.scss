@@ -1,11 +1,11 @@
 .food {
   margin-bottom: 15px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     margin-bottom: 43px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     margin-bottom: 70px;
   }
 }
@@ -25,7 +25,7 @@
   @include center-block;
   margin-bottom: 22px;
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     width: 245px;
     font-size: 20px;
     line-height: 20px;
@@ -35,7 +35,7 @@
     left: 119px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     top: 234px;
     left: 121px;
   }

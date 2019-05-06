@@ -2,14 +2,14 @@
   @include list-reset;
   width: 100%;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     width: 438px;
     display: flex;
     margin-top: -5px;
     justify-content: space-between;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     margin-top: -2px;
     width: 477px;
   }
@@ -25,13 +25,13 @@
   padding-bottom: 22px;
   border-bottom: 1px solid $color_6;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     border: none;
     font-size: 18px;
     line-height: 25px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     font-size: 20px;
     margin-top: -3px;
   }
@@ -39,13 +39,13 @@
   &:first-child {
     border-top: 1px solid $color_6;
 
-    @media(min-width: $width_tablet) {
+    @media($width_tablet) {
       border-top: none;
     }
   }
 
   &--catalog {
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       margin-top: -1px;
     }
   }
@@ -55,7 +55,7 @@
   color: $color_1;
   text-decoration: none;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     color: $color_9;
     font-weight: 400;
 
@@ -64,7 +64,7 @@
     }
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     color: $color_2;
 
     &--catalog {
@@ -82,7 +82,7 @@
 
   &--current {
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       padding-bottom: 6px;
       border-bottom: 2px solid $color_2;
     }
@@ -90,7 +90,7 @@
 
   &--catalog--current {
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       padding-bottom: 6px;
       border-bottom: 2px solid $color_4;
     }

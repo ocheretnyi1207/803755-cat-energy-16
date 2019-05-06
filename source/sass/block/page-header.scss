@@ -1,15 +1,15 @@
 .page-header {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 12px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     display: flex;
     padding-top: 24px;
     padding-left: 29px;
     padding-right: 31px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     padding-top: 0;
     padding-left: 0;
     padding-right: 0;
@@ -28,12 +28,12 @@
 }
 
 .page-header__wrap {
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     width: 100%;
-    
+
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     position: absolute;
     left: 50%;
     margin-left: -650px;
@@ -50,16 +50,16 @@
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     margin: 0;
     margin-right: auto;
     padding-left: 0;
     padding-right: 0;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 50%;
     padding-top: 53px;
     padding-left: 40px;
@@ -72,8 +72,6 @@
   }
 }
 
-.page-header__wrap3 
-
 .page-header__btn {
   outline: none;
   width: 25px;
@@ -83,7 +81,7 @@
   border: none;
   position: relative;
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     display: none;
   }
 
@@ -100,19 +98,25 @@
 
 .page-header__promo {
   position: relative;
-  width: 100%;
+  width: 320px;
+  @include center-block;
   background-image: url('../img/index-background-mobile@1x.jpg');
   background-repeat: no-repeat;
   padding-top: 27px;
   margin-bottom: 22px;
   min-height: 295px;
 
-  @media(min-width: $width_tablet) {
+  @media ($retina-dpi), ($retina-dppx) {
+    background-image: url('../img/index-background-mobile@2x.jpg');
+    background-size: 320px auto;
+  }
+
+  @media($width_tablet) {
     background-image: none;
     padding-top: 0;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 1300px;
     position: absolute;
     top: -554px;
@@ -133,7 +137,7 @@
   color: $color_2;
   margin-bottom: 25px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     width: 415px;
     margin-left: 120px;
     font-size: 60px;
@@ -154,7 +158,7 @@
   color: $color_2;
   margin-bottom: 28px;
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     font-size: 20px;
     line-height: 20px;
     color: $color_1;
@@ -167,13 +171,14 @@
   display: block;
   width: 280px;
   @include center-block;
+  margin-bottom: 3px;
 }
 
 .page-header__link {
   display: block;
   width: 280px;
   @include center-block;
-  padding-top: 14px;
+  padding-top: 12px;
   padding-bottom: 11px;
   background-color: $color_4;
   color: $color_2;
