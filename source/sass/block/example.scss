@@ -64,6 +64,15 @@
 }
 
 .example__wrapping3 {
+  width: 320px;
+  @include center-block;
+
+  @media ($width_tablet) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
   @media ($width_desktop) {
     width: 650px;
     position: relative;
@@ -83,7 +92,7 @@
   @media ($width_tablet) {
     margin-left: 30px;
     margin-right: 60px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -193,7 +202,7 @@
 
   @media ($width_tablet) {
     display: block;
-    padding-top: 10px;
+    padding-top: 11px;
     width: 174px;
   }
 
@@ -283,6 +292,7 @@
     width: 583px;
     display: flex;
     justify-content: space-between;
+    margin-left: 92px;
   }
 
   @media ($width_desktop) {
@@ -319,6 +329,7 @@
   padding-left: 6px;
 
   @media ($width_tablet) {
+    margin-top: 3px;
     padding: 0;
     width: 428px;
     height: 6px;

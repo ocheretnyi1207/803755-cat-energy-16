@@ -33,6 +33,10 @@
 
   &--catalog {
     background-color: $color_5;
+
+    @media ($width_desktop) {
+      background-color: $color_2;
+    }
   }
 
   &--form {

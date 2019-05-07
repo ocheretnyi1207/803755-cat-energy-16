@@ -84,6 +84,10 @@
 
     @media ($width_tablet) {
       padding-bottom: 6px;
+      border-bottom: 2px solid $color_4;
+    }
+
+    @media ($width_desktop) {
       border-bottom: 2px solid $color_2;
     }
   }

@@ -5,12 +5,12 @@
   align-items: center;
 
   @media($width_tablet) {
-    margin-top: -4px;
+    margin-top: -7px;
     width: 162px;
   }
 
   @media($width_desktop) {
-    margin-top: 1px;
+    margin-top: -5px;
   }
 }
 

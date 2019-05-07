@@ -15,6 +15,7 @@
     padding-right: 0;
     position: relative;
     margin-bottom: 80px;
+    background: linear-gradient(90deg, #ffffff 50%, #63a73a 50%);
 
     &--catalog {
       width: 1300px;
@@ -23,6 +24,10 @@
       padding-left: 40px;
       padding-right: 40px;
       margin-bottom: 0;
+
+      @media ($width_desktop) {
+        background: none;
+      }
     }
   }
 }
@@ -34,17 +39,31 @@
   }
 
   @media ($width_desktop) {
-    position: absolute;
-    left: 50%;
-    margin-left: -650px;
     width: 1300px;
+    @include center-block;
+  }
+
+  &--catalog {
     display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 19px;
+    padding-bottom: 12px;
+
+    @media ($width_tablet) {
+      padding-left: 0;
+    }
   }
 }
 
 .page-header__wrap2 {
   @media ($width_tablet) {
     display: flex;
+    margin-bottom: 51px;
+  }
+
+  @media ($width_desktop) {
+    margin-bottom: 0;
   }
 }
 
@@ -75,6 +94,13 @@
       padding-top: 0;
       padding-left: 0;
     }
+  }
+}
+
+.page-header__logo {
+  @media ($width_desktop) {
+    width: 203px;
+    height: 60px;
   }
 }
 
@@ -118,16 +144,15 @@
   }
 
   @media($width_tablet) {
+    width: 709px;
     background-image: none;
     padding-top: 0;
   }
 
   @media ($width_desktop) {
-    width: 1300px;
-    position: absolute;
-    top: -554px;
-    left: 50%;
-    margin-left: -650px;
+    margin-top: -474px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 0;
   }
 }
@@ -145,13 +170,17 @@
 
   @media ($width_tablet) {
     width: 415px;
-    margin-left: 120px;
+    margin-left: 88px;
     font-size: 60px;
     line-height: 60px;
     color: $color_1;
     text-align: left;
     padding-bottom: 0;
-    margin-bottom: 41px;
+    margin-bottom: 42px;
+  }
+
+  @media ($width_desktop) {
+    margin-left: 120px;
   }
 }
 
@@ -169,18 +198,18 @@
     line-height: 20px;
     color: $color_1;
     text-align: left;
-    margin-left: 121px;
+    margin-left: 90px;
+    margin-bottom: 47px;
+  }
+
+  @media ($width_desktop) {
+    margin-left: 120px;
+    margin-bottom: 52px;
   }
 }
 
-.page-header__img {
-  display: block;
-  width: 280px;
-  @include center-block;
-  margin-bottom: 3px;
-}
-
 .page-header__link {
+  position: relative;
   display: block;
   width: 280px;
   @include center-block;
@@ -193,4 +222,21 @@
   line-height: 18px;
   text-align: center;
   text-decoration: none;
+
+  @media ($width_tablet) {
+    width: 244px;
+    margin-left: 91px;
+    margin-bottom: 464px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: inherit;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+  }
+
+  @media ($width_desktop) {
+    margin-left: 120px;
+    margin-bottom: 180px;
+  }
 }

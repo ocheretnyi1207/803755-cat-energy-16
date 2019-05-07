@@ -95,7 +95,7 @@
 
   &--slim .food-list__title {
     @media($width_tablet) {
-      margin-bottom: 24px;
+      margin-bottom: 26px;
     }
 
     @media ($width_desktop) {
@@ -211,8 +211,8 @@
       border-radius: 50%;
       background-color: $color_4;
       position: absolute;
-      top: -46px;
-      left: 1;
+      top: -47px;
+      left: -11px;
     }
 
     &--slim span::after {
@@ -222,7 +222,7 @@
       background-image: url("../img/icon-cat-slim.svg");
       position: absolute;
       top: -58px;
-      left: 30px;
+      left: 18px;
     }
 
     &--fat span::after {
@@ -231,8 +231,8 @@
       height: 113px;
       background-image: url("../img/icon-cat-pro.svg");
       position: absolute;
-      top: -2px;
-      left: -35px;
+      top: -4px;
+      left: -47px;
     }
   }
 
@@ -294,7 +294,7 @@
     left: 97px;
 
     @media ($width_tablet) {
-      top: 10px;
+      top: 9px;
       left: 132px;
     }
 
@@ -308,7 +308,7 @@
     left: 95px;
 
     @media ($width_tablet) {
-      top: 10px;
+      top: 8px;
       left: 125px;
     }
 
