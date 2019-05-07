@@ -43,6 +43,12 @@
 }
 
 .page-header__wrap2 {
+  @media ($width_tablet) {
+    display: flex;
+  }
+}
+
+.page-header__wrap3 {
   width: 100%;
   display: flex;
   justify-content: space-between;
