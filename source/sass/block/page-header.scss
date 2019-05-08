@@ -138,7 +138,8 @@
   margin-bottom: 22px;
   min-height: 295px;
 
-  @media ($retina-dpi), ($retina-dppx) {
+  @media ($retina-dpi),
+  ($retina-dppx) {
     background-image: url('../img/index-background-mobile@2x.jpg');
     background-size: 320px auto;
   }
@@ -205,6 +206,22 @@
   @media ($width_desktop) {
     margin-left: 120px;
     margin-bottom: 52px;
+  }
+}
+
+.page-header__img {
+  display: block;
+  width: 280px;
+  @include center-block;
+
+  @media ($width_tablet) {
+    width: 709px;
+    position: absolute;
+    top: 200px;
+  }
+  
+  @media ($width_desktop) {
+    width: 552px;
   }
 }
 
