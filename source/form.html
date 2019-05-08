@@ -36,9 +36,11 @@
     </nav>
   </header>
   <main class="page-main page-main--form">
-    <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
-    <p class="page-main__description page-main__description--form">Заполните анкету и мы подберем программу питания для
-      вашего кота</p>
+    <div class="page-main__center page-main__center--form">
+      <h1 class="page-main__title page-main__title--form">Подбор программы</h1>
+      <p class="page-main__description page-main__description--form">Заполните анкету и мы подберем программу питания
+        для вашего кота</p>
+    </div>
     <form class="program-selection" action="https://echo.htmlacademy.ru" method="POST">
       <div class="program-selection__wrap">
         <div class="program-selection__wrappers">
@@ -117,24 +119,24 @@
               <input class="program-selection__control program-selection__control--checkbox visuallyhidden"
                 type="checkbox" name="sweetener" id="sweetener-field" checked>
               <label class="program-selection__label program-selection__label--checkbox"
-                for="sweetener-field">Сахарозаменитель</label>
+                for="sweetener-field" tabindex="0">Сахарозаменитель</label>
             </li>
             <li>
               <input class="program-selection__control program-selection__control--checkbox visuallyhidden"
                 type="checkbox" name="water" id="water-field">
-              <label class="program-selection__label program-selection__label--checkbox" for="water-field">Питьевая
+              <label class="program-selection__label program-selection__label--checkbox" for="water-field" tabindex="0">Питьевая
                 вода</label>
             </li>
             <li>
               <input class="program-selection__control program-selection__control--checkbox visuallyhidden"
                 type="checkbox" name="milk" id="milk-field">
-              <label class="program-selection__label program-selection__label--checkbox" for="milk-field">Молоко</label>
+              <label class="program-selection__label program-selection__label--checkbox" for="milk-field" tabindex="0">Молоко</label>
             </li>
             <li>
               <input class="program-selection__control program-selection__control--checkbox visuallyhidden"
                 type="checkbox" name="vitamins" id="vitamins-field">
               <label class="program-selection__label program-selection__label--checkbox"
-                for="vitamins-field">Витамины</label>
+                for="vitamins-field" tabindex="0">Витамины</label>
             </li>
           </ul>
         </fieldset>

@@ -10,8 +10,17 @@
   }
 }
 
-.program-selection__item {
+.program-selection__wrappers {
   width: 283px;
+  @include center-block;
+
+  @media ($width_tablet) {
+    width: 631px;
+  }
+}
+
+.program-selection__item {
+  width: 280px;
   @include center-block;
   display: flex;
   margin-bottom: 10px;
@@ -44,7 +53,7 @@
   &--contacts {
     @media ($width_desktop) {
       margin: 0;
-      margin-right: auto;
+      margin-right: 80px;
     }
   }
 
@@ -61,7 +70,7 @@
   margin-top: 15px;
   margin-bottom: 16px;
   margin-right: auto;
-  margin-left: 2px;
+  margin-left: 0;
 
   @media ($width_tablet) {
     font-size: 20px;
@@ -216,17 +225,20 @@
   }
 
   @media ($width_desktop) {
+    width: 1220px;
     display: flex;
-    padding-left: 43px;
-    padding-right: 39px;
+    justify-content: space-between;
+    @include center-block;
     margin-bottom: 91px;
+    padding: 0;
+
   }
 }
 
 .program-selection__wrappers {
   @media ($width_desktop) {
     width: 570px;
-    margin-right: auto;
+    margin: 0;
   }
 }
 
@@ -413,13 +425,15 @@
   border-bottom: 1px solid $color_8;
 
   @media ($width_tablet) {
-    width: 100%;
+    width: 631px;
+    @include center-block;
     border: 1px solid $color_8;
     padding-bottom: 33px;
   }
 
   @media ($width_desktop) {
     width: 570px;
+    margin: 0;
   }
 
   li {
@@ -456,7 +470,7 @@
 
     @media ($width_desktop) {
       flex-wrap: nowrap;
-      width: 100%;
+      width: 1220px;
     }
 
     li {
@@ -467,8 +481,9 @@
       }
 
       @media ($width_desktop) {
-        width: 325px;
-        padding-left: 10px;
+        width: 230px;
+        margin-bottom: 0;
+        padding: 0;
       }
     }
 
@@ -478,7 +493,26 @@
       }
 
       @media ($width_desktop) {
-        padding-left: 10px;
+        padding: 0;
+      }
+    }
+
+    li:nth-child(4n+1) {
+      @media ($width_desktop) {
+        padding-left: 11px;
+        margin-right: 106px;
+      }
+    }
+
+    li:nth-child(4n+2) {
+      @media ($width_desktop) {
+        margin-right: 95px;
+      }
+    }
+
+    li:nth-child(4n+3) {
+      @media ($width_desktop) {
+        margin-right: 95px;
       }
     }
   }
@@ -491,7 +525,7 @@
   @media ($width_tablet) {
     padding-left: 57px;
     padding-right: 52px;
-    margin-bottom: 4px;
+    margin-bottom:57px;
   }
 
   @media ($width_desktop) {
@@ -504,26 +538,39 @@
     margin-bottom: 32px;
 
     @media ($width_tablet) {
-      margin-bottom: 76px;
+      margin-bottom: 75px;
+    }
+
+    @media ($width_desktop) {
+      margin-bottom: 77px;
     }
   }
 
   &--additionaly {
+    @media ($width_tablet) {
+      margin-bottom: 11px;
+    }
+
     @media ($width_desktop) {
-      margin-bottom: 19px;
+      margin-bottom: 61px;
     }
   }
 }
 
 .program-selection__wrap3 {
+  width: 280px;
+  @include center-block;
+
   @media ($width_tablet) {
+    width: 631px;
     display: flex;
-    padding-left: 73px;
+    padding-left: 3px;
     padding-right: 63px;
   }
 
   @media ($width_desktop) {
-    padding-left: 44px;
+    width: 1220px;
+    padding-left: 2px;
   }
 }
 
@@ -532,28 +579,51 @@
   position: relative;
 
   &--contacts {
+    width: 280px;
+    @include center-block;
     padding-top: 66px;
 
     @media ($width_tablet) {
+      width: 657px;
       padding-top: 87px;
+    }
+
+    @media ($width_desktop) {
+      width: 1250px;
     }
   }
 
   &--comments {
+    width: 280px;
+    @include center-block;
     padding-top: 41px;
 
     @media ($width_tablet) {
+      width: 657px;
       padding-top: 87px;
+    }
+
+    @media ($width_desktop) {
+      width: 1250px;
     }
   }
 
   &--additionaly {
+    width: 280px;
+    @include center-block;
     padding-top: 21px;
     margin-bottom: 31px;
 
     @media ($width_tablet) {
+      width: 657px;
       padding-top: 44px;
       margin-bottom: 11px;
+    }
+
+    @media ($width_desktop) {
+      width: 1250px;
+      margin-bottom: 0;
+      padding-top: 52px;
     }
   }
 }
@@ -563,7 +633,7 @@
   line-height: 24px;
   color: $color_1;
   position: absolute;
-  left: 0;
+  left: -6px;
   padding-left: 19px;
   background-color: $color_2;
 
@@ -646,7 +716,7 @@
   font-family: $font-additional;
   font-size: 14px;
   line-height: 16px;
-  padding-left: 84px;
+  padding-left: 63px;
   margin-top: -2px;
   margin-bottom: 30px;
 

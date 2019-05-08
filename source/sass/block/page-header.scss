@@ -52,6 +52,7 @@
 
     @media ($width_tablet) {
       padding-left: 0;
+      padding-bottom: 0;
     }
   }
 }
@@ -219,9 +220,11 @@
     position: absolute;
     top: 200px;
   }
-  
+
   @media ($width_desktop) {
     width: 552px;
+    top: -80px;
+    left: 492px;
   }
 }
 
@@ -230,6 +233,7 @@
   display: block;
   width: 280px;
   @include center-block;
+  margin-top: 3px;
   padding-top: 12px;
   padding-bottom: 11px;
   background-color: $color_4;
@@ -253,7 +257,7 @@
   }
 
   @media ($width_desktop) {
-    margin-left: 120px;
+    margin-left: 122px;
     margin-bottom: 180px;
   }
 }

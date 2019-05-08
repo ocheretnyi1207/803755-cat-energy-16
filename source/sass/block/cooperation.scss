@@ -5,7 +5,7 @@
   padding: 29px 23px 25px 19px;
 
   @media ($width_tablet) {
-    padding: 67px 72px 56px 71px;
+    padding: 66px 72px 56px 71px;
     background-color: $color_2;
   }
 
@@ -44,13 +44,13 @@
   }
 
   &--form {
+    background-color: $color_5;
     @media ($width_tablet) {
       padding: 65px 72px 56px 73px;
-      background-color: $color_5;
     }
 
     @media ($width_desktop) {
-      padding: 65px 70px 56px 78px;
+      padding: 65px 72px 56px 76px;
       background-color: $color_2;
     }
   }
@@ -99,6 +99,12 @@
 
     @media ($width_desktop) {
       margin-left: 0;
+    }
+  }
+
+  &--catalog {
+    @media ($width_tablet) {
+      margin-top: -2px;
     }
   }
 

@@ -13,11 +13,11 @@
     padding-top: 15px;
 
     @media ($width_tablet) {
-      padding-top: 43px;
+      padding-top: 51px;
     }
 
     @media ($width_desktop) {
-      padding-top: 63px;
+      padding-top: 68px;
     }
   }
 
@@ -26,11 +26,29 @@
     margin-left: -2px;
 
     @media ($width_tablet) {
-      padding-top: 50px;
+      padding-top: 51px;
+      margin-left: 0;
     }
 
     @media ($width_desktop) {
-      padding-top: 71px;
+      padding-top: 67px;
+    }
+  }
+}
+
+.page-main__center {
+
+  &--form {
+    width: 280px;
+    @include center-block;
+
+    @media ($width_tablet) {
+      width: 710px;
+    }
+
+    @media ($width_desktop) {
+      width: 1220px;
+      margin-bottom: 66px;
     }
   }
 }
@@ -71,6 +89,7 @@
   }
 
   &--form {
+    margin-left: 1px;
     margin-bottom: 25px;
 
     @media ($width_tablet) {
@@ -78,8 +97,8 @@
     }
 
     @media ($width_desktop) {
-      margin-left: 43px;
-      margin-bottom: 54px;
+      margin-left: 0;
+      margin-bottom: 55px;
     }
   }
 }
@@ -94,19 +113,19 @@
   margin-bottom: 39px;
 
   &--form {
-    margin-left: 22px;
+    margin-left: 1px;
 
     @media ($width_tablet) {
       width: 324px;
       font-size: 20px;
       line-height: 30px;
       color: $color_9;
-      margin-left: 72px;
-      margin-bottom: 66px;
+      margin-left: 42px;
+      margin-bottom: 65px;
     }
 
     @media ($width_desktop) {
-      margin-left: 43px;
+      margin: 0;
     }
   }
 }
