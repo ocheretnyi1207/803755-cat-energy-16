@@ -7,8 +7,10 @@
   padding-top: 24px;
   padding-bottom: 19px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     margin: 0;
+    padding-top: 4px;
+    padding-bottom: 0;
   }
 }
 
@@ -22,7 +24,7 @@
       width: 22px;
       height: 12px;
 
-      @media (min-width: $width_tablet) {
+      @media ($width_tablet) {
         width: 30px;
         height: 16px;
       }
@@ -33,7 +35,7 @@
     margin-top: -1px;
     margin-left: -3px;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       margin-top: -5px;
     }
 
@@ -41,7 +43,7 @@
       width: 17px;
       height: 17px;
 
-      @media (min-width: $width_tablet) {
+      @media ($width_tablet) {
         width: 23px;
         height: 23px;
       }
@@ -52,7 +54,7 @@
     margin-top: -2px;
     margin-right: 4px;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       margin-top: -8px;
     }
 
@@ -60,7 +62,7 @@
       width: 10px;
       height: 19px;
 
-      @media (min-width: $width_tablet) {
+      @media ($width_tablet) {
         width: 14px;
         height: 28px;
       }

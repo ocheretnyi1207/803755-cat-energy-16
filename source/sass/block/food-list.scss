@@ -4,13 +4,13 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     margin: 0;
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 1220px;
     padding-left: 0;
     padding-right: 0;
@@ -31,12 +31,12 @@
   padding: 30px 20px 22px 20px;
   margin-bottom: 20px;
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     margin-bottom: 30px;
     padding: 75px 50px 62px 52px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 570px;
     margin-left: 0;
     margin-right: 80px;
@@ -44,7 +44,7 @@
   }
 
   &:last-child {
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       margin-right: 0;
     }
   }
@@ -58,11 +58,11 @@
     top: 22px;
     left: 30px;
 
-    @media(min-width: $width_tablet) {
+    @media($width_tablet) {
       display: none;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       display: block;
       width: 71px;
       height: 97px;
@@ -80,11 +80,11 @@
     top: 33px;
     left: 13px;
 
-    @media(min-width: $width_tablet) {
+    @media($width_tablet) {
       display: none;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       display: block;
       width: 134px;
       height: 57px;
@@ -94,42 +94,42 @@
   }
 
   &--slim .food-list__title {
-    @media(min-width: $width_tablet) {
-      margin-bottom: 24px;
+    @media($width_tablet) {
+      margin-bottom: 26px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       margin-left: 162px;
       margin-bottom: 75px;
     }
   }
 
   &--slim .food-list__description {
-    @media(min-width: $width_tablet) {
+    @media($width_tablet) {
       width: 372px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       width: 462px;
     }
   }
 
   &--fat .food-list__description {
-    @media(min-width: $width_tablet) {
+    @media($width_tablet) {
       width: 340px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       width: 446px;
     }
   }
 
   &--fat .food-list__title {
-    @media(min-width: $width_tablet) {
+    @media($width_tablet) {
       margin-bottom: 27px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       margin-top: 1px;
       margin-left: 162px;
       margin-bottom: 75px;
@@ -155,12 +155,12 @@
     margin-bottom: 29px;
   }
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     margin-left: 0;
     font-size: 36px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     margin-left: 164px;
     margin-bottom: 80px;
   }
@@ -172,14 +172,14 @@
     border-radius: 50%;
     background-color: $color_4;
     position: absolute;
-    top: 24px;
+    top: 22px;
     left: 22px;
 
-    @media(min-width: $width_tablet) {
+    @media($width_tablet) {
       display: none;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       display: block;
       width: 100px;
       height: 100px;
@@ -192,7 +192,7 @@
 .food-list__wrap {
   margin-bottom: 18px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 57px;
@@ -211,8 +211,8 @@
       border-radius: 50%;
       background-color: $color_4;
       position: absolute;
-      top: -46px;
-      left: 1;
+      top: -47px;
+      left: -11px;
     }
 
     &--slim span::after {
@@ -222,7 +222,7 @@
       background-image: url("../img/icon-cat-slim.svg");
       position: absolute;
       top: -58px;
-      left: 30px;
+      left: 18px;
     }
 
     &--fat span::after {
@@ -231,12 +231,12 @@
       height: 113px;
       background-image: url("../img/icon-cat-pro.svg");
       position: absolute;
-      top: -2px;
-      left: -35px;
+      top: -4px;
+      left: -47px;
     }
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     margin-bottom: 31px;
 
     & span {
@@ -254,7 +254,7 @@
   font-family: $font-additional;
   color: $color_3;
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     border: none;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -271,7 +271,7 @@
   text-decoration: none;
   color: $color_1;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     font-size: 20px;
     line-height: 20px;
   }
@@ -293,12 +293,12 @@
     top: 5px;
     left: 97px;
 
-    @media (min-width: $width_tablet) {
-      top: 10px;
+    @media ($width_tablet) {
+      top: 9px;
       left: 132px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       top: 8px;
     }
   }
@@ -307,12 +307,12 @@
     top: 5px;
     left: 95px;
 
-    @media (min-width: $width_tablet) {
-      top: 10px;
+    @media ($width_tablet) {
+      top: 8px;
       left: 125px;
     }
 
-    @media (min-width: $width_desktop) {
+    @media ($width_desktop) {
       top: 8px;
     }
   }

@@ -1,0 +1,9 @@
+.maps-interactive {
+  width: 100%;
+  height: 363px;
+
+  @media ($width_tablet) {
+    height: 400px;
+  }
+}
+

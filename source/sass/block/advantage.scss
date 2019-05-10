@@ -1,11 +1,11 @@
 .advantage {
   margin-bottom: 45px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     margin-bottom: -3px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 1220px;
     @include center-block;
   }
@@ -20,14 +20,14 @@
   margin-left: 20px;
   margin-bottom: 30px;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     width: 708px;
     font-size: 60px;
     margin-left: 30px;
     margin-bottom: 72px;
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     @include center-block;
     margin: 0;
     margin-bottom: 74px;
@@ -40,7 +40,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media(min-width: $width_tablet) {
+  @media($width_tablet) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -54,7 +54,7 @@
     }
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
@@ -64,7 +64,7 @@
 .advantage__number {
   display: none;
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     display: block;
   }
 }
@@ -83,7 +83,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $width_tablet) {
+  @media ($width_tablet) {
     padding-left: 0;
     width: 324px;
     padding-top: 112px;
@@ -102,7 +102,7 @@
     }
   }
 
-  @media (min-width: $width_desktop) {
+  @media ($width_desktop) {
     width: 245px;
     margin-bottom: 65px;
   }
@@ -117,10 +117,10 @@
     height: 60px;
     background-color: $color_4;
     position: absolute;
-    top: -1px;
+    top: -2px;
     left: 0;
 
-    @media(min-width: $width_tablet) {
+    @media($width_tablet) {
       width: 80px;
       height: 80px;
       top: 0;
@@ -136,7 +136,7 @@
     top: 3px;
     left: 5px;
 
-    @media(min-width: $width_tablet) {
+    @media($width_tablet) {
       top: 15px;
       left: 15px;
     }
@@ -144,24 +144,44 @@
 
   &--vitamins::after {
     background-image: url('../img/advantage-leaf@1x.png');
+
+    @media ($retina-dpi), ($retina-dppx) {
+      background-image: url('../img/advantage-leaf@2x.png');
+      background-size: cover;
+    }
   }
 
   &--flour::after {
     background-image: url('../img/advantage-powder@1x.png');
+
+    @media ($retina-dpi), ($retina-dppx) {
+      background-image: url('../img/advantage-powder@2x.png');
+      background-size: cover;
+    }
   }
 
   &--food::after {
     background-image: url('../img/advantage-dining@1x.png');
+
+    @media ($retina-dpi), ($retina-dppx) {
+      background-image: url('../img/advantage-dining@2x.png');
+      background-size: cover;
+    }
   }
 
   &--time::after {
     background-image: url('../img/advantage-clock@1x.png');
+
+    @media ($retina-dpi), ($retina-dppx) {
+      background-image: url('../img/advantage-clock@2x.png');
+      background-size: cover;
+    }
   }
 
   &--vitamins .advantage__description {
     width: 100%;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       width: 201px;
       position: relative;
       z-index: 2;
@@ -171,7 +191,7 @@
   &--flour .advantage__description {
     width: 100%;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       width: 222px;
       position: relative;
       z-index: 2;
@@ -181,7 +201,7 @@
   &--food .advantage__description {
     width: 100%;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       width: 205px;
       position: relative;
       z-index: 2;
@@ -191,7 +211,7 @@
   &--time .advantage__description {
     width: 100%;
 
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       width: 246px;
       position: relative;
       z-index: 2;
@@ -199,28 +219,28 @@
   }
 
   &--vitamins .advantage__number {
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       top: -40px;
       left: 118px;
     }
   }
 
   &--flour .advantage__number {
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       top: -39px;
       left: 111px;
     }
   }
 
   &--food .advantage__number {
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       top: -39px;
       left: 113px;
     }
   }
 
   &--time .advantage__number {
-    @media (min-width: $width_tablet) {
+    @media ($width_tablet) {
       top: -39px;
       left: 114px;
     }

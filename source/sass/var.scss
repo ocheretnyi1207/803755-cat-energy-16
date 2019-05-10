@@ -1,6 +1,8 @@
 $width_mobile: 320px;
-$width_tablet: 768px;
-$width_desktop: 1300px;
+$width_tablet: "min-width: 768px";
+$width_desktop: "min-width: 1300px";
+$retina-dpi: "min-resolution: 144dpi";
+$retina-dppx: "min-resolution: 1.5dppx";
 $font-base: "Oswald", "Arial", sans-serif;
 $font-additional: "Arial", sans-serif;
 $color_1: #111111;

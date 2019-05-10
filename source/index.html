@@ -6,54 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+
+  </script>
+  <script src="./js/picturefill.min.js" async></script>
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__left"></div>
-    <div class="page-header__right"></div>
-    <div class="page-header__wrapper">
-      <div class="page-header__wrap">
-        <a class="page-header__logo">
-          <picture>
-            <source srcset="./img/logo-desktop.svg" media="(min-width: 1300px)">
-            <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
-            <img class="page-header__img" src="./img/logo-mobile.svg" alt="Логотип CatEnergy">
-          </picture>
-        </a>
-        <button class="page-header__btn" aria-label="Открыть меню"></button>
+    <div class="page-header__wrap">
+      <div class="page-header__wrap2">
+        <div class="page-header__wrap3">
+          <a class="page-header__logo">
+            <picture>
+              <source srcset="./img/logo-desktop.svg" media="(min-width: 1300px)">
+              <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)">
+              <img class="page-header__logoimage" src="./img/logo-mobile.svg" alt="Логотип CatEnergy">
+            </picture>
+          </a>
+          <button class="page-header__btn" type="button" aria-label="Открыть меню"></button>
+        </div>
+        <nav class="main-navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list__item">
+              <a class="navigation-list__link navigation-list__link--current" href="index.html">Главная</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation-list__item">
+              <a class="navigation-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list__item">
-            <a class="navigation-list__link navigation-list__link--current" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation-list__item">
-            <a class="navigation-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__promo">
+        <h1 class="page-header__title">
+          Функциональное питание для котов
+        </h1>
+        <p class="page-header__description">
+          Занялся собой? Займись котом!
+        </p>
+        <picture>
+          <source srcset="./img/index-can-desktop@1x.png, /img/index-can-desktop@2x.png 2x" media="(min-width: 1300px)">
+          <source srcset="./img/index-can-tablet@1x.jpg, ./img/index-can-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <img class="page-header__img" src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x"
+            alt="Функциональное питание Cat Energy">
+        </picture>
+        <a class="page-header__link" href="form.html">Подобрать программу</a>
+      </div>
     </div>
   </header>
   <main class="page-main">
     <section class="food">
-      <div class="food-promo">
-        <h1 class="food-promo__title">
-          Функциональное питание для котов
-        </h1>
-        <p class="food-promo__description">
-          Занялся собой? Займись котом!
-        </p>
-        <picture>
-          <source srcset="./img/index-can-desktop@1x.png" media="(min-width: 1300px)">
-          <source srcset="./img/index-can-tablet@1x.jpg" media="(min-width: 768px)">
-          <img class="food-promo__img" src="./img/index-can-mobile@1x.png" alt="Функциональное питание Cat Energy">
-        </picture>
-      <a class="food__link" href="#">Подобрать программу</a>
-      </div>
       <ul class="food-list">
         <li class="food-list__item food-list__item--slim">
           <h3 class="food-list__title food-list__title--slim">Похудение</h3>
@@ -64,7 +71,7 @@
             </p>
             <span></span>
           </div>
-          <a class="food-list__link food-list__link--slim" href="#">Каталог Slim</a>
+          <a class="food-list__link food-list__link--slim" href="catalog-slim.html">Каталог Slim</a>
         </li>
         <li class="food-list__item food-list__item--fat">
           <h3 class="food-list__title food-list__title--fat">Набор массы</h3>
@@ -75,7 +82,7 @@
             </p>
             <span></span>
           </div>
-          <a class="food-list__link food-list__link--fat" href="#">Каталог Pro</a>
+          <a class="food-list__link food-list__link--fat" href="catalog-pro.html">Каталог Pro</a>
         </li>
       </ul>
     </section>
@@ -95,7 +102,8 @@
           <p class="advantage__number">3</p>
         </li>
         <li class="advantage__item advantage__item--time">
-          <p class="advantage__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <p class="advantage__description">Уже через месяц наслаждайтесь изменениями к лучшему &nbsp; вашего питомца!
+          </p>
           <p class="advantage__number">4</p>
         </li>
       </ul>
@@ -129,47 +137,57 @@
             </div>
           </div>
           <div class="example__wrapping3">
-            <picture>
-              <source srcset="./img/before-desktop@1x.png" media="(min-width: 1300px)">
-              <source srcset="./img/before-tablet@1x.png" media="(min-width: 768px)">
-              <img class="example__img1" src="./img/before-mobile@1x.png" alt="Cat">
-            </picture>
-            <picture>
-              <source srcset="./img/after-desktop@1x.png" media="(min-width: 1300px)">
-              <source srcset="./img/after-tablet@1x.png" media="(min-width: 768px)">
-              <img class="example__img2" src="./img/after-mobile@1x.png" alt="Cat">
-            </picture>
+            <div class="example__center">
+              <picture>
+                <source srcset="./img/before-desktop@1x.png, ./img/before-desktop@2x.png 2x"
+                  media="(min-width: 1300px)">
+                <source srcset="./img/before-tablet@1x.png, ./img/before-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="example__img1" src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x"
+                  alt="Cat">
+              </picture>
+              <picture>
+                <source srcset="./img/after-desktop@1x.png, ./img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
+                <source srcset="./img/after-tablet@1x.png, ./img/after-tablet@2x.png 2x" media="(min-width: 768px)">
+                <img class="example__img2" src="./img/after-mobile@1x.png" srcset="./img/after-mobile@2x.png 2x"
+                  alt="Cat">
+              </picture>
+            </div>
             <div class="example__progress">
-              <div class="example__center">
-                <button>Было</button>
+              <div class="example__wrap3">
+                <button class="example__btn" type="button">Было</button>
                 <div class="example__rangebar">
                   <div class="example__progressbar"></div>
-                  <div class="example__slider"></div>
+                  <div class="example__slider" tabindex="0"></div>
                 </div>
-                <button>Стало</button>
+                <button class="example__btn" type="button">Стало</button>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
     <div class="page-main__wrap">
-      <div class="cooperation">
-        <p>Приглашаем <br> к сотрудничеству дилеров!</p>
-        <div class="cooperation__wrap">
-          <p>
-            ул. Большая Конюшенная, д. 19/8
-          </p>
-          <p>
-            Санкт-Петербург
-          </p>
+      <div class="maps-interactive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557411364483!5m2!1sru!2sru"
+          width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="page-main__wrap2">
+        <div class="cooperation">
+          <p>Приглашаем <br> к сотрудничеству дилеров!</p>
+          <div class="cooperation__wrap">
+            <p>
+              ул. Большая Конюшенная, д. 19/8
+            </p>
+            <p>
+              Санкт-Петербург
+            </p>
+          </div>
         </div>
+        <div class="maps-static"></div>
       </div>
-      <div class="maps">
-        <div class="maps__static"></div>
-        <div class="maps__interactive"></div>
-      </div>
+    </div>
   </main>
-  </div>
   <footer class="page-footer">
     <div class="page-footer__center">
       <a class="page-footer__logo">
@@ -208,7 +226,6 @@
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="34.789 -4.709 13.518 27.75">
                 <path fill="#666666"
                   d="M44.32 23.041h-6.816V10.137h-2.715V3.763h2.629c-.202-2.887.298-5 1.519-6.444 1.039-1.229 2.583-1.911 4.588-2.026l4.782-.001v6.15h-3.755c-.166.315-.251 1.093-.252 2.321h3.978v6.375H44.32v12.903zm-5.316-1.5h3.816V8.637h3.957V5.263h-3.953l-.016-.734c-.044-2.04.002-3.784 1.007-4.46l.19-.127h2.801v-3.15h-3.239c-1.557.091-2.711.581-3.485 1.496-1.041 1.231-1.41 3.298-1.099 6.144l.092.832h-2.786v3.375h2.715v12.902z" />
-                </path>
               </svg>
             </a>
           </li>
