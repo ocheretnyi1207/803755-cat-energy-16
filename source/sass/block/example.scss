@@ -2,14 +2,17 @@
   position: relative;
   background-color: $color_5;
   padding-top: 18px;
+  padding-bottom: 114px;
 
   @media ($width_tablet) {
     background-color: $color_2;
     padding-top: 44px;
+    padding-bottom: 194px;
   }
 
   @media ($width_desktop) {
     padding-top: 63px;
+    padding-bottom: 0;
   }
 }
 
@@ -35,6 +38,7 @@
 }
 
 .example__wrap {
+
   @media ($width_desktop) {
     width: 1220px;
     @include center-block;
@@ -42,6 +46,7 @@
 }
 
 .example__wrap2 {
+
   @media ($width_desktop) {
     width: 100%;
     background-color: $color_5;
@@ -49,6 +54,7 @@
 }
 
 .example__wrapping {
+
   @media ($width_desktop) {
     width: 1220px;
     @include center-block;
@@ -57,6 +63,7 @@
 }
 
 .example__wrapping2 {
+
   @media ($width_desktop) {
     padding-top: 71px;
     margin-right: auto;
@@ -64,6 +71,7 @@
 }
 
 .example__wrapping3 {
+
   width: 320px;
   @include center-block;
 
@@ -76,6 +84,17 @@
   @media ($width_desktop) {
     width: 650px;
     position: relative;
+  }
+}
+
+.example__center {
+  @media ($width_tablet) {
+    width: 677px;
+    @include center-block;
+  }
+
+  @media ($width_desktop) {
+    width: 690px;
   }
 }
 
@@ -246,14 +265,16 @@
 
 .example__img1 {
   display: block;
+  width: 320px;
+  height: 240px;
   @include center-block;
   margin-bottom: 33px;
 
   @media ($width_tablet) {
+    width: 690px;
+    height: 517px;
     position: absolute;
     top: 450px;
-    left: 51%;
-    transform: translateX(-50%);
   }
 
   @media ($width_desktop) {
@@ -290,9 +311,9 @@
 
   @media ($width_tablet) {
     width: 583px;
+    @include center-block;
     display: flex;
     justify-content: space-between;
-    margin-left: 92px;
   }
 
   @media ($width_desktop) {
@@ -355,7 +376,7 @@
 
   @media ($width_tablet) {
     position: absolute;
-    top: -13px;
+    top: -16px;
     left: 198px;
     display: block;
     width: 34px;

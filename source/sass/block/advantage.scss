@@ -144,18 +144,38 @@
 
   &--vitamins::after {
     background-image: url('../img/advantage-leaf@1x.png');
+
+    @media ($retina-dpi), ($retina-dppx) {
+      background-image: url('../img/advantage-leaf@2x.png');
+      background-size: cover;
+    }
   }
 
   &--flour::after {
     background-image: url('../img/advantage-powder@1x.png');
+
+    @media ($retina-dpi), ($retina-dppx) {
+      background-image: url('../img/advantage-powder@2x.png');
+      background-size: cover;
+    }
   }
 
   &--food::after {
     background-image: url('../img/advantage-dining@1x.png');
+
+    @media ($retina-dpi), ($retina-dppx) {
+      background-image: url('../img/advantage-dining@2x.png');
+      background-size: cover;
+    }
   }
 
   &--time::after {
     background-image: url('../img/advantage-clock@1x.png');
+
+    @media ($retina-dpi), ($retina-dppx) {
+      background-image: url('../img/advantage-clock@2x.png');
+      background-size: cover;
+    }
   }
 
   &--vitamins .advantage__description {

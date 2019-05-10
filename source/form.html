@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Каталог</title>
   <link rel="stylesheet" href="./css/style.css">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+
+  </script>
+  <script src="./js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -118,25 +124,27 @@
             <li>
               <input class="program-selection__control program-selection__control--checkbox visuallyhidden"
                 type="checkbox" name="sweetener" id="sweetener-field" checked>
-              <label class="program-selection__label program-selection__label--checkbox"
-                for="sweetener-field" tabindex="0">Сахарозаменитель</label>
+              <label class="program-selection__label program-selection__label--checkbox" for="sweetener-field"
+                tabindex="0">Сахарозаменитель</label>
             </li>
             <li>
               <input class="program-selection__control program-selection__control--checkbox visuallyhidden"
                 type="checkbox" name="water" id="water-field">
-              <label class="program-selection__label program-selection__label--checkbox" for="water-field" tabindex="0">Питьевая
+              <label class="program-selection__label program-selection__label--checkbox" for="water-field"
+                tabindex="0">Питьевая
                 вода</label>
             </li>
             <li>
               <input class="program-selection__control program-selection__control--checkbox visuallyhidden"
                 type="checkbox" name="milk" id="milk-field">
-              <label class="program-selection__label program-selection__label--checkbox" for="milk-field" tabindex="0">Молоко</label>
+              <label class="program-selection__label program-selection__label--checkbox" for="milk-field"
+                tabindex="0">Молоко</label>
             </li>
             <li>
               <input class="program-selection__control program-selection__control--checkbox visuallyhidden"
                 type="checkbox" name="vitamins" id="vitamins-field">
-              <label class="program-selection__label program-selection__label--checkbox"
-                for="vitamins-field" tabindex="0">Витамины</label>
+              <label class="program-selection__label program-selection__label--checkbox" for="vitamins-field"
+                tabindex="0">Витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -147,20 +155,24 @@
       </div>
     </form>
     <div class="page-main__wrap">
-      <div class="cooperation cooperation--form">
-        <p>Приглашаем <br> к сотрудничеству дилеров!</p>
-        <div class="cooperation__wrap cooperation__wrap--form">
-          <p>
-            ул. Большая Конюшенная, д. 19/8
-          </p>
-          <p>
-            Санкт-Петербург
-          </p>
-        </div>
+      <div class="maps-interactive">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300316!2d30.320858716173465!3d59.93871916905408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557411364483!5m2!1sru!2sru"
+          width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-      <div class="maps">
-        <div class="maps__static maps__static--catalog"></div>
-        <div class="maps__interactive"></div>
+      <div class="page-main__wrap2">
+        <div class="cooperation cooperation--form">
+          <p>Приглашаем <br> к сотрудничеству дилеров!</p>
+          <div class="cooperation__wrap cooperation__wrap--form">
+            <p>
+              ул. Большая Конюшенная, д. 19/8
+            </p>
+            <p>
+              Санкт-Петербург
+            </p>
+          </div>
+        </div>
+        <div class="maps-static"></div>
       </div>
     </div>
   </main>

@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   padding: 29px 23px 25px 19px;
+  background-color: $color_2;
 
   @media ($width_tablet) {
     padding: 66px 72px 56px 71px;
-    background-color: $color_2;
   }
 
   @media ($width_desktop) {
@@ -29,7 +29,7 @@
     text-transform: uppercase;
 
     @media ($width_tablet) {
-      width: 154px;
+      width: 156px;
       font-size: 20px;
       line-height: 25px;
     }

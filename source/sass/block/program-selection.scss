@@ -1,12 +1,13 @@
 .program-selection {
   width: 100%;
+  padding-bottom: 114px;
 
   @media ($width_tablet) {
-    margin-bottom: 71px;
+    padding-bottom: 265px;
   }
 
   @media ($width_desktop) {
-    margin-bottom: 81px;
+    padding-bottom: 81px;
   }
 }
 
