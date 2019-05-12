@@ -84,7 +84,8 @@
     }
 
     @media ($width_desktop) {
-      margin-left: 40px;
+      width: 1220px;
+      @include center-block;
     }
   }
 
