@@ -11,17 +11,9 @@
   }
 }
 
-.program-selection__wrappers {
-  width: 283px;
-  @include center-block;
-
-  @media ($width_tablet) {
-    width: 631px;
-  }
-}
-
 .program-selection__item {
   width: 280px;
+
   @include center-block;
   display: flex;
   margin-bottom: 10px;
@@ -229,14 +221,22 @@
     width: 1220px;
     display: flex;
     justify-content: space-between;
+
     @include center-block;
     margin-bottom: 91px;
     padding: 0;
-
   }
 }
 
 .program-selection__wrappers {
+  width: 283px;
+
+  @include center-block;
+
+  @media ($width_tablet) {
+    width: 631px;
+  }
+
   @media ($width_desktop) {
     width: 570px;
     margin: 0;
@@ -260,6 +260,7 @@
 
   &--text {
     outline: none;
+
     @include program-selection-control;
     opacity: 0.5;
     height: 45px;
@@ -319,7 +320,7 @@
     }
   }
 
-  &--radio:checked+.program-selection__label--radio::after {
+  &--radio:checked + .program-selection__label--radio::after {
     background-color: $color_4;
   }
 
@@ -327,6 +328,7 @@
     outline: none;
     width: 219px;
     height: 45px;
+
     @include program-selection-control;
     padding-right: 36px;
     opacity: 0.5;
@@ -362,6 +364,7 @@
     outline: none;
     width: 204px;
     height: 45px;
+
     @include program-selection-control;
     padding-right: 36px;
     opacity: 0.5;
@@ -392,7 +395,7 @@
     }
   }
 
-  &--checkbox:checked+.program-selection__label--checkbox::after {
+  &--checkbox:checked + .program-selection__label--checkbox::after {
     background-image: url("../img/icon-tick.svg");
   }
 
@@ -400,6 +403,7 @@
     display: block;
     width: 280px;
     height: 150px;
+
     @include program-selection-control;
     @include center-block;
     padding-top: 13px;
@@ -427,6 +431,7 @@
 
   @media ($width_tablet) {
     width: 631px;
+
     @include center-block;
     border: 1px solid $color_8;
     padding-bottom: 33px;
@@ -439,6 +444,7 @@
 
   li {
     width: 280px;
+
     @include center-block;
     margin-bottom: 24px;
 
@@ -526,7 +532,7 @@
   @media ($width_tablet) {
     padding-left: 57px;
     padding-right: 52px;
-    margin-bottom:57px;
+    margin-bottom: 57px;
   }
 
   @media ($width_desktop) {
@@ -560,6 +566,7 @@
 
 .program-selection__wrap3 {
   width: 280px;
+
   @include center-block;
 
   @media ($width_tablet) {
@@ -581,6 +588,7 @@
 
   &--contacts {
     width: 280px;
+
     @include center-block;
     padding-top: 66px;
 
@@ -596,6 +604,7 @@
 
   &--comments {
     width: 280px;
+
     @include center-block;
     padding-top: 41px;
 
@@ -611,6 +620,7 @@
 
   &--additionaly {
     width: 280px;
+
     @include center-block;
     padding-top: 21px;
     margin-bottom: 31px;
@@ -683,6 +693,7 @@
 .program-selection__btn {
   display: block;
   width: 280px;
+
   @include center-block;
   font-family: $font-base;
   font-size: 16px;

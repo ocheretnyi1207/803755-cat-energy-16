@@ -19,6 +19,7 @@
 
     &--catalog {
       width: 1300px;
+
       @include center-block;
       padding-top: 53px;
       padding-left: 40px;
@@ -35,11 +36,11 @@
 .page-header__wrap {
   @media ($width_tablet) {
     width: 100%;
-
   }
 
   @media ($width_desktop) {
     width: 1300px;
+
     @include center-block;
   }
 
@@ -78,7 +79,7 @@
   padding-right: 20px;
   margin-bottom: 12px;
 
-  @media($width_tablet) {
+  @media ($width_tablet) {
     width: 174px;
     margin: 0;
     margin-right: auto;
@@ -116,7 +117,7 @@
   border: none;
   position: relative;
 
-  @media($width_tablet) {
+  @media ($width_tablet) {
     display: none;
   }
 
@@ -124,7 +125,7 @@
     content: "";
     width: 19px;
     height: 19px;
-    background-image: url('../img/icon-close.svg');
+    background-image: url("../img/icon-close.svg");
     position: absolute;
     top: -2px;
     left: 3px;
@@ -134,20 +135,21 @@
 .page-header__promo {
   position: relative;
   width: 320px;
+
   @include center-block;
-  background-image: url('../img/index-background-mobile@1x.jpg');
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   padding-top: 27px;
   margin-bottom: 22px;
   min-height: 295px;
 
   @media ($retina-dpi),
-  ($retina-dppx) {
-    background-image: url('../img/index-background-mobile@2x.jpg');
+    ($retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
     background-size: 320px auto;
   }
 
-  @media($width_tablet) {
+  @media ($width_tablet) {
     width: 709px;
     background-image: none;
     padding-top: 0;
@@ -164,6 +166,7 @@
 .page-header__title {
   width: 250px;
   margin: 0;
+
   @include center-block;
   font-size: 36px;
   line-height: 36px;
@@ -197,7 +200,7 @@
   color: $color_2;
   margin-bottom: 28px;
 
-  @media($width_tablet) {
+  @media ($width_tablet) {
     font-size: 20px;
     line-height: 20px;
     color: $color_1;
@@ -215,6 +218,7 @@
 .page-header__img {
   display: block;
   width: 280px;
+
   @include center-block;
 
   @media ($width_tablet) {
@@ -225,8 +229,8 @@
 
   @media ($width_desktop) {
     width: 552px;
-    top: -80px;
-    left: 492px;
+    top: -81px;
+    left: 490px;
   }
 }
 
@@ -234,6 +238,7 @@
   position: relative;
   display: block;
   width: 280px;
+
   @include center-block;
   margin-top: 3px;
   padding-top: 12px;

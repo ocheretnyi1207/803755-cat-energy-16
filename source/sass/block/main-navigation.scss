@@ -13,11 +13,11 @@
     background-repeat: no-repeat;
   }
 
-  @media($width_desktop) and ($retina-dpi),
-        ($width_desktop) and ($retina-dppx) {
-          background-image: url('../img/index-background-desktop@2x.jpg');
-          background-size: cover;
-        }
+  @media ($width_desktop) and ($retina-dpi),
+    ($width_desktop) and ($retina-dppx) {
+    background-image: url("../img/index-background-desktop@2x.jpg");
+    background-size: cover;
+  }
 
   @media ($width_desktop) {
     &--catalog {

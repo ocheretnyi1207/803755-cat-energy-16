@@ -22,6 +22,7 @@
 .additional-products__wrap2 {
   @media ($width_desktop) {
     width: 1220px;
+
     @include center-block;
     display: flex;
     padding-top: 91px;
@@ -79,7 +80,6 @@
 }
 
 .additional-products__wrap4 {
-
   @media ($width_tablet) {
     display: flex;
     margin-bottom: 22px;
@@ -227,6 +227,7 @@
 
 .additional-products__all {
   width: 280px;
+
   @include center-block;
   background-color: #61d71a;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -249,10 +250,10 @@
   }
 
   @media ($width_tablet) and ($retina-dpi),
-         ($width_tablet) and ($retina-dppx) {
-           background-image: url("../img/gift-photo-tablet@2x.jpg");
-           background-size: 708px auto;
-         }
+    ($width_tablet) and ($retina-dppx) {
+    background-image: url("../img/gift-photo-tablet@2x.jpg");
+    background-size: 708px auto;
+  }
 
   @media ($width_desktop) {
     width: 245px;
@@ -264,9 +265,9 @@
   }
 
   @media ($width_desktop) and ($retina-dpi),
-         ($width_desktop) and ($retina-dppx) {
-           background-image: url("../img/gift-photo-desktop@2x.jpg");
-           background-size: 245px auto;
+    ($width_desktop) and ($retina-dppx) {
+    background-image: url("../img/gift-photo-desktop@2x.jpg");
+    background-size: 245px auto;
   }
 
 
@@ -293,6 +294,7 @@
 
   p {
     width: 161px;
+
     @include center-block;
     text-align: center;
     font-family: $font-additional;

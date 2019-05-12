@@ -49,7 +49,7 @@ gulp.task("webp", function () {
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/sprite-*.svg")
-    .pipe(svgstore({inlineSVG: true
+    .pipe(svgstore({inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img/"))
@@ -65,7 +65,7 @@ gulp.task("html", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -73,7 +73,14 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
+  gulp.watch("source/img/sprite-*.svg", gulp.series("sprite", "html", "refresh"));
+  gulp.watch("source/*.html", gulp.series("html", "refresh"));
   gulp.watch("source/*.html").on("change", server.reload);
+});
+
+gulp.task("refresh", function (done) {
+  server.reload();
+  done();
 });
 
 gulp.task("copy", function () {

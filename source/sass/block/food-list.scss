@@ -14,6 +14,7 @@
     width: 1220px;
     padding-left: 0;
     padding-right: 0;
+
     @include center-block;
     display: flex;
   }
@@ -26,12 +27,13 @@
 .food-list__item {
   position: relative;
   width: 100%;
+
   @include center-block;
   background-color: $color_5;
   padding: 30px 20px 22px 20px;
   margin-bottom: 20px;
 
-  @media($width_tablet) {
+  @media ($width_tablet) {
     margin-bottom: 30px;
     padding: 75px 50px 62px 52px;
   }
@@ -58,7 +60,7 @@
     top: 22px;
     left: 30px;
 
-    @media($width_tablet) {
+    @media ($width_tablet) {
       display: none;
     }
 
@@ -80,7 +82,7 @@
     top: 33px;
     left: 13px;
 
-    @media($width_tablet) {
+    @media ($width_tablet) {
       display: none;
     }
 
@@ -94,7 +96,7 @@
   }
 
   &--slim .food-list__title {
-    @media($width_tablet) {
+    @media ($width_tablet) {
       margin-bottom: 26px;
     }
 
@@ -105,7 +107,7 @@
   }
 
   &--slim .food-list__description {
-    @media($width_tablet) {
+    @media ($width_tablet) {
       width: 372px;
     }
 
@@ -115,7 +117,7 @@
   }
 
   &--fat .food-list__description {
-    @media($width_tablet) {
+    @media ($width_tablet) {
       width: 340px;
     }
 
@@ -125,7 +127,7 @@
   }
 
   &--fat .food-list__title {
-    @media($width_tablet) {
+    @media ($width_tablet) {
       margin-bottom: 27px;
     }
 
@@ -155,7 +157,7 @@
     margin-bottom: 29px;
   }
 
-  @media($width_tablet) {
+  @media ($width_tablet) {
     margin-left: 0;
     font-size: 36px;
   }
@@ -175,7 +177,7 @@
     top: 22px;
     left: 22px;
 
-    @media($width_tablet) {
+    @media ($width_tablet) {
       display: none;
     }
 
@@ -254,7 +256,7 @@
   font-family: $font-additional;
   color: $color_3;
 
-  @media($width_tablet) {
+  @media ($width_tablet) {
     border: none;
     padding-bottom: 0;
     margin-bottom: 0;
@@ -280,7 +282,7 @@
     content: "";
     width: 25px;
     height: 12px;
-    background-image: url('../img/icon-right-arrow-long.svg');
+    background-image: url("../img/icon-right-arrow-long.svg");
     position: absolute;
   }
 

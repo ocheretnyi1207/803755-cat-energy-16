@@ -3,6 +3,7 @@
   position: relative;
   width: 320px;
   height: 363px;
+
   @include center-block;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
@@ -44,11 +45,11 @@
     height: 400px;
   }
 
-  @media($width_tablet) and ($retina-dpi),
-        ($width_tablet) and ($retina-dppx) {
-          background-image: url("../img/bg-map-tablet@2x.png");
-          background-size: 767px auto;
-        }
+  @media ($width_tablet) and ($retina-dpi),
+    ($width_tablet) and ($retina-dppx) {
+    background-image: url("../img/bg-map-tablet@2x.png");
+    background-size: 767px auto;
+  }
 
   @media ($width_desktop) {
     width: 100%;
@@ -58,14 +59,13 @@
   }
 
   @media ($width_desktop) and ($retina-dpi),
-         ($width_desktop) and ($retina-dppx) {
-           background-image: url("../img/bg-map-desktop@2x.png");
-           background-size: cover;
-         }
+    ($width_desktop) and ($retina-dppx) {
+    background-image: url("../img/bg-map-desktop@2x.png");
+    background-size: cover;
+  }
 }
 
 .maps__static {
-
   &--catalog {
     @media ($width_desktop) {
       background-position: -70px -2px;

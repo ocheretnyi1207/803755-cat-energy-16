@@ -38,15 +38,14 @@
 }
 
 .example__wrap {
-
   @media ($width_desktop) {
     width: 1220px;
+
     @include center-block;
   }
 }
 
 .example__wrap2 {
-
   @media ($width_desktop) {
     width: 100%;
     background-color: $color_5;
@@ -54,16 +53,15 @@
 }
 
 .example__wrapping {
-
   @media ($width_desktop) {
     width: 1220px;
+
     @include center-block;
     display: flex;
   }
 }
 
 .example__wrapping2 {
-
   @media ($width_desktop) {
     padding-top: 71px;
     margin-right: auto;
@@ -73,6 +71,7 @@
 .example__wrapping3 {
 
   width: 320px;
+
   @include center-block;
 
   @media ($width_tablet) {
@@ -90,6 +89,7 @@
 .example__center {
   @media ($width_tablet) {
     width: 677px;
+
     @include center-block;
   }
 
@@ -151,6 +151,7 @@
 
 .example__wrappers2 {
   width: 280px;
+
   @include center-block;
   display: flex;
   justify-content: space-between;
@@ -267,6 +268,7 @@
   display: block;
   width: 320px;
   height: 240px;
+
   @include center-block;
   margin-bottom: 33px;
 
@@ -279,7 +281,7 @@
 
   @media ($width_desktop) {
     top: -190px;
-    left: 0px;
+    left: 0;
     transform: none;
   }
 }
@@ -311,6 +313,7 @@
 
   @media ($width_tablet) {
     width: 583px;
+
     @include center-block;
     display: flex;
     justify-content: space-between;
@@ -385,7 +388,7 @@
     background-color: $color_2;
     border: 1px solid $color_8;
 
-    &:after {
+    &::after {
       content: "";
       width: 8px;
       height: 8px;

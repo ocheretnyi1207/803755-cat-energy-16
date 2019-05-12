@@ -15,7 +15,7 @@
   display: block;
   margin-bottom: 29px;
 
-  @media($width_tablet) {
+  @media ($width_tablet) {
     margin-bottom: 0;
     margin-right: 27px;
   }
@@ -27,7 +27,7 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media($width_tablet) {
+  @media ($width_tablet) {
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -35,6 +35,7 @@
 
   @media ($width_desktop) {
     width: 1220px;
+
     @include center-block;
   }
 }

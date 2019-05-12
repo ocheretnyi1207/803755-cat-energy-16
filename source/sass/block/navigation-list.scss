@@ -38,7 +38,7 @@
   &:first-child {
     border-top: 1px solid $color_6;
 
-    @media($width_tablet) {
+    @media ($width_tablet) {
       border-top: none;
     }
   }
@@ -74,7 +74,6 @@
   }
 
   &--current {
-
     @media ($width_tablet) {
       padding-bottom: 6px;
       border-bottom: 2px solid $color_4;
@@ -86,7 +85,6 @@
   }
 
   &--catalog--current {
-
     @media ($width_tablet) {
       padding-bottom: 6px;
       border-bottom: 2px solid $color_4;

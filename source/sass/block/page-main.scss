@@ -37,9 +37,9 @@
 }
 
 .page-main__center {
-
   &--form {
     width: 280px;
+
     @include center-block;
 
     @media ($width_tablet) {
@@ -71,6 +71,7 @@
 
   @media ($width_desktop) {
     width: 1220px;
+
     @include center-block;
   }
 
@@ -85,6 +86,7 @@
 
     @media ($width_desktop) {
       width: 1220px;
+
       @include center-block;
     }
   }
@@ -158,6 +160,7 @@
   @media ($width_desktop) {
     width: 1300px;
     height: 400px;
+
     @include center-block;
     position: relative;
     margin-top: -400px;
