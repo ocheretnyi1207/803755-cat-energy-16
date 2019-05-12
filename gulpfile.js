@@ -15,6 +15,7 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso=require("gulp-csso");
 var del=require("del");
+var htmlmin = require("gulp-htmlmin");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -63,6 +64,12 @@ gulp.task("html", function () {
     .pipe(gulp.dest("build"))
 });
 
+gulp.task("html-minify", function () {
+  return gulp.src("build/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "build/",
@@ -102,5 +109,5 @@ gulp.task ("clean-source-webp", function () {
   return del("source/img/*.webp")
 });
 
-gulp.task("build", gulp.series("clean", "css", "image", "webp", "copy", "clean-source-webp", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "css", "image", "webp", "copy", "clean-source-webp", "sprite", "html", "html-minify"));
 gulp.task("start", gulp.series("build", "server"));
