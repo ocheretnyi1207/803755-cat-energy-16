@@ -59,18 +59,30 @@
 
   @media ($width_desktop) {
     color: $color_2;
-
-    &--catalog {
-      color: $color_1;
-    }
   }
 
   &:hover {
     color: $main_menu_hover;
+    border-bottom: none;
   }
 
   &:active {
     color: $main_menu_down;
+    border-bottom: none;
+  }
+
+  &--catalog {
+    @media ($width_desktop) {
+      color: $color_1;
+
+      &:hover {
+        color: $main_menu_catalog_hover;
+      }
+
+      &:active {
+        color: $main_menu_catalog_active;
+      }
+    }
   }
 
   &--current {

@@ -109,6 +109,14 @@
         left: -48px;
       }
     }
+
+    &:hover::before {
+      border: 1px solid $color_12;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &--checkbox {
@@ -154,6 +162,14 @@
         top: 8px;
         left: -49px;
       }
+    }
+
+    &:hover::before {
+      border: 1px solid $color_12;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 
@@ -260,9 +276,9 @@
 
   &--text {
     outline: none;
+    border: 1px solid rgba(205, 205, 205, 0.5);
 
     @include program-selection-control;
-    opacity: 0.5;
     height: 45px;
 
     @media ($width_tablet) {
@@ -276,10 +292,10 @@
     }
 
     &:hover {
-      opacity: 1;
+      border: 1px solid $color_8;
     }
 
-    &:active {
+    &:focus {
       border: 2px solid $color_3;
     }
   }
@@ -328,10 +344,10 @@
     outline: none;
     width: 219px;
     height: 45px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
 
     @include program-selection-control;
     padding-right: 36px;
-    opacity: 0.5;
 
     @media ($width_tablet) {
       width: 551px;
@@ -352,10 +368,10 @@
     }
 
     &:hover {
-      opacity: 1;
+      border: 1px solid $color_8;
     }
 
-    &:active {
+    &:focus {
       border: 2px solid $color_3;
     }
   }
@@ -364,10 +380,10 @@
     outline: none;
     width: 204px;
     height: 45px;
+    border: 1px solid rgba(205, 205, 205, 0.5);
 
     @include program-selection-control;
     padding-right: 36px;
-    opacity: 0.5;
 
     @media ($width_tablet) {
       width: 535px;
@@ -387,10 +403,10 @@
     }
 
     &:hover {
-      opacity: 1;
+      border: 1px solid $color_8;
     }
 
-    &:active {
+    &:focus {
       border: 2px solid $color_3;
     }
   }
@@ -421,6 +437,7 @@
     }
   }
 }
+
 
 .program-selection__list {
   @include list-reset;

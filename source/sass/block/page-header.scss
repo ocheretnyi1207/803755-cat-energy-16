@@ -33,6 +33,20 @@
   }
 }
 
+.page-header__overwrap {
+  @media ($width_desktop) {
+    width: 100%;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 720px auto;
+    background-position: left 50vw top;
+  }
+
+  @media (min-width: 1440px) {
+    background-position: right;
+  }
+}
+
 .page-header__wrap {
   @media ($width_tablet) {
     width: 100%;
@@ -104,6 +118,14 @@
   @media ($width_desktop) {
     width: 203px;
     height: 60px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -266,5 +288,13 @@
   @media ($width_desktop) {
     margin-left: 122px;
     margin-bottom: 180px;
+  }
+
+  &:hover {
+    background-color: $btn_hover;
+  }
+
+  &:active {
+    color: $btn_active;
   }
 }

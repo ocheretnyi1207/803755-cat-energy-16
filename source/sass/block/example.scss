@@ -340,6 +340,14 @@
     margin-top: -5px;
     padding-bottom: 5px;
     border-bottom: 1px dotted $color_8;
+
+    &:hover {
+      border-bottom: 1px solid $color_8;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -378,6 +386,7 @@
   display: none;
 
   @media ($width_tablet) {
+    outline: none;
     position: absolute;
     top: -16px;
     left: 198px;
@@ -387,6 +396,17 @@
     border-radius: 50%;
     background-color: $color_2;
     border: 1px solid $color_8;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $color_4;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
 
     &::after {
       content: "";
@@ -397,6 +417,17 @@
       position: absolute;
       top: 12px;
       left: 12px;
+    }
+
+    &:active::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $color_4;
+      position: absolute;
+      top: 11px;
+      left: 11px;
     }
   }
 }

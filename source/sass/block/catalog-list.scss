@@ -208,6 +208,14 @@
   &--show {
     background-color: $color_5;
     color: $color_3;
+
+    &:hover {
+      background-color: $color_11;
+    }
+
+    &:active {
+      color: $btn_show_all;
+    }
   }
 }
 
