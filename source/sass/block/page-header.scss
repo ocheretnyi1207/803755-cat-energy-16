@@ -42,6 +42,12 @@
     background-position: left 50vw top;
   }
 
+  @media ($width_desktop) and ($retina-dpi),
+    ($width_desktop) and ($retina-dppx) {
+    background-image: url("../img/index-background-desktop@2x.jpg");
+    background-size: 720px auto;
+  }
+
   @media (min-width: 1440px) {
     background-position: right;
   }
