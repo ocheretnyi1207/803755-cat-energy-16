@@ -68,3 +68,23 @@
     }
   }
 }
+
+.social-icons__link {
+  .social-icons__vk,
+  .social-icons__insta,
+  .social-icons__fb {
+    fill: #666666;
+  }
+
+  &:hover .social-icons__vk,
+  &:hover .social-icons__insta,
+  &:hover .social-icons__fb {
+    fill: $color_4;
+  }
+
+  &:active .social-icons__vk,
+  &:active .social-icons__insta,
+  &:active .social-icons__fb {
+    opacity: 0.3;
+  }
+}

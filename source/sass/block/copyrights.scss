@@ -22,4 +22,18 @@
     font-family: $font-additional;
     color: $color_3;
   }
+
+  &--image {
+    .copyrights__icon-academy {
+      fill: #666666;
+    }
+
+    &:hover .copyrights__icon-academy {
+      fill: $color_4;
+    }
+
+    &:active .copyrights__icon-academy {
+      opacity: 0.3;
+    }
+  }
 }

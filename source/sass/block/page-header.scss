@@ -34,8 +34,9 @@
 }
 
 .page-header__overwrap {
+  width: 100%;
+
   @media ($width_desktop) {
-    width: 100%;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 720px auto;

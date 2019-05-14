@@ -52,6 +52,15 @@
     color: $color_9;
     font-weight: 400;
 
+    &:hover {
+      color: $main_menu_catalog_hover;
+    }
+
+    &:active {
+      color: $main_menu_catalog_active;
+      border-bottom: none;
+    }
+
     &--active {
       border-bottom: $color_4;
     }
@@ -59,17 +68,17 @@
 
   @media ($width_desktop) {
     color: $color_2;
+
+    &:hover {
+      color: $main_menu_hover;
+    }
+
+    &:active {
+      color: $main_menu_down;
+      border-bottom: none;
+    }
   }
 
-  &:hover {
-    color: $main_menu_hover;
-    border-bottom: none;
-  }
-
-  &:active {
-    color: $main_menu_down;
-    border-bottom: none;
-  }
 
   &--catalog {
     @media ($width_desktop) {
@@ -81,6 +90,7 @@
 
       &:active {
         color: $main_menu_catalog_active;
+        border-bottom: none;
       }
     }
   }
