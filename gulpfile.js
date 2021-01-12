@@ -36,16 +36,16 @@ gulp.task("image", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
+      imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img/"))
+    .pipe(gulp.dest("build/img/"))
 });
 
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img/"))
+    .pipe(gulp.dest("build/img/"))
 });
 
 gulp.task("sprite", function () {
@@ -93,7 +93,6 @@ gulp.task("refresh", function (done) {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff2,woff}",
-    "source/img/**",
     "source/js/**",
   ], {
     base: "source"
@@ -105,9 +104,5 @@ gulp.task ("clean", function () {
   return del("build")
 });
 
-gulp.task ("clean-source-webp", function () {
-  return del("source/img/*.webp")
-});
-
-gulp.task("build", gulp.series("clean", "css", "image", "webp", "copy", "clean-source-webp", "sprite", "html", "html-minify"));
+gulp.task("build", gulp.series("clean", "css", "image", "webp", "copy", "sprite", "html", "html-minify"));
 gulp.task("start", gulp.series("build", "server"));
