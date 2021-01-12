@@ -15,4 +15,5 @@ In the course of the course, students gain practical skills in:
 - Building project from source code
 
 Student - [Anton Ocheretnyi](https://htmlacademy.ru/profile/id803755 "Anton Ocheretnyi")
+
 Mentor - [Ekaterina Komnatnaya](https://htmlacademy.ru/profile/id215761 "Ekaterina Komnatnaya")
